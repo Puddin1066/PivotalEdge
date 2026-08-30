@@ -1,0 +1,50 @@
+{
+  "kind": "competitor_approval_overrides",
+  "description": "Curated approval dates and Orange Book brand aliases for competitors missing from generic-name OB search / retrospective KG. Sourced facts only.",
+  "orangeBookAliases": {
+    "Sotorasib": ["Lumakras"],
+    "Liposomal irinotecan": ["Onivyde"]
+  },
+  "entries": [
+    {
+      "names": ["Semaglutide", "Ozempic", "Wegovy"],
+      "approvedAt": "2017-12-05T12:00:00.000Z",
+      "productLabel": "Semaglutide (Ozempic)",
+      "applicationNumber": "NDA209637",
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/209637Orig1s000TOC.cfm",
+      "passage": "FDA approved Ozempic (semaglutide) injection for type 2 diabetes on 2017-12-05."
+    },
+    {
+      "names": ["Cetuximab", "Erbitux"],
+      "approvedAt": "2004-02-12T12:00:00.000Z",
+      "productLabel": "Cetuximab (Erbitux)",
+      "applicationNumber": "BLA125084",
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2004/125084lbl.pdf",
+      "passage": "FDA approved Erbitux (cetuximab) on 2004-02-12."
+    },
+    {
+      "names": ["Ramucirumab", "Cyramza"],
+      "approvedAt": "2014-04-21T12:00:00.000Z",
+      "productLabel": "Ramucirumab (Cyramza)",
+      "applicationNumber": "BLA125477",
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/125477s000lbl.pdf",
+      "passage": "FDA approved Cyramza (ramucirumab) on 2014-04-21."
+    },
+    {
+      "names": ["Dostarlimab", "Jemperli"],
+      "approvedAt": "2021-04-22T12:00:00.000Z",
+      "productLabel": "Dostarlimab (Jemperli)",
+      "applicationNumber": "BLA761174",
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/761174s000lbl.pdf",
+      "passage": "FDA approved Jemperli (dostarlimab-gxly) on 2021-04-22."
+    },
+    {
+      "names": ["Trastuzumab deruxtecan", "Enhertu", "TRASTUZUMAB DERUXTECAN"],
+      "approvedAt": "2019-12-20T12:00:00.000Z",
+      "productLabel": "Fam-trastuzumab deruxtecan-nxki (Enhertu)",
+      "applicationNumber": "BLA761139",
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/761139s000lbl.pdf",
+      "passage": "FDA approved Enhertu (fam-trastuzumab deruxtecan-nxki) on 2019-12-20."
+    }
+  ]
+}

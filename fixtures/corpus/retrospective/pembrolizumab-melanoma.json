@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_pembrolizumab_melanoma",
+    "preferredName": "Pembrolizumab (Keytruda)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_pembrolizumab_melanoma"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_pembrolizumab_melanoma",
+    "name": "Merck",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_pembrolizumab_melanoma",
+    "name": "Advanced melanoma",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0000756"
+  },
+  "program": {
+    "id": "prog_pembrolizumab_melanoma",
+    "drugAssetId": "drug_pembrolizumab_melanoma",
+    "indicationId": "ind_pembrolizumab_melanoma",
+    "sponsorId": "sponsor_pembrolizumab_melanoma",
+    "name": "Pembrolizumab (Keytruda) — Advanced melanoma",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_pembrolizumab_melanoma",
+      "name": "PD-1 inhibition",
+      "target": "PDCD1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01295827",
+      "nctId": "NCT01295827",
+      "programId": "prog_pembrolizumab_melanoma",
+      "phase": "III",
+      "title": "KEYNOTE-001 pembrolizumab melanoma",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 655,
+      "actualEnrollment": 655,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2014-06-01T12:00:00.000Z",
+      "studyStartAt": "2014-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2014-09-04T12:00:00.000Z",
+      "completionAt": "2014-09-04T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_pembrolizumab_melanoma_primary",
+      "trialId": "trial_nct01295827",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_pembrolizumab_melanoma_primary",
+      "trialId": "trial_nct01295827",
+      "endpointId": "ep_pembrolizumab_melanoma_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01295827",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2014-06-01T00:00:00.000Z",
+        "effectiveAt": "2014-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2168a71d67a089437885a557",
+        "exactPassage": "KEYNOTE-001 primary endpoint met in advanced melanoma.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla125514",
+    "programId": "prog_pembrolizumab_melanoma",
+    "applicationNumber": "BLA125514",
+    "applicationType": "BLA",
+    "indicationId": "ind_pembrolizumab_melanoma",
+    "filedAt": "2014-02-27T00:00:00.000Z",
+    "acceptedAt": "2014-05-06T00:00:00.000Z",
+    "pdufaDate": "2014-09-04T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.merck.com/news/merck-announces-fda-acceptance-for-review-of-mk-3475-biologics-license-application-for-advanced-melanoma/",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:35.496Z",
+      "firstPublicAt": "2014-02-27T00:00:00.000Z",
+      "effectiveAt": "2014-02-27T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:d9fbea07bf61060ce99cf985",
+      "exactPassage": "Rolling BLA final portion submitted Feb 27 2014; FDA accepted for priority review May 6 2014; accelerated approval Sep 4 2014.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_pembrolizumab_melanoma_approval",
+    "applicationId": "app_bla125514",
+    "actionType": "approval",
+    "actionDate": "2014-09-04T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01295827",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:35.496Z",
+      "firstPublicAt": "2014-09-04T00:00:00.000Z",
+      "effectiveAt": "2014-09-04T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:d0d6bdb0b629b3780a1b4d02",
+      "exactPassage": "FDA approval date 2014-09-04T00:00:00.000Z for Pembrolizumab (Keytruda)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_pembrolizumab_melanoma_breakthrough_0",
+      "programId": "prog_pembrolizumab_melanoma",
+      "applicationId": "app_bla125514",
+      "designationType": "breakthrough",
+      "grantedAt": "2013-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2013-01-01T00:00:00.000Z",
+        "effectiveAt": "2013-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ea9fa83ccafd6dfb07a1f8f7",
+        "exactPassage": "breakthrough designation for Pembrolizumab (Keytruda)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_pembrolizumab_melanoma_0_ipilimumab",
+      "indicationId": "ind_pembrolizumab_melanoma",
+      "drugAssetId": "drug_comp_ipilimumab",
+      "drugName": "Ipilimumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000756",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2014-06-01T12:00:00.000Z",
+        "effectiveAt": "2014-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:59dd6025c2050addbb1775e0",
+        "exactPassage": "Approved / clinical candidate in indication: Ipilimumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_pembrolizumab_melanoma_ct",
+      "title": "KEYNOTE-001 pembrolizumab melanoma",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01295827",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2014-06-01T12:00:00.000Z",
+        "effectiveAt": "2014-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:18be5277339b73f0049bf3de",
+        "exactPassage": "KEYNOTE-001 pembrolizumab melanoma",
+        "locator": "NCT01295827",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_pembrolizumab_melanoma_result_press",
+      "title": "Pembrolizumab (Keytruda) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01295827",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2014-06-01T00:00:00.000Z",
+        "effectiveAt": "2014-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2168a71d67a089437885a557",
+        "exactPassage": "KEYNOTE-001 primary endpoint met in advanced melanoma.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_pembrolizumab_melanoma_reg_clock",
+      "title": "Pembrolizumab (Keytruda) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.merck.com/news/merck-announces-fda-acceptance-for-review-of-mk-3475-biologics-license-application-for-advanced-melanoma/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:35.496Z",
+        "firstPublicAt": "2014-02-27T00:00:00.000Z",
+        "effectiveAt": "2014-02-27T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d9fbea07bf61060ce99cf985",
+        "exactPassage": "Rolling BLA final portion submitted Feb 27 2014; FDA accepted for priority review May 6 2014; accelerated approval Sep 4 2014.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

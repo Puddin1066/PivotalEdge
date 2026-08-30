@@ -1,0 +1,160 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_torcetrapib_cv_fail",
+    "preferredName": "Torcetrapib",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_torcetrapib_cv_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_torcetrapib_cv_fail",
+    "name": "Pfizer",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_torcetrapib_cv_fail",
+    "name": "Atherosclerosis",
+    "therapeuticArea": "cardiology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_torcetrapib_cv_fail",
+    "drugAssetId": "drug_torcetrapib_cv_fail",
+    "indicationId": "ind_torcetrapib_cv_fail",
+    "sponsorId": "sponsor_torcetrapib_cv_fail",
+    "name": "Torcetrapib — Atherosclerosis",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_torcetrapib_cv_fail",
+      "name": "CETP inhibition",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00134264",
+      "nctId": "NCT00134264",
+      "programId": "prog_torcetrapib_cv_fail",
+      "phase": "III",
+      "title": "ILLUMINATE torcetrapib",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 15067,
+      "actualEnrollment": 15067,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2006-12-02T12:00:00.000Z",
+      "studyStartAt": "2006-12-02T12:00:00.000Z",
+      "primaryCompletionAt": "2006-12-09T12:00:00.000Z",
+      "completionAt": "2006-12-09T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_torcetrapib_cv_fail_primary",
+      "trialId": "trial_nct00134264",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_torcetrapib_cv_fail_primary",
+      "trialId": "trial_nct00134264",
+      "endpointId": "ep_torcetrapib_cv_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.176Z",
+        "firstPublicAt": "2006-12-02T00:00:00.000Z",
+        "effectiveAt": "2006-12-02T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:528c272712c5cd9ba70c53f0",
+        "exactPassage": "ILLUMINATE stopped for excess mortality.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_torcetrapib_cv_fail_pending",
+    "programId": "prog_torcetrapib_cv_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_torcetrapib_cv_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2006-12-09T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_torcetrapib_cv_fail_withdrawal",
+    "applicationId": "app_torcetrapib_cv_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2006-12-09T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.176Z",
+      "firstPublicAt": "2006-12-09T00:00:00.000Z",
+      "effectiveAt": "2006-12-09T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:c6c4a5f1758f59bb95c420eb",
+      "exactPassage": "Program discontinuation disclosure 2006-12-09T00:00:00.000Z for Torcetrapib",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_torcetrapib_cv_fail_ct",
+      "title": "ILLUMINATE torcetrapib",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00134264",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.176Z",
+        "firstPublicAt": "2006-12-02T12:00:00.000Z",
+        "effectiveAt": "2006-12-02T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:26c57892c4b12a8e3f18f19e",
+        "exactPassage": "ILLUMINATE torcetrapib",
+        "locator": "NCT00134264",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_torcetrapib_cv_fail_result_press",
+      "title": "Torcetrapib primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.176Z",
+        "firstPublicAt": "2006-12-02T00:00:00.000Z",
+        "effectiveAt": "2006-12-02T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:528c272712c5cd9ba70c53f0",
+        "exactPassage": "ILLUMINATE stopped for excess mortality.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

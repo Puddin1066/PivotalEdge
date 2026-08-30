@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_inotersen_hattr",
+    "preferredName": "Inotersen (Tegsedi)",
+    "modality": "antisense_oligonucleotide",
+    "mechanismIds": [
+      "mech_inotersen_hattr"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_inotersen_hattr",
+    "name": "Ionis/Akcea",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_inotersen_hattr",
+    "name": "hATTR polyneuropathy",
+    "therapeuticArea": "neurology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_inotersen_hattr",
+    "drugAssetId": "drug_inotersen_hattr",
+    "indicationId": "ind_inotersen_hattr",
+    "sponsorId": "sponsor_inotersen_hattr",
+    "name": "Inotersen (Tegsedi) — hATTR polyneuropathy",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_inotersen_hattr",
+      "name": "TTR knockdown",
+      "target": "TTR",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01737398",
+      "nctId": "NCT01737398",
+      "programId": "prog_inotersen_hattr",
+      "phase": "III",
+      "title": "NEURO-TTR inotersen",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 172,
+      "actualEnrollment": 172,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2017-07-01T12:00:00.000Z",
+      "studyStartAt": "2017-07-01T12:00:00.000Z",
+      "primaryCompletionAt": "2018-10-05T12:00:00.000Z",
+      "completionAt": "2018-10-05T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_inotersen_hattr_primary",
+      "trialId": "trial_nct01737398",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_inotersen_hattr_primary",
+      "trialId": "trial_nct01737398",
+      "endpointId": "ep_inotersen_hattr_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01737398",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2017-07-01T00:00:00.000Z",
+        "effectiveAt": "2017-07-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:64a47c93c6dfa4b75cc93637",
+        "exactPassage": "NEURO-TTR primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda211172",
+    "programId": "prog_inotersen_hattr",
+    "applicationNumber": "NDA211172",
+    "applicationType": "NDA",
+    "indicationId": "ind_inotersen_hattr",
+    "filedAt": "2017-12-19T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2018-10-05T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://ir.akcea.com/news-releases/news-release-details/akcea-and-ionis-announce-fda-acceptance-new-drug-application",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:39.789Z",
+      "firstPublicAt": "2017-12-19T00:00:00.000Z",
+      "effectiveAt": "2017-12-19T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:581e05e169c38ef18c64a6b4",
+      "exactPassage": "Akcea submitted inotersen NDA Dec 19 2017; FDA approval Oct 5 2018.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_inotersen_hattr_approval",
+    "applicationId": "app_nda211172",
+    "actionType": "approval",
+    "actionDate": "2018-10-05T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01737398",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:39.789Z",
+      "firstPublicAt": "2018-10-05T00:00:00.000Z",
+      "effectiveAt": "2018-10-05T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:fe698cd7d4fa777fed1ba2ce",
+      "exactPassage": "FDA approval date 2018-10-05T00:00:00.000Z for Inotersen (Tegsedi)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_inotersen_hattr_orphan_0",
+      "programId": "prog_inotersen_hattr",
+      "applicationId": "app_nda211172",
+      "designationType": "orphan",
+      "grantedAt": "2014-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2014-01-01T00:00:00.000Z",
+        "effectiveAt": "2014-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:1c291001c564304bdbb351a9",
+        "exactPassage": "orphan designation for Inotersen (Tegsedi)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_inotersen_hattr_0_patisiran",
+      "indicationId": "ind_inotersen_hattr",
+      "drugAssetId": "drug_comp_patisiran",
+      "drugName": "Patisiran",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01737398",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2017-07-01T12:00:00.000Z",
+        "effectiveAt": "2017-07-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:895ef6c0280c15e4ffcbae6a",
+        "exactPassage": "Approved / clinical candidate in indication: Patisiran",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_inotersen_hattr_ct",
+      "title": "NEURO-TTR inotersen",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01737398",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2017-07-01T12:00:00.000Z",
+        "effectiveAt": "2017-07-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3c3cf44f99e0a80d7f27fc7b",
+        "exactPassage": "NEURO-TTR inotersen",
+        "locator": "NCT01737398",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_inotersen_hattr_result_press",
+      "title": "Inotersen (Tegsedi) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01737398",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2017-07-01T00:00:00.000Z",
+        "effectiveAt": "2017-07-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:64a47c93c6dfa4b75cc93637",
+        "exactPassage": "NEURO-TTR primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_inotersen_hattr_reg_clock",
+      "title": "Inotersen (Tegsedi) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://ir.akcea.com/news-releases/news-release-details/akcea-and-ionis-announce-fda-acceptance-new-drug-application",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.789Z",
+        "firstPublicAt": "2017-12-19T00:00:00.000Z",
+        "effectiveAt": "2017-12-19T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:581e05e169c38ef18c64a6b4",
+        "exactPassage": "Akcea submitted inotersen NDA Dec 19 2017; FDA approval Oct 5 2018.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

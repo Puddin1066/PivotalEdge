@@ -1,0 +1,292 @@
+{
+  "kind": "frozen_opportunity_snapshot",
+  "snapshotVersion": "1",
+  "frozenAt": "2024-06-01T12:00:00.000Z",
+  "marketQuestion": {
+    "marketId": "pm_poly_syn_001",
+    "eventType": "FDA_APPROVAL_BY_DATE",
+    "drugAssetId": "drug_syn_alpha",
+    "drugAliases": [
+      "Synalphimab",
+      "SYN-α"
+    ],
+    "sponsorId": "sponsor_synbio",
+    "indicationId": "ind_nsclc",
+    "population": "metastatic NSCLC",
+    "applicationId": "app_bla_syn_001",
+    "linkedTrialIds": [
+      "trial_nct00000001"
+    ],
+    "endpointIds": [
+      "ep_os"
+    ],
+    "eventDeadline": "2025-12-31T23:59:59.000Z",
+    "resolutionSource": "Drugs@FDA or official FDA announcement",
+    "resolutionDefinition": "FDA approval of Synalphimab for any NSCLC indication on or before the deadline; conditional approval counts.",
+    "conditionalApprovalCounts": true,
+    "ambiguityFlags": [],
+    "parserConfidence": 0.92
+  },
+  "forecast": {
+    "id": "fc_synalpha_fixture",
+    "marketQuestionId": "pm_poly_syn_001",
+    "programId": "prog_syn_alpha_nsclc",
+    "generatedAt": "2024-06-01T12:00:00.000Z",
+    "forecastCutoff": "2024-06-01T00:00:00.000Z",
+    "modelProbability": 1,
+    "conservativeProbability": 0.9123754607496077,
+    "intervalLow": 0.9123754607496077,
+    "intervalHigh": 1,
+    "modelVersion": "base-rate-calibrated@3",
+    "calibrationStatus": "held_out",
+    "components": [
+      {
+        "id": "comp_clinical",
+        "name": "clinical_adequacy",
+        "probability": 0.88,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@3",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_submission",
+        "name": "submission_by_T",
+        "probability": 0.95,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@3",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_acceptance",
+        "name": "acceptance_given_submission",
+        "probability": 0.93,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@3",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_approval",
+        "name": "approval_given_acceptance",
+        "probability": 1,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@3",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_decision",
+        "name": "decision_by_T",
+        "probability": 1,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@3",
+        "calibrationStatus": "held_out"
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_nct00000001_primary",
+      "action_approve_syn_001",
+      "des_syn_bt",
+      "des_syn_pr",
+      "doc_syn_approval"
+    ],
+    "cutoffAudit": {
+      "forecastCutoff": "2024-06-01T00:00:00.000Z",
+      "checkedAt": "2026-08-28T12:43:17.735Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "yesOrderBook": {
+    "id": "ob_synalpha_yes_fixture",
+    "marketId": "pm_poly_syn_001",
+    "capturedAt": "2024-06-01T12:00:00.000Z",
+    "bids": [
+      {
+        "price": 0.68,
+        "size": 1200
+      },
+      {
+        "price": 0.67,
+        "size": 800
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.72,
+        "size": 900
+      },
+      {
+        "price": 0.73,
+        "size": 600
+      }
+    ],
+    "midpoint": 0.7,
+    "bestBid": 0.68,
+    "bestAsk": 0.72
+  },
+  "noOrderBook": {
+    "id": "ob_synalpha_no_fixture",
+    "marketId": "pm_poly_syn_001",
+    "capturedAt": "2024-06-01T12:00:00.000Z",
+    "bids": [
+      {
+        "price": 0.26,
+        "size": 700
+      },
+      {
+        "price": 0.25,
+        "size": 500
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.3,
+        "size": 850
+      },
+      {
+        "price": 0.31,
+        "size": 400
+      }
+    ],
+    "midpoint": 0.28,
+    "bestBid": 0.26,
+    "bestAsk": 0.3
+  },
+  "precedentBundle": {
+    "marketQuestionId": "pm_poly_syn_001",
+    "currentProgram": {
+      "programId": "prog_syn_alpha_nsclc",
+      "drugAssetId": "drug_syn_alpha",
+      "drugName": "Synalphimab",
+      "sponsorId": "sponsor_synbio",
+      "sponsorName": "SynBio Therapeutics",
+      "indicationId": "ind_nsclc",
+      "indicationName": "Non-small cell lung cancer",
+      "therapeuticArea": "oncology",
+      "status": "approved",
+      "trialIds": [
+        "trial_nct00000001"
+      ],
+      "applicationId": "app_bla_syn_001",
+      "primaryEndpointMet": true,
+      "endpointFamily": "OS",
+      "trialStatus": "completed",
+      "plannedEnrollment": 600,
+      "actualEnrollment": 582,
+      "biomarkerEnriched": true,
+      "designationTypes": [
+        "breakthrough",
+        "priority_review"
+      ],
+      "orphanDesignated": false,
+      "approvedTherapyCount": 2,
+      "priorApprovalCount": 1,
+      "applicationFiled": true,
+      "applicationAccepted": false,
+      "filedAt": null,
+      "acceptedAt": null,
+      "pdufaDate": null,
+      "expectedFilingAt": null,
+      "reviewProgram": "unknown",
+      "registeredAt": null,
+      "studyStartAt": null,
+      "primaryCompletionAt": null,
+      "completionAt": null,
+      "actionDate": "2023-01-10T16:00:00.000Z",
+      "daysRegistrationToPrimaryCompletion": null,
+      "daysPrimaryCompletionToAcceptance": null,
+      "daysAcceptanceToPdufa": null,
+      "daysAcceptanceToAction": null,
+      "inferredReviewWindowDays": 240
+    },
+    "cohorts": [
+      {
+        "cohortDefinition": "Same therapeutic area and phase III",
+        "programs": [],
+        "approvals": 0,
+        "crls": 0,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": null
+      },
+      {
+        "cohortDefinition": "Review-duration analogues (acceptance → action)",
+        "programs": [],
+        "approvals": 0,
+        "crls": 0,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": null
+      },
+      {
+        "cohortDefinition": "Same endpoint family (overall survival)",
+        "programs": [],
+        "approvals": 0,
+        "crls": 0,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": null
+      }
+    ],
+    "exactAnalogues": [
+      {
+        "programId": "prog_syn_beta_ra",
+        "similarities": [
+          "Same phase: III"
+        ],
+        "differences": [
+          "Therapeutic area oncology vs rheumatology",
+          "Sponsor SynBio Therapeutics vs Crestline Pharma"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_nct00000001_primary",
+      "action_approve_syn_001",
+      "des_syn_bt",
+      "des_syn_pr",
+      "doc_syn_approval"
+    ],
+    "contradictoryEvidenceIds": [],
+    "missingHighValueEvidence": [
+      "regulatory_acceptance_or_filing_guidance"
+    ],
+    "cutoffCompliance": {
+      "forecastCutoff": "2024-06-01T00:00:00.000Z",
+      "checkedAt": "2026-08-28T12:43:17.735Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "bankroll": 10000
+}

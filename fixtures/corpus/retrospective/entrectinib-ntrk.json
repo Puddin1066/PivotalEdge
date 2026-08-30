@@ -1,0 +1,247 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_entrectinib_ntrk",
+    "preferredName": "Entrectinib (Rozlytrek)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_entrectinib_ntrk"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_entrectinib_ntrk",
+    "name": "Genentech",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_entrectinib_ntrk",
+    "name": "NTRK fusion solid tumors",
+    "therapeuticArea": "oncology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_entrectinib_ntrk",
+    "drugAssetId": "drug_entrectinib_ntrk",
+    "indicationId": "ind_entrectinib_ntrk",
+    "sponsorId": "sponsor_entrectinib_ntrk",
+    "name": "Entrectinib (Rozlytrek) — NTRK fusion solid tumors",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_entrectinib_ntrk",
+      "name": "TRK/ROS1 inhibition",
+      "target": "NTRK1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct02097810",
+      "nctId": "NCT02097810",
+      "programId": "prog_entrectinib_ntrk",
+      "phase": "II",
+      "title": "STARTRK entrectinib NTRK",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 355,
+      "actualEnrollment": 355,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2018-06-01T12:00:00.000Z",
+      "studyStartAt": "2018-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2019-08-15T12:00:00.000Z",
+      "completionAt": "2019-08-15T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_entrectinib_ntrk_primary",
+      "trialId": "trial_nct02097810",
+      "name": "ORR",
+      "endpointFamily": "ORR",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_entrectinib_ntrk_primary",
+      "trialId": "trial_nct02097810",
+      "endpointId": "ep_entrectinib_ntrk_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02097810",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2018-06-01T00:00:00.000Z",
+        "effectiveAt": "2018-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:239a95df3576e2587c4bf37a",
+        "exactPassage": "STARTRK ORR primary endpoint met in NTRK+ tumors.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda212725",
+    "programId": "prog_entrectinib_ntrk",
+    "applicationNumber": "NDA212725",
+    "applicationType": "NDA",
+    "indicationId": "ind_entrectinib_ntrk",
+    "filedAt": "2018-11-30T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2019-08-15T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.roche.com/investors/updates/inv-update-2018-11-30",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:40.044Z",
+      "firstPublicAt": "2018-11-30T00:00:00.000Z",
+      "effectiveAt": "2018-11-30T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:d00f5b9828b2e8480a87d326",
+      "exactPassage": "Roche submitted entrectinib NDA Nov 30 2018; FDA approval Aug 15 2019.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_entrectinib_ntrk_approval",
+    "applicationId": "app_nda212725",
+    "actionType": "approval",
+    "actionDate": "2019-08-15T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT02097810",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:40.044Z",
+      "firstPublicAt": "2019-08-15T00:00:00.000Z",
+      "effectiveAt": "2019-08-15T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:cf1cd3a527f8f1dcad6c20fd",
+      "exactPassage": "FDA approval date 2019-08-15T00:00:00.000Z for Entrectinib (Rozlytrek)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_entrectinib_ntrk_breakthrough_0",
+      "programId": "prog_entrectinib_ntrk",
+      "applicationId": "app_nda212725",
+      "designationType": "breakthrough",
+      "grantedAt": "2017-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2017-01-01T00:00:00.000Z",
+        "effectiveAt": "2017-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:5334e578c4e7a2ca86ee00f1",
+        "exactPassage": "breakthrough designation for Entrectinib (Rozlytrek)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_entrectinib_ntrk_orphan_1",
+      "programId": "prog_entrectinib_ntrk",
+      "applicationId": "app_nda212725",
+      "designationType": "orphan",
+      "grantedAt": "2015-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2015-01-01T00:00:00.000Z",
+        "effectiveAt": "2015-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:eeaca61185c9d1349f03ae19",
+        "exactPassage": "orphan designation for Entrectinib (Rozlytrek)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_entrectinib_ntrk_0_larotrectinib",
+      "indicationId": "ind_entrectinib_ntrk",
+      "drugAssetId": "drug_comp_larotrectinib",
+      "drugName": "Larotrectinib",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02097810",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2018-06-01T12:00:00.000Z",
+        "effectiveAt": "2018-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7af8eea485bd2723b5a8e693",
+        "exactPassage": "Approved / clinical candidate in indication: Larotrectinib",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_entrectinib_ntrk_ct",
+      "title": "STARTRK entrectinib NTRK",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02097810",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2018-06-01T12:00:00.000Z",
+        "effectiveAt": "2018-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:6713fa34a402770091f350a9",
+        "exactPassage": "STARTRK entrectinib NTRK",
+        "locator": "NCT02097810",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_entrectinib_ntrk_result_press",
+      "title": "Entrectinib (Rozlytrek) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02097810",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2018-06-01T00:00:00.000Z",
+        "effectiveAt": "2018-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:239a95df3576e2587c4bf37a",
+        "exactPassage": "STARTRK ORR primary endpoint met in NTRK+ tumors.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_entrectinib_ntrk_reg_clock",
+      "title": "Entrectinib (Rozlytrek) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.roche.com/investors/updates/inv-update-2018-11-30",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.044Z",
+        "firstPublicAt": "2018-11-30T00:00:00.000Z",
+        "effectiveAt": "2018-11-30T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d00f5b9828b2e8480a87d326",
+        "exactPassage": "Roche submitted entrectinib NDA Nov 30 2018; FDA approval Aug 15 2019.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

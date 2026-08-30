@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_solanezumab_ad_fail",
+    "preferredName": "Solanezumab",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_solanezumab_ad_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_solanezumab_ad_fail",
+    "name": "Eli Lilly",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_solanezumab_ad_fail",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0000249"
+  },
+  "program": {
+    "id": "prog_solanezumab_ad_fail",
+    "drugAssetId": "drug_solanezumab_ad_fail",
+    "indicationId": "ind_solanezumab_ad_fail",
+    "sponsorId": "sponsor_solanezumab_ad_fail",
+    "name": "Solanezumab — Alzheimer disease",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_solanezumab_ad_fail",
+      "name": "Soluble amyloid-beta antibody",
+      "target": "APP",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01900665",
+      "nctId": "NCT01900665",
+      "programId": "prog_solanezumab_ad_fail",
+      "phase": "III",
+      "title": "EXPEDITION3 solanezumab",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 2129,
+      "actualEnrollment": 2129,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2016-11-23T12:00:00.000Z",
+      "studyStartAt": "2016-11-23T12:00:00.000Z",
+      "primaryCompletionAt": "2016-11-30T12:00:00.000Z",
+      "completionAt": "2016-11-30T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_solanezumab_ad_fail_primary",
+      "trialId": "trial_nct01900665",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_solanezumab_ad_fail_primary",
+      "trialId": "trial_nct01900665",
+      "endpointId": "ep_solanezumab_ad_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01900665",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.681Z",
+        "firstPublicAt": "2016-11-23T00:00:00.000Z",
+        "effectiveAt": "2016-11-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:5097e61c5ba74ab5f3d411f1",
+        "exactPassage": "EXPEDITION3 missed primary endpoint.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_solanezumab_ad_fail_pending",
+    "programId": "prog_solanezumab_ad_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_solanezumab_ad_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2016-11-30T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_solanezumab_ad_fail_withdrawal",
+    "applicationId": "app_solanezumab_ad_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2016-11-30T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01900665",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.681Z",
+      "firstPublicAt": "2016-11-30T00:00:00.000Z",
+      "effectiveAt": "2016-11-30T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:c3091d460a422c9c64425b16",
+      "exactPassage": "Program discontinuation disclosure 2016-11-30T00:00:00.000Z for Solanezumab",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_solanezumab_ad_fail_0_aducanumab",
+      "indicationId": "ind_solanezumab_ad_fail",
+      "drugAssetId": "drug_comp_aducanumab",
+      "drugName": "Aducanumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000249",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.681Z",
+        "firstPublicAt": "2016-11-23T12:00:00.000Z",
+        "effectiveAt": "2016-11-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f509aa4490b446faa4ae2680",
+        "exactPassage": "Approved / clinical candidate in indication: Aducanumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_solanezumab_ad_fail_ct",
+      "title": "EXPEDITION3 solanezumab",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01900665",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.681Z",
+        "firstPublicAt": "2016-11-23T12:00:00.000Z",
+        "effectiveAt": "2016-11-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:92a12ef9a89bf980a6556e4f",
+        "exactPassage": "EXPEDITION3 solanezumab",
+        "locator": "NCT01900665",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_solanezumab_ad_fail_result_press",
+      "title": "Solanezumab primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01900665",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.681Z",
+        "firstPublicAt": "2016-11-23T00:00:00.000Z",
+        "effectiveAt": "2016-11-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:5097e61c5ba74ab5f3d411f1",
+        "exactPassage": "EXPEDITION3 missed primary endpoint.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

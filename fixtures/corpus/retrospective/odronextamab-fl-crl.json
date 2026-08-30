@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_odronextamab_fl_crl",
+    "preferredName": "Odronextamab (Ordspono)",
+    "modality": "bispecific_antibody",
+    "mechanismIds": [
+      "mech_odronextamab_fl_crl"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_odronextamab_fl_crl",
+    "name": "Regeneron",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_odronextamab_fl_crl",
+    "name": "Follicular lymphoma",
+    "therapeuticArea": "oncology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_odronextamab_fl_crl",
+    "drugAssetId": "drug_odronextamab_fl_crl",
+    "indicationId": "ind_odronextamab_fl_crl",
+    "sponsorId": "sponsor_odronextamab_fl_crl",
+    "name": "Odronextamab (Ordspono) — Follicular lymphoma",
+    "status": "crl"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_odronextamab_fl_crl",
+      "name": "CD20xCD3 T-cell engagement",
+      "target": "MS4A1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03888105",
+      "nctId": "NCT03888105",
+      "programId": "prog_odronextamab_fl_crl",
+      "phase": "III",
+      "title": "ELM-2 odronextamab FL",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 478,
+      "actualEnrollment": 478,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2024-01-15T12:00:00.000Z",
+      "studyStartAt": "2024-01-15T12:00:00.000Z",
+      "primaryCompletionAt": "2025-07-15T12:00:00.000Z",
+      "completionAt": "2025-07-15T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_odronextamab_fl_crl_primary",
+      "trialId": "trial_nct03888105",
+      "name": "ORR",
+      "endpointFamily": "ORR",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_odronextamab_fl_crl_primary",
+      "trialId": "trial_nct03888105",
+      "endpointId": "ep_odronextamab_fl_crl_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03888105",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2024-01-15T00:00:00.000Z",
+        "effectiveAt": "2024-01-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f7a5b54c948421fd2aa9d01f",
+        "exactPassage": "ELM-2 ORR supportive; manufacturing CRL.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761345",
+    "programId": "prog_odronextamab_fl_crl",
+    "applicationNumber": "BLA761345",
+    "applicationType": "BLA",
+    "indicationId": "ind_odronextamab_fl_crl",
+    "filedAt": "2024-08-30T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2025-07-15T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-announces-fda-acceptance-biologics-license-application",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:41.202Z",
+      "firstPublicAt": "2024-08-30T00:00:00.000Z",
+      "effectiveAt": "2024-08-30T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:830703ef392f185e6c58a4d2",
+      "exactPassage": "Regeneron submitted odronextamab BLA Aug 30 2024; FDA issued CRL Jul 15 2025.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_odronextamab_fl_crl_crl",
+    "applicationId": "app_bla761345",
+    "actionType": "crl",
+    "actionDate": "2025-07-15T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT03888105",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.202Z",
+      "firstPublicAt": "2025-07-15T00:00:00.000Z",
+      "effectiveAt": "2025-07-15T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:947649db68669336e1fa0624",
+      "exactPassage": "Complete response / non-approval disclosure 2025-07-15T00:00:00.000Z for Odronextamab (Ordspono)",
+      "locator": "action#crl",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_odronextamab_fl_crl_orphan_0",
+      "programId": "prog_odronextamab_fl_crl",
+      "applicationId": "app_bla761345",
+      "designationType": "orphan",
+      "grantedAt": "2020-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2020-01-01T00:00:00.000Z",
+        "effectiveAt": "2020-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3e52091b041a3ca0f65e561c",
+        "exactPassage": "orphan designation for Odronextamab (Ordspono)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_odronextamab_fl_crl_0_rituximab",
+      "indicationId": "ind_odronextamab_fl_crl",
+      "drugAssetId": "drug_comp_rituximab",
+      "drugName": "Rituximab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03888105",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2024-01-15T12:00:00.000Z",
+        "effectiveAt": "2024-01-15T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:68b4477403d5e40c6d5cb161",
+        "exactPassage": "Approved / clinical candidate in indication: Rituximab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_odronextamab_fl_crl_ct",
+      "title": "ELM-2 odronextamab FL",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03888105",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2024-01-15T12:00:00.000Z",
+        "effectiveAt": "2024-01-15T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c50bb92334425c470d444cee",
+        "exactPassage": "ELM-2 odronextamab FL",
+        "locator": "NCT03888105",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_odronextamab_fl_crl_result_press",
+      "title": "Odronextamab (Ordspono) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03888105",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2024-01-15T00:00:00.000Z",
+        "effectiveAt": "2024-01-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f7a5b54c948421fd2aa9d01f",
+        "exactPassage": "ELM-2 ORR supportive; manufacturing CRL.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_odronextamab_fl_crl_reg_clock",
+      "title": "Odronextamab (Ordspono) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-announces-fda-acceptance-biologics-license-application",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.202Z",
+        "firstPublicAt": "2024-08-30T00:00:00.000Z",
+        "effectiveAt": "2024-08-30T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:830703ef392f185e6c58a4d2",
+        "exactPassage": "Regeneron submitted odronextamab BLA Aug 30 2024; FDA issued CRL Jul 15 2025.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

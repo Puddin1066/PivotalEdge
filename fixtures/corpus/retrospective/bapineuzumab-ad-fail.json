@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_bapineuzumab_ad_fail",
+    "preferredName": "Bapineuzumab",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_bapineuzumab_ad_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_bapineuzumab_ad_fail",
+    "name": "Pfizer/Janssen",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_bapineuzumab_ad_fail",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0000249"
+  },
+  "program": {
+    "id": "prog_bapineuzumab_ad_fail",
+    "drugAssetId": "drug_bapineuzumab_ad_fail",
+    "indicationId": "ind_bapineuzumab_ad_fail",
+    "sponsorId": "sponsor_bapineuzumab_ad_fail",
+    "name": "Bapineuzumab — Alzheimer disease",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_bapineuzumab_ad_fail",
+      "name": "Amyloid-beta antibody",
+      "target": "APP",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00575055",
+      "nctId": "NCT00575055",
+      "programId": "prog_bapineuzumab_ad_fail",
+      "phase": "III",
+      "title": "Bapineuzumab Phase 3 Alzheimer",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 1121,
+      "actualEnrollment": 1121,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2012-07-23T12:00:00.000Z",
+      "studyStartAt": "2012-07-23T12:00:00.000Z",
+      "primaryCompletionAt": "2012-08-06T12:00:00.000Z",
+      "completionAt": "2012-08-06T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_bapineuzumab_ad_fail_primary",
+      "trialId": "trial_nct00575055",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_bapineuzumab_ad_fail_primary",
+      "trialId": "trial_nct00575055",
+      "endpointId": "ep_bapineuzumab_ad_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00575055",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.679Z",
+        "firstPublicAt": "2012-07-23T00:00:00.000Z",
+        "effectiveAt": "2012-07-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9e3936b74a4eeb0ac880af86",
+        "exactPassage": "Phase 3 missed co-primary endpoints; program discontinued.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bapineuzumab_ad_fail_pending",
+    "programId": "prog_bapineuzumab_ad_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_bapineuzumab_ad_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2012-08-06T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_bapineuzumab_ad_fail_withdrawal",
+    "applicationId": "app_bapineuzumab_ad_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2012-08-06T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT00575055",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.679Z",
+      "firstPublicAt": "2012-08-06T00:00:00.000Z",
+      "effectiveAt": "2012-08-06T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:358a2c780f29465a3de15a8b",
+      "exactPassage": "Program discontinuation disclosure 2012-08-06T00:00:00.000Z for Bapineuzumab",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_bapineuzumab_ad_fail_0_donepezil",
+      "indicationId": "ind_bapineuzumab_ad_fail",
+      "drugAssetId": "drug_comp_donepezil",
+      "drugName": "Donepezil",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000249",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.679Z",
+        "firstPublicAt": "2012-07-23T12:00:00.000Z",
+        "effectiveAt": "2012-07-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:46b8a4d2c5b413d3d3e78ad5",
+        "exactPassage": "Approved / clinical candidate in indication: Donepezil",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_bapineuzumab_ad_fail_ct",
+      "title": "Bapineuzumab Phase 3 Alzheimer",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00575055",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.679Z",
+        "firstPublicAt": "2012-07-23T12:00:00.000Z",
+        "effectiveAt": "2012-07-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d27b7cc02db4e14fc61a4759",
+        "exactPassage": "Bapineuzumab Phase 3 Alzheimer",
+        "locator": "NCT00575055",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_bapineuzumab_ad_fail_result_press",
+      "title": "Bapineuzumab primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00575055",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.679Z",
+        "firstPublicAt": "2012-07-23T00:00:00.000Z",
+        "effectiveAt": "2012-07-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9e3936b74a4eeb0ac880af86",
+        "exactPassage": "Phase 3 missed co-primary endpoints; program discontinued.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "kind": "forecast_holdout_corpus",
+  "description": "Synthetic mock historical programs for S5 chronological holdout (not live API data).",
+  "cases": [
+    {
+      "caseId": "holdout_2018_onc_pe",
+      "forecastCutoff": "2018-03-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": false,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2018_onc_filed",
+      "forecastCutoff": "2018-09-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true
+    },
+    {
+      "caseId": "holdout_2019_rheum_filed",
+      "forecastCutoff": "2019-02-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "rheumatology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true
+    },
+    {
+      "caseId": "holdout_2019_rheum_fail",
+      "forecastCutoff": "2019-08-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "rheumatology",
+      "primaryEndpointMet": false,
+      "applicationFiled": true,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2020_onc_filed",
+      "forecastCutoff": "2020-01-15T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true
+    },
+    {
+      "caseId": "holdout_2020_onc_phase2",
+      "forecastCutoff": "2020-07-01T00:00:00.000Z",
+      "phase": "II",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": false,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2021_neuro_filed",
+      "forecastCutoff": "2021-01-10T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "neurology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2021_onc_miss",
+      "forecastCutoff": "2021-06-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": false,
+      "applicationFiled": false,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2022_rheum_filed",
+      "forecastCutoff": "2022-02-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "rheumatology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true
+    },
+    {
+      "caseId": "holdout_2022_neuro_pe",
+      "forecastCutoff": "2022-08-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "neurology",
+      "primaryEndpointMet": true,
+      "applicationFiled": false,
+      "resolvedApproved": false
+    },
+    {
+      "caseId": "holdout_2023_onc_filed",
+      "forecastCutoff": "2023-03-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true
+    },
+    {
+      "caseId": "holdout_2023_onc_crl",
+      "forecastCutoff": "2023-10-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "kind": "retrospective_regulatory_clocks",
+  "description": "Curated public regulatory clock milestones for retrospective KG programs. Filing/acceptance dates from sponsor IR, FDA Drugs@FDA review docs, and FDA acceptance press releases — not inferred from review windows.",
+  "clocks": {
+    "pembrolizumab-melanoma": {
+      "filedAt": "2014-02-27T00:00:00.000Z",
+      "acceptedAt": "2014-05-06T00:00:00.000Z",
+      "pdufaDate": "2014-09-04T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.merck.com/news/merck-announces-fda-acceptance-for-review-of-mk-3475-biologics-license-application-for-advanced-melanoma/",
+      "clockFirstPublicAt": "2014-02-27T00:00:00.000Z",
+      "clockPassage": "Rolling BLA final portion submitted Feb 27 2014; FDA accepted for priority review May 6 2014; accelerated approval Sep 4 2014."
+    },
+    "nivolumab-melanoma": {
+      "acceptedAt": "2014-09-26T00:00:00.000Z",
+      "pdufaDate": "2014-12-22T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://news.bms.com/news/details/2014/Bristol-Myers-Squibb-Announces-U-S--Food-and-Drug-Administration-Accepts-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Patients-with-Previously-Treated-Unresectable-or-Metastatic-Melanoma/default.aspx",
+      "clockFirstPublicAt": "2014-09-26T00:00:00.000Z",
+      "clockPassage": "FDA accepted nivolumab BLA for priority review Sep 26 2014; approved Dec 22 2014."
+    },
+    "palbociclib-breast": {
+      "filedAt": "2014-08-18T00:00:00.000Z",
+      "pdufaDate": "2015-02-03T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_s_palbociclib_granted_fda_breakthrough_therapy_designation",
+      "clockFirstPublicAt": "2014-08-18T00:00:00.000Z",
+      "clockPassage": "Pfizer submitted palbociclib NDA Aug 2014 under breakthrough; FDA approval Feb 3 2015."
+    },
+    "nivolumab-nsclc": {
+      "acceptedAt": "2015-03-04T00:00:00.000Z",
+      "pdufaDate": "2015-10-09T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://news.bms.com/news/details/2015/Bristol-Myers-Squibb-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Advanced-Non-Small-Cell-Lung-Cancer/default.aspx",
+      "clockFirstPublicAt": "2015-03-04T00:00:00.000Z",
+      "clockPassage": "FDA accepted nivolumab NSCLC sBLA Mar 4 2015; approved Oct 9 2015."
+    },
+    "ipilimumab-melanoma": {
+      "acceptedAt": "2010-08-18T00:00:00.000Z",
+      "pdufaDate": "2011-03-25T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://news.bms.com/news/details/2010/Ipilimumab-Receives-FDA-Priority-Review-Designation-for-Adult-Patients-with-Previously-Treated-Advanced-Melanoma/default.aspx",
+      "clockFirstPublicAt": "2010-08-18T00:00:00.000Z",
+      "clockPassage": "FDA accepted ipilimumab BLA for priority review Aug 18 2010; approved Mar 25 2011."
+    },
+    "sofosbuvir-hcv": {
+      "filedAt": "2013-04-08T00:00:00.000Z",
+      "pdufaDate": "2013-12-06T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.gilead.com/news-and-press/press-room/press-releases/2013/4/gilead-submits-new-drug-application-to-us-fda-for-sofosbuvir-for-the-treatment-of-hepatitis-c",
+      "clockFirstPublicAt": "2013-04-08T00:00:00.000Z",
+      "clockPassage": "Gilead submitted sofosbuvir NDA Apr 2013; FDA approval Dec 6 2013."
+    },
+    "tirzepatide-t2d": {
+      "filedAt": "2021-09-15T00:00:00.000Z",
+      "pdufaDate": "2022-05-13T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/215866Orig1s000NameR.pdf",
+      "clockFirstPublicAt": "2021-09-15T00:00:00.000Z",
+      "clockPassage": "Lilly submitted tirzepatide NDA Sep 15 2021 with priority review voucher; approved May 13 2022."
+    },
+    "resmetirom-mash": {
+      "filedAt": "2023-07-17T00:00:00.000Z",
+      "acceptedAt": "2023-09-13T00:00:00.000Z",
+      "pdufaDate": "2024-03-14T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://ir.madrigalpharma.com/news-releases/news-release-details/madrigal-pharmaceuticals-completes-submission-new-drug",
+      "clockFirstPublicAt": "2023-07-17T00:00:00.000Z",
+      "clockPassage": "Madrigal completed resmetirom NDA rolling submission Jul 17 2023; FDA priority review accepted Sep 13 2023; accelerated approval Mar 14 2024."
+    },
+    "atezolizumab-urothelial": {
+      "acceptedAt": "2016-03-14T00:00:00.000Z",
+      "pdufaDate": "2016-05-18T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.gene.com/media/press-releases/14667/2016-03-14/fda-accepts-genentechs-biologics-license",
+      "clockFirstPublicAt": "2016-03-14T00:00:00.000Z",
+      "clockPassage": "FDA accepted atezolizumab BLA for priority review Mar 14 2016; accelerated approval May 18 2016."
+    },
+    "entrectinib-ntrk": {
+      "filedAt": "2018-11-30T00:00:00.000Z",
+      "pdufaDate": "2019-08-15T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.roche.com/investors/updates/inv-update-2018-11-30",
+      "clockFirstPublicAt": "2018-11-30T00:00:00.000Z",
+      "clockPassage": "Roche submitted entrectinib NDA Nov 30 2018; FDA approval Aug 15 2019."
+    },
+    "patisiran-hattr": {
+      "filedAt": "2017-10-18T00:00:00.000Z",
+      "pdufaDate": "2018-08-10T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://investors.alnylam.com/press-release?id=24206",
+      "clockFirstPublicAt": "2017-10-18T00:00:00.000Z",
+      "clockPassage": "Alnylam submitted patisiran NDA Oct 18 2017; FDA approval Aug 10 2018."
+    },
+    "mavacamten-hcm": {
+      "filedAt": "2020-12-23T00:00:00.000Z",
+      "pdufaDate": "2022-04-28T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://ir.cytokinetics.com/news-releases/news-release-details/cytokinetics-announces-submission-new-drug-application-us-fda",
+      "clockFirstPublicAt": "2020-12-23T00:00:00.000Z",
+      "clockPassage": "Cytokinetics submitted mavacamten NDA Dec 23 2020; FDA approval Apr 28 2022."
+    },
+    "upadacitinib-ra": {
+      "filedAt": "2018-12-20T00:00:00.000Z",
+      "pdufaDate": "2019-08-16T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://news.abbvie.com/news/press-releases/abbvie-submits-new-drug-application-fda-upadacitinib-rheumatoid-arthritis.htm",
+      "clockFirstPublicAt": "2018-12-20T00:00:00.000Z",
+      "clockPassage": "AbbVie submitted upadacitinib NDA Dec 20 2018; FDA approval Aug 16 2019."
+    },
+    "inotersen-hattr": {
+      "filedAt": "2017-12-19T00:00:00.000Z",
+      "pdufaDate": "2018-10-05T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://ir.akcea.com/news-releases/news-release-details/akcea-and-ionis-announce-fda-acceptance-new-drug-application",
+      "clockFirstPublicAt": "2017-12-19T00:00:00.000Z",
+      "clockPassage": "Akcea submitted inotersen NDA Dec 19 2017; FDA approval Oct 5 2018."
+    },
+    "dupilumab-ad": {
+      "filedAt": "2016-09-26T00:00:00.000Z",
+      "pdufaDate": "2017-03-28T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-and-sanofi-announce-fda-acceptance-biologics-license",
+      "clockFirstPublicAt": "2016-09-26T00:00:00.000Z",
+      "clockPassage": "Dupilumab BLA submitted and accepted Sep 26 2016; FDA approval Mar 28 2017."
+    },
+    "ocrelizumab-ms": {
+      "filedAt": "2015-12-18T00:00:00.000Z",
+      "pdufaDate": "2017-03-28T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.gene.com/media/press-releases/14807/2015-12-18/genentech-submits-biologics-license-application-to",
+      "clockFirstPublicAt": "2015-12-18T00:00:00.000Z",
+      "clockPassage": "Genentech submitted ocrelizumab BLA Dec 18 2015; FDA approval Mar 28 2017."
+    },
+    "fingolimod-ms": {
+      "acceptedAt": "2009-12-23T00:00:00.000Z",
+      "pdufaDate": "2010-09-21T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.novartis.com/news/media-releases/novartis-drug-fingolimod-receives-fda-priority-review-designation-first-line-relapsing-remitting-multiple-sclerosis",
+      "clockFirstPublicAt": "2009-12-23T00:00:00.000Z",
+      "clockPassage": "FDA accepted fingolimod NDA for priority review Dec 2009; approval Sep 21 2010."
+    },
+    "faricimab-amd": {
+      "filedAt": "2021-01-29T00:00:00.000Z",
+      "pdufaDate": "2022-01-28T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://www.gene.com/media/press-releases/15063/2021-01-29/genentech-submits-biologics-license-application-to",
+      "clockFirstPublicAt": "2021-01-29T00:00:00.000Z",
+      "clockPassage": "Genentech submitted faricimab BLA Jan 29 2021; FDA approval Jan 28 2022."
+    },
+    "aducanumab-ad": {
+      "filedAt": "2020-07-07T00:00:00.000Z",
+      "pdufaDate": "2021-06-07T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://investors.biogen.com/news-releases/news-release-details/biogen-completes-submission-biologics-license-application-us-fda",
+      "clockFirstPublicAt": "2020-07-07T00:00:00.000Z",
+      "clockPassage": "Biogen submitted aducanumab BLA Jul 7 2020; accelerated approval Jun 7 2021."
+    },
+    "rp1-melanoma-crl": {
+      "filedAt": "2024-12-20T00:00:00.000Z",
+      "pdufaDate": "2025-07-22T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://investors.replimune.com/news-releases/news-release-details/replimune-announces-fda-acceptance-biologics-license-application",
+      "clockFirstPublicAt": "2024-12-20T00:00:00.000Z",
+      "clockPassage": "Replimune submitted RP1 BLA Dec 2024; FDA issued CRL Jul 22 2025."
+    },
+    "odronextamab-fl-crl": {
+      "filedAt": "2024-08-30T00:00:00.000Z",
+      "pdufaDate": "2025-07-15T00:00:00.000Z",
+      "reviewProgram": "priority",
+      "clockSourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-announces-fda-acceptance-biologics-license-application",
+      "clockFirstPublicAt": "2024-08-30T00:00:00.000Z",
+      "clockPassage": "Regeneron submitted odronextamab BLA Aug 30 2024; FDA issued CRL Jul 15 2025."
+    }
+  }
+}

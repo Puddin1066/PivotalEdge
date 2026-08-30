@@ -1,0 +1,2265 @@
+{
+  "gate": {
+    "kind": "retrospective_gate_report",
+    "generatedAt": "2026-08-26T17:00:30.822Z",
+    "passed": true,
+    "clinical": {
+      "passed": true,
+      "totalCases": 100,
+      "testCases": 92,
+      "baseRateBrier": 0.2760478260869563,
+      "calibratedBrier": 0.20475450599531814,
+      "beatsBaseRate": true
+    },
+    "resolvedMarkets": {
+      "passed": true,
+      "scoredCases": 7,
+      "modelBrier": 0.23086474456834236,
+      "marketBrier": 0.21554285714285717,
+      "beatsMarketBrier": false,
+      "edgeVsMarket": 297.1188331188331,
+      "beatsMarketAfterCosts": true,
+      "askProvenance": "curated_pre_resolution_mid_plus_spread_proxy",
+      "edgeInformational": true
+    },
+    "syntheticEdgeSmoke": {
+      "passed": true,
+      "beatsMarketAfterCosts": true,
+      "edgeVsMarket": 867.7095067617315,
+      "totalTrades": 2
+    },
+    "blockers": []
+  },
+  "clinical": {
+    "kind": "clinical_calibration_report",
+    "generatedAt": "2026-08-26T17:00:30.798Z",
+    "modelVersion": "base-rate-calibrated@2",
+    "corpusKind": "clinical_calibration_corpus",
+    "dataSource": "curated_public_drugsfda+kg_retrospective",
+    "totalCases": 100,
+    "trainCases": 8,
+    "testCases": 92,
+    "baseRateBrier": 0.2760478260869563,
+    "calibratedBrier": 0.20475450599531814,
+    "beatsBaseRate": true,
+    "weights": {
+      "endpointBoost": 0.18,
+      "filingBoost": 0.25,
+      "cohortWeight": 0.35,
+      "biomarkerBoost": 0.05,
+      "orphanBoost": 0.04,
+      "priorApprovalBoost": 0.08,
+      "designationBoost": 0.02,
+      "underEnrollmentPenalty": 0.04
+    },
+    "globalReliability": [
+      {
+        "binLow": 0.1,
+        "binHigh": 0.2,
+        "meanPredicted": 0.1775471506720655,
+        "empiricalRate": 0,
+        "count": 2
+      },
+      {
+        "binLow": 0.2,
+        "binHigh": 0.30000000000000004,
+        "meanPredicted": 0.25243520660934526,
+        "empiricalRate": 0,
+        "count": 1
+      },
+      {
+        "binLow": 0.30000000000000004,
+        "binHigh": 0.4,
+        "meanPredicted": 0.3297448774326766,
+        "empiricalRate": 0.5,
+        "count": 16
+      },
+      {
+        "binLow": 0.4,
+        "binHigh": 0.5,
+        "meanPredicted": 0.4430730152073659,
+        "empiricalRate": 0.25,
+        "count": 4
+      },
+      {
+        "binLow": 0.5,
+        "binHigh": 0.6000000000000001,
+        "meanPredicted": 0.5513169438903975,
+        "empiricalRate": 0.8571428571428571,
+        "count": 28
+      },
+      {
+        "binLow": 0.6000000000000001,
+        "binHigh": 0.7000000000000001,
+        "meanPredicted": 0.6275398369619127,
+        "empiricalRate": 0.9024390243902439,
+        "count": 41
+      }
+    ],
+    "strata": [
+      {
+        "stratumKey": "applicationFiled:filed",
+        "stratumLabel": "Application filed",
+        "dimension": "applicationFiled",
+        "n": 79,
+        "baseRateBrier": 0.29521645569620236,
+        "calibratedBrier": 0.21749256784098128,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3077053826193396,
+            "empiricalRate": 0.8888888888888888,
+            "count": 9
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.4003599893388606,
+            "empiricalRate": 1,
+            "count": 1
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5513169438903975,
+            "empiricalRate": 0.8571428571428571,
+            "count": 28
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6275398369619127,
+            "empiricalRate": 0.9024390243902439,
+            "count": 41
+          }
+        ]
+      },
+      {
+        "stratumKey": "applicationFiled:not_filed",
+        "stratumLabel": "Not filed",
+        "dimension": "applicationFiled",
+        "n": 13,
+        "baseRateBrier": 0.15956153846153842,
+        "calibratedBrier": 0.12734628401013387,
+        "reliability": [
+          {
+            "binLow": 0.1,
+            "binHigh": 0.2,
+            "meanPredicted": 0.1775471506720655,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.2,
+            "binHigh": 0.30000000000000004,
+            "meanPredicted": 0.25243520660934526,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.35808137076410984,
+            "empiricalRate": 0,
+            "count": 7
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.4573106904968676,
+            "empiricalRate": 0,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:II|dermatology",
+        "stratumLabel": "II × dermatology",
+        "dimension": "phase_x_ta",
+        "n": 1,
+        "baseRateBrier": 0.6084,
+        "calibratedBrier": 0.4865784019258786,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3024482801068593,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:II|infectious_disease",
+        "stratumLabel": "II × infectious_disease",
+        "dimension": "phase_x_ta",
+        "n": 1,
+        "baseRateBrier": 0.6084,
+        "calibratedBrier": 0.4865784019258786,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3024482801068593,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:II|oncology",
+        "stratumLabel": "II × oncology",
+        "dimension": "phase_x_ta",
+        "n": 10,
+        "baseRateBrier": 0.3844,
+        "calibratedBrier": 0.30815557065647653,
+        "reliability": [
+          {
+            "binLow": 0.1,
+            "binHigh": 0.2,
+            "meanPredicted": 0.1775471506720655,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.2,
+            "binHigh": 0.30000000000000004,
+            "meanPredicted": 0.25243520660934526,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3092074119086196,
+            "empiricalRate": 0.8571428571428571,
+            "count": 7
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|cardiology",
+        "stratumLabel": "III × cardiology",
+        "dimension": "phase_x_ta",
+        "n": 8,
+        "baseRateBrier": 0.26160000000000005,
+        "calibratedBrier": 0.21285453468537113,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.37277211413048494,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5697981689045776,
+            "empiricalRate": 0.7142857142857143,
+            "count": 7
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|dermatology",
+        "stratumLabel": "III × dermatology",
+        "dimension": "phase_x_ta",
+        "n": 4,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13989084760795295,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6259856327678104,
+            "empiricalRate": 1,
+            "count": 4
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|endocrinology",
+        "stratumLabel": "III × endocrinology",
+        "dimension": "phase_x_ta",
+        "n": 1,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13048492409868404,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6387730296632268,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|hematology",
+        "stratumLabel": "III × hematology",
+        "dimension": "phase_x_ta",
+        "n": 3,
+        "baseRateBrier": 0.23040000000000002,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|infectious_disease",
+        "stratumLabel": "III × infectious_disease",
+        "dimension": "phase_x_ta",
+        "n": 3,
+        "baseRateBrier": 0.23040000000000002,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|metabolic",
+        "stratumLabel": "III × metabolic",
+        "dimension": "phase_x_ta",
+        "n": 3,
+        "baseRateBrier": 0.23040000000000002,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|nephrology",
+        "stratumLabel": "III × nephrology",
+        "dimension": "phase_x_ta",
+        "n": 2,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13562379660400478,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6317947578769663,
+            "empiricalRate": 1,
+            "count": 2
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|neurology",
+        "stratumLabel": "III × neurology",
+        "dimension": "phase_x_ta",
+        "n": 20,
+        "baseRateBrier": 0.2851000000000001,
+        "calibratedBrier": 0.2056744898518223,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.35563291353638066,
+            "empiricalRate": 0,
+            "count": 6
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.42724895782376016,
+            "empiricalRate": 0.5,
+            "count": 2
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5181657504292981,
+            "empiricalRate": 1,
+            "count": 12
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|oncology",
+        "stratumLabel": "III × oncology",
+        "dimension": "phase_x_ta",
+        "n": 22,
+        "baseRateBrier": 0.2431272727272728,
+        "calibratedBrier": 0.19881056176393716,
+        "reliability": [
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.4588970725909716,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5374404624119948,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6275088347602317,
+            "empiricalRate": 0.7894736842105263,
+            "count": 19
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|ophthalmology",
+        "stratumLabel": "III × ophthalmology",
+        "dimension": "phase_x_ta",
+        "n": 1,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|rare_disease",
+        "stratumLabel": "III × rare_disease",
+        "dimension": "phase_x_ta",
+        "n": 5,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13665157110506893,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6303991035197143,
+            "empiricalRate": 1,
+            "count": 5
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase_x_ta:III|rheumatology",
+        "stratumLabel": "III × rheumatology",
+        "dimension": "phase_x_ta",
+        "n": 8,
+        "baseRateBrier": 0.2654,
+        "calibratedBrier": 0.1925453941837016,
+        "reliability": [
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5866072223794402,
+            "empiricalRate": 0.875,
+            "count": 8
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase:II",
+        "stratumLabel": "II",
+        "dimension": "phase",
+        "n": 12,
+        "baseRateBrier": 0.42173333333333335,
+        "calibratedBrier": 0.3378927092013768,
+        "reliability": [
+          {
+            "binLow": 0.1,
+            "binHigh": 0.2,
+            "meanPredicted": 0.1775471506720655,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.2,
+            "binHigh": 0.30000000000000004,
+            "meanPredicted": 0.25243520660934526,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3077053826193396,
+            "empiricalRate": 0.8888888888888888,
+            "count": 9
+          }
+        ]
+      },
+      {
+        "stratumKey": "phase:III",
+        "stratumLabel": "III",
+        "dimension": "phase",
+        "n": 80,
+        "baseRateBrier": 0.2541949999999999,
+        "calibratedBrier": 0.18478377551440925,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.35808137076410984,
+            "empiricalRate": 0,
+            "count": 7
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.4430730152073659,
+            "empiricalRate": 0.25,
+            "count": 4
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5513169438903975,
+            "empiricalRate": 0.8571428571428571,
+            "count": 28
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6275398369619127,
+            "empiricalRate": 0.9024390243902439,
+            "count": 41
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:cardiology",
+        "stratumLabel": "cardiology",
+        "dimension": "therapeuticArea",
+        "n": 8,
+        "baseRateBrier": 0.26160000000000005,
+        "calibratedBrier": 0.21285453468537113,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.37277211413048494,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5697981689045776,
+            "empiricalRate": 0.7142857142857143,
+            "count": 7
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:dermatology",
+        "stratumLabel": "dermatology",
+        "dimension": "therapeuticArea",
+        "n": 5,
+        "baseRateBrier": 0.306,
+        "calibratedBrier": 0.20922835847153806,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3024482801068593,
+            "empiricalRate": 1,
+            "count": 1
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6259856327678104,
+            "empiricalRate": 1,
+            "count": 4
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:endocrinology",
+        "stratumLabel": "endocrinology",
+        "dimension": "therapeuticArea",
+        "n": 1,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13048492409868404,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6387730296632268,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:hematology",
+        "stratumLabel": "hematology",
+        "dimension": "therapeuticArea",
+        "n": 3,
+        "baseRateBrier": 0.23040000000000002,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:infectious_disease",
+        "stratumLabel": "infectious_disease",
+        "dimension": "therapeuticArea",
+        "n": 4,
+        "baseRateBrier": 0.3249,
+        "calibratedBrier": 0.2272166023134638,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3024482801068593,
+            "empiricalRate": 1,
+            "count": 1
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:metabolic",
+        "stratumLabel": "metabolic",
+        "dimension": "therapeuticArea",
+        "n": 3,
+        "baseRateBrier": 0.23040000000000002,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 3
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:nephrology",
+        "stratumLabel": "nephrology",
+        "dimension": "therapeuticArea",
+        "n": 2,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13562379660400478,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6317947578769663,
+            "empiricalRate": 1,
+            "count": 2
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:neurology",
+        "stratumLabel": "neurology",
+        "dimension": "therapeuticArea",
+        "n": 20,
+        "baseRateBrier": 0.2851000000000001,
+        "calibratedBrier": 0.2056744898518223,
+        "reliability": [
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.35563291353638066,
+            "empiricalRate": 0,
+            "count": 6
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.42724895782376016,
+            "empiricalRate": 0.5,
+            "count": 2
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5181657504292981,
+            "empiricalRate": 1,
+            "count": 12
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:oncology",
+        "stratumLabel": "oncology",
+        "dimension": "therapeuticArea",
+        "n": 32,
+        "baseRateBrier": 0.28727500000000017,
+        "calibratedBrier": 0.23298087704285578,
+        "reliability": [
+          {
+            "binLow": 0.1,
+            "binHigh": 0.2,
+            "meanPredicted": 0.1775471506720655,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.2,
+            "binHigh": 0.30000000000000004,
+            "meanPredicted": 0.25243520660934526,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.30000000000000004,
+            "binHigh": 0.4,
+            "meanPredicted": 0.3092074119086196,
+            "empiricalRate": 0.8571428571428571,
+            "count": 7
+          },
+          {
+            "binLow": 0.4,
+            "binHigh": 0.5,
+            "meanPredicted": 0.4588970725909716,
+            "empiricalRate": 0,
+            "count": 2
+          },
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5374404624119948,
+            "empiricalRate": 0,
+            "count": 1
+          },
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6275088347602317,
+            "empiricalRate": 0.7894736842105263,
+            "count": 19
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:ophthalmology",
+        "stratumLabel": "ophthalmology",
+        "dimension": "therapeuticArea",
+        "n": 1,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.14076266910932553,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6248164860907058,
+            "empiricalRate": 1,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:rare_disease",
+        "stratumLabel": "rare_disease",
+        "dimension": "therapeuticArea",
+        "n": 5,
+        "baseRateBrier": 0.2304,
+        "calibratedBrier": 0.13665157110506893,
+        "reliability": [
+          {
+            "binLow": 0.6000000000000001,
+            "binHigh": 0.7000000000000001,
+            "meanPredicted": 0.6303991035197143,
+            "empiricalRate": 1,
+            "count": 5
+          }
+        ]
+      },
+      {
+        "stratumKey": "therapeuticArea:rheumatology",
+        "stratumLabel": "rheumatology",
+        "dimension": "therapeuticArea",
+        "n": 8,
+        "baseRateBrier": 0.2654,
+        "calibratedBrier": 0.1925453941837016,
+        "reliability": [
+          {
+            "binLow": 0.5,
+            "binHigh": 0.6000000000000001,
+            "meanPredicted": 0.5866072223794402,
+            "empiricalRate": 0.875,
+            "count": 8
+          }
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "caseId": "kg_prog_bapineuzumab_ad_fail",
+        "forecastCutoff": "2012-08-05T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3265203782372855,
+        "brandName": "Bapineuzumab"
+      },
+      {
+        "caseId": "fda_201301_tocilizumab_sjia",
+        "forecastCutoff": "2013-04-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "BLA125276",
+        "brandName": "Tocilizumab SJIA"
+      },
+      {
+        "caseId": "fda_201312_simeprevir",
+        "forecastCutoff": "2013-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "infectious_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA205123",
+        "brandName": "Simeprevir (Olysio)"
+      },
+      {
+        "caseId": "fda_201309_sofosbuvir_hcv",
+        "forecastCutoff": "2013-12-05T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "infectious_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA204671",
+        "brandName": "Sofosbuvir (Sovaldi)"
+      },
+      {
+        "caseId": "kg_prog_bitopertin_schiz_fail",
+        "forecastCutoff": "2014-01-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3672656175692381,
+        "brandName": "Bitopertin"
+      },
+      {
+        "caseId": "fda_201402_idelalisib",
+        "forecastCutoff": "2014-07-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "NDA205858",
+        "brandName": "Idelalisib (Zydelig)"
+      },
+      {
+        "caseId": "fda_201405_tavaborole",
+        "forecastCutoff": "2014-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "dermatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA204427",
+        "brandName": "Tavaborole (Kerydin)"
+      },
+      {
+        "caseId": "fda_201408_pembrolizumab_melanoma",
+        "forecastCutoff": "2014-09-03T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6410772333107313,
+        "applicationNumber": "BLA125514",
+        "brandName": "Pembrolizumab (Keytruda)"
+      },
+      {
+        "caseId": "fda_201411_nivolumab_pre",
+        "forecastCutoff": "2014-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125554",
+        "brandName": "Nivolumab pre-melanoma"
+      },
+      {
+        "caseId": "fda_201506_onc_phase3_miss",
+        "forecastCutoff": "2014-11-19T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.4427626823790107,
+        "applicationNumber": "NDA206500",
+        "brandName": "Rilotumumab (gastric)"
+      },
+      {
+        "caseId": "fda_201412_nivolumab_melanoma",
+        "forecastCutoff": "2014-12-21T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.629493072799124,
+        "applicationNumber": "BLA125554",
+        "brandName": "Nivolumab (Opdivo)"
+      },
+      {
+        "caseId": "fda_201504_secukinumab_pso",
+        "forecastCutoff": "2015-01-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "dermatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125504",
+        "brandName": "Secukinumab (Cosentyx)"
+      },
+      {
+        "caseId": "fda_201503_palbociclib_breast",
+        "forecastCutoff": "2015-02-02T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6410772333107313,
+        "applicationNumber": "NDA207103",
+        "brandName": "Palbociclib (Ibrance)"
+      },
+      {
+        "caseId": "fda_201508_alirocumab",
+        "forecastCutoff": "2015-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "BLA125559",
+        "brandName": "Alirocumab (Praluent)"
+      },
+      {
+        "caseId": "fda_201510_nivolumab_nsclc",
+        "forecastCutoff": "2015-10-08T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125554",
+        "brandName": "Nivolumab NSCLC sBLA"
+      },
+      {
+        "caseId": "kg_prog_evacetrapib_cv_fail",
+        "forecastCutoff": "2015-10-18T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.37277211413048494,
+        "brandName": "Evacetrapib"
+      },
+      {
+        "caseId": "fda_201601_ixekizumab",
+        "forecastCutoff": "2016-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "dermatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125521",
+        "brandName": "Ixekizumab (Taltz)"
+      },
+      {
+        "caseId": "fda_201605_baricitinib_ra",
+        "forecastCutoff": "2016-05-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "NDA207924",
+        "brandName": "Baricitinib (Olumiant)"
+      },
+      {
+        "caseId": "kg_prog_atezolizumab_urothelial",
+        "forecastCutoff": "2016-05-17T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3174173014267933,
+        "applicationNumber": "BLA761034",
+        "brandName": "Atezolizumab (Tecentriq)"
+      },
+      {
+        "caseId": "fda_201608_atezolizumab_bladder",
+        "forecastCutoff": "2016-08-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761034",
+        "brandName": "Atezolizumab (Tecentriq)"
+      },
+      {
+        "caseId": "fda_201610_eteplirsen",
+        "forecastCutoff": "2016-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rare_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA206488",
+        "brandName": "Eteplirsen (Exondys)"
+      },
+      {
+        "caseId": "fda_201611_verubecestat_alz",
+        "forecastCutoff": "2016-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3672656175692381,
+        "applicationNumber": "NDA761000",
+        "brandName": "Verubecestat (BACE inhibitor)"
+      },
+      {
+        "caseId": "kg_prog_solanezumab_ad_fail",
+        "forecastCutoff": "2016-11-29T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3789598720359986,
+        "brandName": "Solanezumab"
+      },
+      {
+        "caseId": "fda_201607_etelcalcetide",
+        "forecastCutoff": "2017-02-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "nephrology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA208325",
+        "brandName": "Etelcalcetide (Parsabiv)"
+      },
+      {
+        "caseId": "kg_prog_verubecestat_ad_fail",
+        "forecastCutoff": "2017-02-14T12:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3265203782372855,
+        "brandName": "Verubecestat (Alzheimer)"
+      },
+      {
+        "caseId": "fda_201702_ocrevus_ppms",
+        "forecastCutoff": "2017-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761053",
+        "brandName": "Ocrelizumab PPMS"
+      },
+      {
+        "caseId": "fda_201703_sacubitril_hf",
+        "forecastCutoff": "2017-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "NDA207620",
+        "brandName": "Sacubitril/Valsartan (Entresto)"
+      },
+      {
+        "caseId": "fda_201602_ocrelizumab_ms",
+        "forecastCutoff": "2017-03-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5214953983351045,
+        "applicationNumber": "BLA761053",
+        "brandName": "Ocrelizumab (Ocrevus)"
+      },
+      {
+        "caseId": "kg_prog_dupilumab_ad",
+        "forecastCutoff": "2017-03-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "dermatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.629493072799124,
+        "applicationNumber": "BLA761055",
+        "brandName": "Dupilumab (Dupixent)"
+      },
+      {
+        "caseId": "fda_201708_midostaurin",
+        "forecastCutoff": "2017-04-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA209401",
+        "brandName": "Midostaurin (Rydapt)"
+      },
+      {
+        "caseId": "fda_201706_secukinumab_psa",
+        "forecastCutoff": "2017-06-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "BLA125504",
+        "brandName": "Secukinumab (Cosentyx)"
+      },
+      {
+        "caseId": "fda_201709_durvalumab_bladder",
+        "forecastCutoff": "2017-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761069",
+        "brandName": "Durvalumab (Imfinzi)"
+      },
+      {
+        "caseId": "fda_201801_emicizumab",
+        "forecastCutoff": "2017-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "hematology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761083",
+        "brandName": "Emicizumab (Hemlibra)"
+      },
+      {
+        "caseId": "fda_201712_onc_crl",
+        "forecastCutoff": "2017-12-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761088",
+        "brandName": "Durvalumab NSCLC (initial CRL)"
+      },
+      {
+        "caseId": "fda_201803_tisagenlecleucel",
+        "forecastCutoff": "2018-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125646",
+        "brandName": "Tisagenlecleucel (Kymriah)"
+      },
+      {
+        "caseId": "fda_201806_erenumab_migraine",
+        "forecastCutoff": "2018-06-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761077",
+        "brandName": "Erenumab (Aimovig)"
+      },
+      {
+        "caseId": "fda_201805_patisiran",
+        "forecastCutoff": "2018-08-09T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rare_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6387730296632268,
+        "applicationNumber": "NDA210922",
+        "brandName": "Patisiran (Onpattro)"
+      },
+      {
+        "caseId": "fda_201809_upadacitinib_ra",
+        "forecastCutoff": "2018-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "NDA211675",
+        "brandName": "Upadacitinib (Rinvoq)"
+      },
+      {
+        "caseId": "kg_prog_inotersen_hattr",
+        "forecastCutoff": "2018-10-04T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5314670129827987,
+        "applicationNumber": "NDA211172",
+        "brandName": "Inotersen (Tegsedi)"
+      },
+      {
+        "caseId": "fda_201811_lorlatinib",
+        "forecastCutoff": "2018-11-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "NDA210868",
+        "brandName": "Lorlatinib (Lorbrena)"
+      },
+      {
+        "caseId": "fda_201812_bapineuzumab_alz",
+        "forecastCutoff": "2018-12-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.3672656175692381,
+        "applicationNumber": "BLA761010",
+        "brandName": "Bapineuzumab (failed Ph3)"
+      },
+      {
+        "caseId": "fda_201902_esketa_depression",
+        "forecastCutoff": "2019-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "NDA211243",
+        "brandName": "Esketamine (Spravato)"
+      },
+      {
+        "caseId": "fda_201903_atezolizumab_nsclc",
+        "forecastCutoff": "2019-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761034",
+        "brandName": "Atezolizumab NSCLC"
+      },
+      {
+        "caseId": "fda_201904_siponimod",
+        "forecastCutoff": "2019-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "NDA209884",
+        "brandName": "Siponimod (Mayzent)"
+      },
+      {
+        "caseId": "fda_201907_onasemnogene",
+        "forecastCutoff": "2019-05-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rare_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125694",
+        "brandName": "Onasemnogene (Zolgensma)"
+      },
+      {
+        "caseId": "fda_201906_dapagliflozin_hf",
+        "forecastCutoff": "2019-06-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "NDA202293",
+        "brandName": "Dapagliflozin HF indication"
+      },
+      {
+        "caseId": "kg_prog_onc_phase2_fail_mock",
+        "forecastCutoff": "2019-06-14T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.16442488982673975,
+        "brandName": "Oncofailmab (mock Phase II miss)"
+      },
+      {
+        "caseId": "kg_prog_entrectinib_ntrk",
+        "forecastCutoff": "2019-08-14T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.33055711941441346,
+        "applicationNumber": "NDA212725",
+        "brandName": "Entrectinib (Rozlytrek)"
+      },
+      {
+        "caseId": "kg_prog_upadacitinib_ra",
+        "forecastCutoff": "2019-08-15T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "NDA211675",
+        "brandName": "Upadacitinib (Rinvoq)"
+      },
+      {
+        "caseId": "fda_201909_onc_crl",
+        "forecastCutoff": "2019-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA212157",
+        "brandName": "Larotrectinib companion CRL cycle"
+      },
+      {
+        "caseId": "fda_202002_luspatercept",
+        "forecastCutoff": "2019-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "hematology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761136",
+        "brandName": "Luspatercept (Reblozyl)"
+      },
+      {
+        "caseId": "fda_202001_sarilumab_ra",
+        "forecastCutoff": "2020-01-15T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "BLA761037",
+        "brandName": "Sarilumab (Kevzara)"
+      },
+      {
+        "caseId": "fda_202004_onc_phase2",
+        "forecastCutoff": "2020-04-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": false,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.25243520660934526,
+        "applicationNumber": "IND-ONC-2020",
+        "brandName": "Phase 2 oncology asset"
+      },
+      {
+        "caseId": "fda_202009_tucatinib",
+        "forecastCutoff": "2020-04-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "NDA213411",
+        "brandName": "Tucatinib (Tukysa)"
+      },
+      {
+        "caseId": "fda_202007_remdesivir_covid",
+        "forecastCutoff": "2020-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA214787",
+        "brandName": "Remdesivir (Veklury)"
+      },
+      {
+        "caseId": "fda_202006_remdesivir_covid",
+        "forecastCutoff": "2020-10-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "infectious_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA214787",
+        "brandName": "Remdesivir COVID"
+      },
+      {
+        "caseId": "fda_202010_aducanumab_alz",
+        "forecastCutoff": "2020-10-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761178",
+        "brandName": "Aducanumab (Aduhelm)"
+      },
+      {
+        "caseId": "fda_202012_ansuvimab",
+        "forecastCutoff": "2020-12-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "infectious_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "BLA761172",
+        "brandName": "Ansuvimab (Ebanga)"
+      },
+      {
+        "caseId": "fda_202101_omaveloxolone",
+        "forecastCutoff": "2021-01-10T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "NDA216718",
+        "brandName": "Omaveloxolone (Skyclarys)"
+      },
+      {
+        "caseId": "fda_202102_casimersen",
+        "forecastCutoff": "2021-02-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rare_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA213026",
+        "brandName": "Casimersen (Amondys)"
+      },
+      {
+        "caseId": "fda_202104_cardio_crl",
+        "forecastCutoff": "2021-04-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "NDA214429",
+        "brandName": "Obicetrapib (CRL)"
+      },
+      {
+        "caseId": "fda_202105_sotorasib",
+        "forecastCutoff": "2021-05-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "NDA214665",
+        "brandName": "Sotorasib (Lumakras)"
+      },
+      {
+        "caseId": "kg_prog_aducanumab_ad",
+        "forecastCutoff": "2021-06-06T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": false,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.4003599893388606,
+        "applicationNumber": "BLA761178",
+        "brandName": "Aducanumab (Aduhelm)"
+      },
+      {
+        "caseId": "fda_202107_trastuzumab_derux",
+        "forecastCutoff": "2021-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761139",
+        "brandName": "Trastuzumab deruxtecan"
+      },
+      {
+        "caseId": "fda_202109_avilumab_fail",
+        "forecastCutoff": "2021-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.47503146280293257,
+        "applicationNumber": "IND-AVM-2021",
+        "brandName": "Avelumab combo miss"
+      },
+      {
+        "caseId": "fda_202110_rheum_crl",
+        "forecastCutoff": "2021-10-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "NDA214860",
+        "brandName": "Filgotinib (initial CRL)"
+      },
+      {
+        "caseId": "fda_202203_faricimab",
+        "forecastCutoff": "2022-01-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "ophthalmology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761235",
+        "brandName": "Faricimab (Vabysmo)"
+      },
+      {
+        "caseId": "fda_202202_lecanemab_pre",
+        "forecastCutoff": "2022-02-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": false,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.4541379263086598,
+        "applicationNumber": "BLA761178",
+        "brandName": "Lecanemab (pre-filing)"
+      },
+      {
+        "caseId": "kg_prog_mavacamten_hcm",
+        "forecastCutoff": "2022-04-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5865344847013114,
+        "applicationNumber": "NDA214998",
+        "brandName": "Mavacamten (Camzyos)"
+      },
+      {
+        "caseId": "fda_202205_pembrolizumab_crc",
+        "forecastCutoff": "2022-05-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125514",
+        "brandName": "Pembrolizumab MSI-H CRC"
+      },
+      {
+        "caseId": "fda_202206_tirzepatide",
+        "forecastCutoff": "2022-05-12T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "metabolic",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA215866",
+        "brandName": "Tirzepatide (Mounjaro)"
+      },
+      {
+        "caseId": "fda_202208_cardio_approve",
+        "forecastCutoff": "2022-08-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "NDA215341",
+        "brandName": "Mavacamten (Camzyos)"
+      },
+      {
+        "caseId": "fda_202210_spevigo",
+        "forecastCutoff": "2022-09-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "dermatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.3024482801068593,
+        "applicationNumber": "BLA761244",
+        "brandName": "Spesolimab (Spevigo)"
+      },
+      {
+        "caseId": "fda_202211_lecanemab_filed",
+        "forecastCutoff": "2022-11-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761178",
+        "brandName": "Lecanemab (Leqembi)"
+      },
+      {
+        "caseId": "fda_202301_lecanemab_aa",
+        "forecastCutoff": "2023-01-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761269",
+        "brandName": "Lecanemab accelerated"
+      },
+      {
+        "caseId": "fda_202303_donanemab_filed",
+        "forecastCutoff": "2023-03-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "BLA761248",
+        "brandName": "Donanemab (pre-approval)"
+      },
+      {
+        "caseId": "fda_202304_trodelvy_fail",
+        "forecastCutoff": "2023-04-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.5374404624119948,
+        "applicationNumber": "IND-TRO-2023",
+        "brandName": "Sacituzumab HR+ miss"
+      },
+      {
+        "caseId": "fda_202306_onc_phase2_miss",
+        "forecastCutoff": "2023-06-01T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": false,
+        "primaryEndpointMet": false,
+        "resolvedApproved": false,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.19066941151739122,
+        "applicationNumber": "IND-ONC-2023",
+        "brandName": "Phase 2 oncology miss"
+      },
+      {
+        "caseId": "fda_202308_zurzuvae",
+        "forecastCutoff": "2023-08-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "neurology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.41,
+        "calibratedProbability": 0.5165026593833674,
+        "applicationNumber": "NDA217369",
+        "brandName": "Zuranolone (Zurzuvae)"
+      },
+      {
+        "caseId": "fda_202309_onc_approve",
+        "forecastCutoff": "2023-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761234",
+        "brandName": "Retifanlimab"
+      },
+      {
+        "caseId": "fda_202312_rheum_approve",
+        "forecastCutoff": "2023-12-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rheumatology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.48,
+        "calibratedProbability": 0.5866072223794403,
+        "applicationNumber": "BLA761322",
+        "brandName": "Rozanolixizumab"
+      },
+      {
+        "caseId": "fda_202401_casgevy",
+        "forecastCutoff": "2023-12-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "hematology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA125787",
+        "brandName": "Exagamglogene (Casgevy)"
+      },
+      {
+        "caseId": "fda_202403_wemloby",
+        "forecastCutoff": "2024-03-13T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "metabolic",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA216993",
+        "brandName": "Resmetirom (Rezdiffra)"
+      },
+      {
+        "caseId": "fda_202406_mounjaro_osa",
+        "forecastCutoff": "2024-06-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "metabolic",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA217806",
+        "brandName": "Tirzepatide OSA"
+      },
+      {
+        "caseId": "fda_202409_kisqali_adj",
+        "forecastCutoff": "2024-09-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "NDA209092",
+        "brandName": "Ribociclib adjuvant"
+      },
+      {
+        "caseId": "fda_202507_aficamten_window_miss",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "cardiology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.46,
+        "calibratedProbability": 0.5670087829384552,
+        "applicationNumber": "NDA219214",
+        "brandName": "Aficamten (Myqorzo)"
+      },
+      {
+        "caseId": "fda_202507_blenrep_window_miss",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6248164860907058,
+        "applicationNumber": "BLA761158",
+        "brandName": "Blenrep combinations"
+      },
+      {
+        "caseId": "fda_202507_odronextamab_crl",
+        "forecastCutoff": "2025-07-14T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6387730296632268,
+        "applicationNumber": "BLA761345",
+        "brandName": "Odronextamab (Ordspono)"
+      },
+      {
+        "caseId": "fda_202507_rp1_crl",
+        "forecastCutoff": "2025-07-21T00:00:00.000Z",
+        "phase": "II",
+        "therapeuticArea": "oncology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": false,
+        "baselineProbability": 0.22,
+        "calibratedProbability": 0.30668434209169326,
+        "applicationNumber": "BLA761401",
+        "brandName": "RP1 (vusolimogene oderparepvec)"
+      },
+      {
+        "caseId": "fda_202507_empaveli_c3g",
+        "forecastCutoff": "2025-07-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "nephrology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6387730296632268,
+        "applicationNumber": "NDA217171",
+        "brandName": "Empaveli (pegcetacoplan) C3G"
+      },
+      {
+        "caseId": "fda_202507_transcon_hgh_adult",
+        "forecastCutoff": "2025-07-27T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "endocrinology",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6387730296632268,
+        "applicationNumber": "BLA761177",
+        "brandName": "TransCon hGH (Skytrofa adult)"
+      },
+      {
+        "caseId": "fda_202507_sepiapterin_pku",
+        "forecastCutoff": "2025-07-28T00:00:00.000Z",
+        "phase": "III",
+        "therapeuticArea": "rare_disease",
+        "applicationFiled": true,
+        "primaryEndpointMet": true,
+        "resolvedApproved": true,
+        "baselineProbability": 0.52,
+        "calibratedProbability": 0.6387730296632268,
+        "applicationNumber": "NDA218070",
+        "brandName": "Sepiapterin (Sephience)"
+      }
+    ]
+  },
+  "resolved": {
+    "kind": "resolved_market_retro_report",
+    "generatedAt": "2026-08-26T17:00:30.821Z",
+    "modelVersion": "base-rate-calibrated@2",
+    "policyVersion": "betting-policy@1",
+    "askProvenance": "curated_pre_resolution_mid_plus_spread_proxy",
+    "marketCases": 7,
+    "clinicalTrainPool": 100,
+    "scoredCases": 7,
+    "modelBrier": 0.23086474456834236,
+    "marketBrier": 0.21554285714285717,
+    "beatsMarketBrier": false,
+    "modelNetPnL": 0,
+    "marketBaselineNetPnL": -297.1188331188331,
+    "edgeVsMarket": 297.1188331188331,
+    "beatsMarketAfterCosts": true,
+    "cases": [
+      {
+        "caseId": "pm_566023_rp1_bla",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": false,
+        "modelProbability": 0.3024482801068593,
+        "conservativeProbability": 0.14914460334164278,
+        "marketImpliedProbability": 0.48,
+        "executableYesAsk": 0.48,
+        "executableNoAsk": 0.55,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": -102,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566024_blenrep_bla",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": false,
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42709619037907065,
+        "marketImpliedProbability": 0.58,
+        "executableYesAsk": 0.58,
+        "executableNoAsk": 0.45,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": -102,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566025_transcon_sbla",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": true,
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42408726034906297,
+        "marketImpliedProbability": 0.72,
+        "executableYesAsk": 0.72,
+        "executableNoAsk": 0.31,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": 36.888888888888886,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566026_aficamten_nda",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": false,
+        "modelProbability": 0.5670087829384552,
+        "conservativeProbability": 0.390704789856154,
+        "marketImpliedProbability": 0.66,
+        "executableYesAsk": 0.66,
+        "executableNoAsk": 0.37,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": -102,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566027_empaveli_snda",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": true,
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42408726034906297,
+        "marketImpliedProbability": 0.74,
+        "executableYesAsk": 0.74,
+        "executableNoAsk": 0.29,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": 33.13513513513513,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566028_sepiapterin_nda",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": true,
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42709619037907065,
+        "marketImpliedProbability": 0.7,
+        "executableYesAsk": 0.7,
+        "executableNoAsk": 0.33,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": 40.85714285714286,
+        "trainCasesUsed": 93
+      },
+      {
+        "caseId": "pm_566029_odronextamab_bla",
+        "forecastCutoff": "2025-07-01T00:00:00.000Z",
+        "resolvedApproved": false,
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42709619037907065,
+        "marketImpliedProbability": 0.52,
+        "executableYesAsk": 0.52,
+        "executableNoAsk": 0.51,
+        "action": "NO_BET",
+        "netPnL": 0,
+        "marketBaselineNetPnL": -102,
+        "trainCasesUsed": 93
+      }
+    ]
+  },
+  "synthetic": {
+    "kind": "edge_vs_market_report",
+    "generatedAt": "2026-08-26T17:00:30.822Z",
+    "policyVersion": "betting-policy@1",
+    "modelVersion": "base-rate-calibrated@2",
+    "initialBankroll": 10000,
+    "finalBankroll": 11074.42706984127,
+    "modelNetPnL": 1074.4270698412697,
+    "marketBaselineNetPnL": 206.7175630795382,
+    "edgeVsMarket": 867.7095067617315,
+    "totalTrades": 2,
+    "winningTrades": 2,
+    "hitRate": 1,
+    "modelBrier": 0.2006511556936059,
+    "marketBrier": 0.42445,
+    "beatsMarketAfterCosts": true,
+    "trades": [
+      {
+        "caseId": "bt_2020_onc_filed",
+        "forecastCutoff": "2020-01-15T00:00:00.000Z",
+        "action": "BET_YES",
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42408726034906297,
+        "executablePrice": 0.28,
+        "stake": 200,
+        "grossPnL": 514.2857142857142,
+        "feesPaid": 4,
+        "netPnL": 510.2857142857142,
+        "resolvedYes": true,
+        "marketBaselineNetPnL": 255.1428571428571
+      },
+      {
+        "caseId": "bt_2020_onc_phase2",
+        "forecastCutoff": "2020-07-01T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.25243520660934526,
+        "conservativeProbability": 0.11186005278940309,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": false,
+        "marketBaselineNetPnL": -107.2049142857143
+      },
+      {
+        "caseId": "bt_2021_neuro_filed",
+        "forecastCutoff": "2021-01-10T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.5165026593833674,
+        "conservativeProbability": 0.2992949144298199,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": false,
+        "marketBaselineNetPnL": -107.2049142857143
+      },
+      {
+        "caseId": "bt_2021_onc_miss",
+        "forecastCutoff": "2021-06-01T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.47503146280293257,
+        "conservativeProbability": 0.2799923761135083,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": false,
+        "marketBaselineNetPnL": -107.2049142857143
+      },
+      {
+        "caseId": "bt_2022_rheum_filed",
+        "forecastCutoff": "2022-02-01T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.5866072223794403,
+        "conservativeProbability": 0.3883433764938864,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": true,
+        "marketBaselineNetPnL": 211.28859220779222
+      },
+      {
+        "caseId": "bt_2022_neuro_pe",
+        "forecastCutoff": "2022-08-01T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.4541379263086598,
+        "conservativeProbability": 0.25819502085709295,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": false,
+        "marketBaselineNetPnL": -107.2049142857143
+      },
+      {
+        "caseId": "bt_2023_onc_filed",
+        "forecastCutoff": "2023-03-01T00:00:00.000Z",
+        "action": "BET_YES",
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.42408726034906297,
+        "executablePrice": 0.27,
+        "stake": 210.21,
+        "grossPnL": 568.3455555555555,
+        "feesPaid": 4.2042,
+        "netPnL": 564.1413555555555,
+        "resolvedYes": true,
+        "marketBaselineNetPnL": 282.064926984127
+      },
+      {
+        "caseId": "bt_2023_onc_crl",
+        "forecastCutoff": "2023-10-01T00:00:00.000Z",
+        "action": "NO_BET",
+        "modelProbability": 0.6248164860907058,
+        "conservativeProbability": 0.3865779423152061,
+        "executablePrice": null,
+        "stake": 0,
+        "grossPnL": 0,
+        "feesPaid": 0,
+        "netPnL": 0,
+        "resolvedYes": false,
+        "marketBaselineNetPnL": -112.95915611238094
+      }
+    ]
+  }
+}

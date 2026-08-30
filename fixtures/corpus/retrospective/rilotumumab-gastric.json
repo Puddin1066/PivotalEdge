@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_rilotumumab_gastric",
+    "preferredName": "Rilotumumab (gastric)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_rilotumumab_gastric"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_rilotumumab_gastric",
+    "name": "Amgen",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_rilotumumab_gastric",
+    "name": "Gastric cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0003897"
+  },
+  "program": {
+    "id": "prog_rilotumumab_gastric",
+    "drugAssetId": "drug_rilotumumab_gastric",
+    "indicationId": "ind_rilotumumab_gastric",
+    "sponsorId": "sponsor_rilotumumab_gastric",
+    "name": "Rilotumumab (gastric) — Gastric cancer",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_rilotumumab_gastric",
+      "name": "HGF/MET pathway inhibition",
+      "target": "HGF",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01697072",
+      "nctId": "NCT01697072",
+      "programId": "prog_rilotumumab_gastric",
+      "phase": "III",
+      "title": "RILOMET-1 rilotumumab gastric",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 609,
+      "actualEnrollment": 609,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2014-11-01T12:00:00.000Z",
+      "studyStartAt": "2014-11-01T12:00:00.000Z",
+      "primaryCompletionAt": "2014-11-20T12:00:00.000Z",
+      "completionAt": "2014-11-20T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_rilotumumab_gastric_primary",
+      "trialId": "trial_nct01697072",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_rilotumumab_gastric_primary",
+      "trialId": "trial_nct01697072",
+      "endpointId": "ep_rilotumumab_gastric_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01697072",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.787Z",
+        "firstPublicAt": "2014-11-01T00:00:00.000Z",
+        "effectiveAt": "2014-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9d7570ed24bf824e72483129",
+        "exactPassage": "Phase 3 RILOMET-1 stopped for futility / OS miss.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_rilotumumab_gastric_pending",
+    "programId": "prog_rilotumumab_gastric",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_rilotumumab_gastric",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2014-11-20T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_rilotumumab_gastric_withdrawal",
+    "applicationId": "app_rilotumumab_gastric_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2014-11-20T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01697072",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:37.787Z",
+      "firstPublicAt": "2014-11-20T00:00:00.000Z",
+      "effectiveAt": "2014-11-20T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:988c940a841218401c4b53ee",
+      "exactPassage": "Program discontinuation disclosure 2014-11-20T00:00:00.000Z for Rilotumumab (gastric)",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_rilotumumab_gastric_0_chemotherapy",
+      "indicationId": "ind_rilotumumab_gastric",
+      "drugAssetId": "drug_comp_chemotherapy",
+      "drugName": "Chemotherapy",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0003897",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:37.787Z",
+        "firstPublicAt": "2014-11-01T12:00:00.000Z",
+        "effectiveAt": "2014-11-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4b019fb1c6d093e1f8d6d7ab",
+        "exactPassage": "Approved / clinical candidate in indication: Chemotherapy",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_rilotumumab_gastric_ct",
+      "title": "RILOMET-1 rilotumumab gastric",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01697072",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:37.787Z",
+        "firstPublicAt": "2014-11-01T12:00:00.000Z",
+        "effectiveAt": "2014-11-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9dd425afa3796338d0e54a36",
+        "exactPassage": "RILOMET-1 rilotumumab gastric",
+        "locator": "NCT01697072",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_rilotumumab_gastric_result_press",
+      "title": "Rilotumumab (gastric) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01697072",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.787Z",
+        "firstPublicAt": "2014-11-01T00:00:00.000Z",
+        "effectiveAt": "2014-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9d7570ed24bf824e72483129",
+        "exactPassage": "Phase 3 RILOMET-1 stopped for futility / OS miss.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

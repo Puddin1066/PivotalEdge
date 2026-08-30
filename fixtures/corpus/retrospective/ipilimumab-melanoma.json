@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_ipilimumab_melanoma",
+    "preferredName": "Ipilimumab (Yervoy)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_ipilimumab_melanoma"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_ipilimumab_melanoma",
+    "name": "BMS",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_ipilimumab_melanoma",
+    "name": "Melanoma",
+    "therapeuticArea": "oncology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_ipilimumab_melanoma",
+    "drugAssetId": "drug_ipilimumab_melanoma",
+    "indicationId": "ind_ipilimumab_melanoma",
+    "sponsorId": "sponsor_ipilimumab_melanoma",
+    "name": "Ipilimumab (Yervoy) — Melanoma",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_ipilimumab_melanoma",
+      "name": "CTLA-4 blockade",
+      "target": "CTLA4",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00094653",
+      "nctId": "NCT00094653",
+      "programId": "prog_ipilimumab_melanoma",
+      "phase": "III",
+      "title": "Ipilimumab melanoma",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 676,
+      "actualEnrollment": 676,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2010-06-01T12:00:00.000Z",
+      "studyStartAt": "2010-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2011-03-25T12:00:00.000Z",
+      "completionAt": "2011-03-25T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_ipilimumab_melanoma_primary",
+      "trialId": "trial_nct00094653",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_ipilimumab_melanoma_primary",
+      "trialId": "trial_nct00094653",
+      "endpointId": "ep_ipilimumab_melanoma_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.014Z",
+        "firstPublicAt": "2010-06-01T00:00:00.000Z",
+        "effectiveAt": "2010-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f0e8b64f77b4573e6ff1f820",
+        "exactPassage": "MDX010-20 OS primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla125377",
+    "programId": "prog_ipilimumab_melanoma",
+    "applicationNumber": "BLA125377",
+    "applicationType": "BLA",
+    "indicationId": "ind_ipilimumab_melanoma",
+    "filedAt": null,
+    "acceptedAt": "2010-08-18T00:00:00.000Z",
+    "pdufaDate": "2011-03-25T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://news.bms.com/news/details/2010/Ipilimumab-Receives-FDA-Priority-Review-Designation-for-Adult-Patients-with-Previously-Treated-Advanced-Melanoma/default.aspx",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:42.014Z",
+      "firstPublicAt": "2010-08-18T00:00:00.000Z",
+      "effectiveAt": "2010-08-18T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:d512dddbe2c0ea79cbe1c8b3",
+      "exactPassage": "FDA accepted ipilimumab BLA for priority review Aug 18 2010; approved Mar 25 2011.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_ipilimumab_melanoma_approval",
+    "applicationId": "app_bla125377",
+    "actionType": "approval",
+    "actionDate": "2011-03-25T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:42.014Z",
+      "firstPublicAt": "2011-03-25T00:00:00.000Z",
+      "effectiveAt": "2011-03-25T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:a2a8315df357617d8202dd22",
+      "exactPassage": "FDA approval date 2011-03-25T00:00:00.000Z for Ipilimumab (Yervoy)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_ipilimumab_melanoma_ct",
+      "title": "Ipilimumab melanoma",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00094653",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:42.014Z",
+        "firstPublicAt": "2010-06-01T12:00:00.000Z",
+        "effectiveAt": "2010-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:888404eea65da697fe8ce585",
+        "exactPassage": "Ipilimumab melanoma",
+        "locator": "NCT00094653",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_ipilimumab_melanoma_result_press",
+      "title": "Ipilimumab (Yervoy) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.014Z",
+        "firstPublicAt": "2010-06-01T00:00:00.000Z",
+        "effectiveAt": "2010-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f0e8b64f77b4573e6ff1f820",
+        "exactPassage": "MDX010-20 OS primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_ipilimumab_melanoma_reg_clock",
+      "title": "Ipilimumab (Yervoy) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://news.bms.com/news/details/2010/Ipilimumab-Receives-FDA-Priority-Review-Designation-for-Adult-Patients-with-Previously-Treated-Advanced-Melanoma/default.aspx",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.014Z",
+        "firstPublicAt": "2010-08-18T00:00:00.000Z",
+        "effectiveAt": "2010-08-18T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d512dddbe2c0ea79cbe1c8b3",
+        "exactPassage": "FDA accepted ipilimumab BLA for priority review Aug 18 2010; approved Mar 25 2011.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

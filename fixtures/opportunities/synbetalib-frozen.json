@@ -1,0 +1,267 @@
+{
+  "kind": "frozen_opportunity_snapshot",
+  "snapshotVersion": "1",
+  "frozenAt": "2022-05-19T12:00:00.000Z",
+  "marketQuestion": {
+    "marketId": "pm_poly_syn_002",
+    "eventType": "FDA_APPROVAL_BY_DATE",
+    "drugAssetId": "drug_syn_beta",
+    "drugAliases": ["Synbetalib", "SYN-β"],
+    "sponsorId": "sponsor_crestline",
+    "indicationId": "ind_ra",
+    "population": "moderate-to-severe RA",
+    "applicationId": "app_nda_syn_002",
+    "linkedTrialIds": ["trial_nct00000002"],
+    "endpointIds": ["ep_acr20"],
+    "eventDeadline": "2022-12-31T23:59:59.000Z",
+    "resolutionSource": "Drugs@FDA or official FDA announcement",
+    "resolutionDefinition": "FDA approval of Synbetalib for any NSCLC indication on or before the deadline; conditional approval counts.",
+    "conditionalApprovalCounts": true,
+    "ambiguityFlags": [],
+    "parserConfidence": 0.92
+  },
+  "forecast": {
+    "id": "fc_synbetalib_fixture",
+    "marketQuestionId": "pm_poly_syn_002",
+    "programId": "prog_syn_beta_ra",
+    "generatedAt": "2022-05-19T12:00:00.000Z",
+    "forecastCutoff": "2022-05-19T00:00:00.000Z",
+    "modelProbability": 1,
+    "conservativeProbability": 0.9197016822179859,
+    "intervalLow": 0.9197016822179859,
+    "intervalHigh": 0.9999999999999999,
+    "modelVersion": "base-rate-calibrated@2",
+    "calibrationStatus": "held_out",
+    "components": [
+      {
+        "id": "comp_clinical",
+        "name": "clinical_adequacy",
+        "probability": 0.88,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_submission",
+        "name": "submission_by_T",
+        "probability": 0.95,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_acceptance",
+        "name": "acceptance_given_submission",
+        "probability": 0.93,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_approval",
+        "name": "approval_given_acceptance",
+        "probability": 1,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_decision",
+        "name": "decision_by_T",
+        "probability": 1,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_nct00000001_primary",
+      "action_approve_syn_001",
+      "des_syn_bt",
+      "des_syn_pr",
+      "doc_syn_approval"
+    ],
+    "cutoffAudit": {
+      "forecastCutoff": "2022-05-19T00:00:00.000Z",
+      "checkedAt": "2026-08-23T13:31:11.173Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "yesOrderBook": {
+    "id": "ob_synalpha_yes_fixture",
+    "marketId": "pm_poly_syn_002",
+    "capturedAt": "2022-05-19T12:00:00.000Z",
+    "bids": [
+      {
+        "price": 0.68,
+        "size": 1200
+      },
+      {
+        "price": 0.67,
+        "size": 800
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.72,
+        "size": 900
+      },
+      {
+        "price": 0.73,
+        "size": 600
+      }
+    ],
+    "midpoint": 0.7,
+    "bestBid": 0.68,
+    "bestAsk": 0.72
+  },
+  "noOrderBook": {
+    "id": "ob_synalpha_no_fixture",
+    "marketId": "pm_poly_syn_002",
+    "capturedAt": "2022-05-19T12:00:00.000Z",
+    "bids": [
+      {
+        "price": 0.26,
+        "size": 700
+      },
+      {
+        "price": 0.25,
+        "size": 500
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.3,
+        "size": 850
+      },
+      {
+        "price": 0.31,
+        "size": 400
+      }
+    ],
+    "midpoint": 0.28,
+    "bestBid": 0.26,
+    "bestAsk": 0.3
+  },
+  "precedentBundle": {
+    "marketQuestionId": "pm_poly_syn_002",
+    "currentProgram": {
+      "programId": "prog_syn_beta_ra",
+      "drugAssetId": "drug_syn_beta",
+      "drugName": "Synbetalib",
+      "sponsorId": "sponsor_crestline",
+      "sponsorName": "SynBio Therapeutics",
+      "indicationId": "ind_ra",
+      "indicationName": "Non-small cell lung cancer",
+      "therapeuticArea": "oncology",
+      "status": "approved",
+      "trialIds": ["trial_nct00000002"],
+      "applicationId": "app_nda_syn_002",
+      "primaryEndpointMet": true,
+      "endpointFamily": "OS",
+      "trialStatus": "completed",
+      "plannedEnrollment": 600,
+      "actualEnrollment": 582,
+      "biomarkerEnriched": true,
+      "designationTypes": ["breakthrough", "priority_review"],
+      "orphanDesignated": false,
+      "approvedTherapyCount": 2,
+      "priorApprovalCount": 1
+    },
+    "cohorts": [
+      {
+        "cohortDefinition": "Same therapeutic area and phase III",
+        "programs": [],
+        "approvals": 0,
+        "crls": 0,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": null
+      },
+      {
+        "cohortDefinition": "Same endpoint family (overall survival)",
+        "programs": [
+          {
+            "programId": "prog_syn_beta_ra",
+            "drugName": "Synbetalib",
+            "indicationName": "Rheumatoid arthritis",
+            "therapeuticArea": "rheumatology",
+            "phase": "III",
+            "outcome": "crl",
+            "primaryEndpointMet": true,
+            "sponsorName": "Crestline Pharma",
+            "evidenceIds": [
+              "result_nct00000002_primary",
+              "action_crl_syn_002",
+              "des_beta_ft",
+              "doc_syn_crl_8k"
+            ]
+          }
+        ],
+        "approvals": 0,
+        "crls": 1,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": 0
+      }
+    ],
+    "exactAnalogues": [
+      {
+        "programId": "prog_syn_beta_ra",
+        "similarities": ["Same phase: III"],
+        "differences": [
+          "Therapeutic area oncology vs rheumatology",
+          "Sponsor SynBio Therapeutics vs Crestline Pharma"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_nct00000001_primary",
+      "action_approve_syn_001",
+      "des_syn_bt",
+      "des_syn_pr",
+      "doc_syn_approval"
+    ],
+    "contradictoryEvidenceIds": [],
+    "missingHighValueEvidence": [],
+    "cutoffCompliance": {
+      "forecastCutoff": "2022-05-19T00:00:00.000Z",
+      "checkedAt": "2026-08-23T13:31:11.173Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "bankroll": 10000
+}

@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_dupilumab_ad",
+    "preferredName": "Dupilumab (Dupixent)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_dupilumab_ad"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_dupilumab_ad",
+    "name": "Regeneron/Sanofi",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_dupilumab_ad",
+    "name": "Atopic dermatitis",
+    "therapeuticArea": "dermatology",
+    "efoId": "EFO_0000274"
+  },
+  "program": {
+    "id": "prog_dupilumab_ad",
+    "drugAssetId": "drug_dupilumab_ad",
+    "indicationId": "ind_dupilumab_ad",
+    "sponsorId": "sponsor_dupilumab_ad",
+    "name": "Dupilumab (Dupixent) — Atopic dermatitis",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_dupilumab_ad",
+      "name": "IL-4Rα blockade",
+      "target": "IL4R",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct02260986",
+      "nctId": "NCT02260986",
+      "programId": "prog_dupilumab_ad",
+      "phase": "III",
+      "title": "SOLO dupilumab atopic dermatitis",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 671,
+      "actualEnrollment": 671,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2016-09-01T12:00:00.000Z",
+      "studyStartAt": "2016-09-01T12:00:00.000Z",
+      "primaryCompletionAt": "2017-03-28T12:00:00.000Z",
+      "completionAt": "2017-03-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_dupilumab_ad_primary",
+      "trialId": "trial_nct02260986",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_dupilumab_ad_primary",
+      "trialId": "trial_nct02260986",
+      "endpointId": "ep_dupilumab_ad_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02260986",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2016-09-01T00:00:00.000Z",
+        "effectiveAt": "2016-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:fdfb4e5c206115304c9de819",
+        "exactPassage": "SOLO primary endpoints met in atopic dermatitis.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761055",
+    "programId": "prog_dupilumab_ad",
+    "applicationNumber": "BLA761055",
+    "applicationType": "BLA",
+    "indicationId": "ind_dupilumab_ad",
+    "filedAt": "2016-09-26T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2017-03-28T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-and-sanofi-announce-fda-acceptance-biologics-license",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:38.906Z",
+      "firstPublicAt": "2016-09-26T00:00:00.000Z",
+      "effectiveAt": "2016-09-26T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:ae35e7028238c61c73e03d8b",
+      "exactPassage": "Dupilumab BLA submitted and accepted Sep 26 2016; FDA approval Mar 28 2017.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_dupilumab_ad_approval",
+    "applicationId": "app_bla761055",
+    "actionType": "approval",
+    "actionDate": "2017-03-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT02260986",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:38.906Z",
+      "firstPublicAt": "2017-03-28T00:00:00.000Z",
+      "effectiveAt": "2017-03-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:32dbb3c01841ce1ac4b1cc05",
+      "exactPassage": "FDA approval date 2017-03-28T00:00:00.000Z for Dupilumab (Dupixent)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_dupilumab_ad_breakthrough_0",
+      "programId": "prog_dupilumab_ad",
+      "applicationId": "app_bla761055",
+      "designationType": "breakthrough",
+      "grantedAt": "2014-11-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2014-11-01T00:00:00.000Z",
+        "effectiveAt": "2014-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:417c3127c3ea259d26e2f38e",
+        "exactPassage": "breakthrough designation for Dupilumab (Dupixent)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_dupilumab_ad_0_cyclosporine",
+      "indicationId": "ind_dupilumab_ad",
+      "drugAssetId": "drug_comp_cyclosporine",
+      "drugName": "Cyclosporine",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000274",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2016-09-01T12:00:00.000Z",
+        "effectiveAt": "2016-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:02acfb182233d532cdf96b30",
+        "exactPassage": "Approved / clinical candidate in indication: Cyclosporine",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_dupilumab_ad_ct",
+      "title": "SOLO dupilumab atopic dermatitis",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02260986",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2016-09-01T12:00:00.000Z",
+        "effectiveAt": "2016-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a0cad9ee4f5efb702192e5d2",
+        "exactPassage": "SOLO dupilumab atopic dermatitis",
+        "locator": "NCT02260986",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_dupilumab_ad_result_press",
+      "title": "Dupilumab (Dupixent) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02260986",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2016-09-01T00:00:00.000Z",
+        "effectiveAt": "2016-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:fdfb4e5c206115304c9de819",
+        "exactPassage": "SOLO primary endpoints met in atopic dermatitis.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_dupilumab_ad_reg_clock",
+      "title": "Dupilumab (Dupixent) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-and-sanofi-announce-fda-acceptance-biologics-license",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.906Z",
+        "firstPublicAt": "2016-09-26T00:00:00.000Z",
+        "effectiveAt": "2016-09-26T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ae35e7028238c61c73e03d8b",
+        "exactPassage": "Dupilumab BLA submitted and accepted Sep 26 2016; FDA approval Mar 28 2017.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

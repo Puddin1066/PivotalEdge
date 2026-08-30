@@ -1,0 +1,18 @@
+{
+  "kind": "enrichment_ab_corpus",
+  "description": "Synthetic mock enrichment A/B corpus (fixture research adapters, not live API). Compares P_initial vs P_enriched against program-derived resolution labels.",
+  "cases": [
+    {
+      "caseId": "eab_synalphimab",
+      "profileId": "synalphimab",
+      "resolvedApproved": true,
+      "labelSource": "program_fixture_approved"
+    },
+    {
+      "caseId": "eab_synbetalib",
+      "profileId": "synbetalib",
+      "resolvedApproved": false,
+      "labelSource": "regulatory_action_crl"
+    }
+  ]
+}

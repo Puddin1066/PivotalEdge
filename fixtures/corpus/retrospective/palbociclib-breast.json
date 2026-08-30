@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_palbociclib_breast",
+    "preferredName": "Palbociclib (Ibrance)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_palbociclib_breast"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_palbociclib_breast",
+    "name": "Pfizer",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_palbociclib_breast",
+    "name": "HR+/HER2- breast cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0000305"
+  },
+  "program": {
+    "id": "prog_palbociclib_breast",
+    "drugAssetId": "drug_palbociclib_breast",
+    "indicationId": "ind_palbociclib_breast",
+    "sponsorId": "sponsor_palbociclib_breast",
+    "name": "Palbociclib (Ibrance) — HR+/HER2- breast cancer",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_palbociclib_breast",
+      "name": "CDK4/6 inhibition",
+      "target": "CDK4",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01740427",
+      "nctId": "NCT01740427",
+      "programId": "prog_palbociclib_breast",
+      "phase": "III",
+      "title": "PALOMA palbociclib breast cancer",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 165,
+      "actualEnrollment": 165,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2014-12-01T12:00:00.000Z",
+      "studyStartAt": "2014-12-01T12:00:00.000Z",
+      "primaryCompletionAt": "2015-02-03T12:00:00.000Z",
+      "completionAt": "2015-02-03T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_palbociclib_breast_primary",
+      "trialId": "trial_nct01740427",
+      "name": "PFS",
+      "endpointFamily": "PFS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_palbociclib_breast_primary",
+      "trialId": "trial_nct01740427",
+      "endpointId": "ep_palbociclib_breast_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01740427",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2014-12-01T00:00:00.000Z",
+        "effectiveAt": "2014-12-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:fccfe53d68d3e239e444537a",
+        "exactPassage": "PALOMA-1 PFS primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda207103",
+    "programId": "prog_palbociclib_breast",
+    "applicationNumber": "NDA207103",
+    "applicationType": "NDA",
+    "indicationId": "ind_palbociclib_breast",
+    "filedAt": "2014-08-18T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2015-02-03T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_s_palbociclib_granted_fda_breakthrough_therapy_designation",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:37.782Z",
+      "firstPublicAt": "2014-08-18T00:00:00.000Z",
+      "effectiveAt": "2014-08-18T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:eed2ecb0a7f17b74d8e665e8",
+      "exactPassage": "Pfizer submitted palbociclib NDA Aug 2014 under breakthrough; FDA approval Feb 3 2015.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_palbociclib_breast_approval",
+    "applicationId": "app_nda207103",
+    "actionType": "approval",
+    "actionDate": "2015-02-03T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01740427",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:37.782Z",
+      "firstPublicAt": "2015-02-03T00:00:00.000Z",
+      "effectiveAt": "2015-02-03T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:a4e75722d040d13aa44e500e",
+      "exactPassage": "FDA approval date 2015-02-03T00:00:00.000Z for Palbociclib (Ibrance)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_palbociclib_breast_breakthrough_0",
+      "programId": "prog_palbociclib_breast",
+      "applicationId": "app_nda207103",
+      "designationType": "breakthrough",
+      "grantedAt": "2013-04-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2013-04-01T00:00:00.000Z",
+        "effectiveAt": "2013-04-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:af14484f1149c535d47c32d4",
+        "exactPassage": "breakthrough designation for Palbociclib (Ibrance)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_palbociclib_breast_0_letrozole",
+      "indicationId": "ind_palbociclib_breast",
+      "drugAssetId": "drug_comp_letrozole",
+      "drugName": "Letrozole",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000305",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2014-12-01T12:00:00.000Z",
+        "effectiveAt": "2014-12-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:6f1e296b0ad0ed1cc5ec425f",
+        "exactPassage": "Approved / clinical candidate in indication: Letrozole",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_palbociclib_breast_ct",
+      "title": "PALOMA palbociclib breast cancer",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01740427",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2014-12-01T12:00:00.000Z",
+        "effectiveAt": "2014-12-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:511ae93fe194cee6b03cc56c",
+        "exactPassage": "PALOMA palbociclib breast cancer",
+        "locator": "NCT01740427",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_palbociclib_breast_result_press",
+      "title": "Palbociclib (Ibrance) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01740427",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2014-12-01T00:00:00.000Z",
+        "effectiveAt": "2014-12-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:fccfe53d68d3e239e444537a",
+        "exactPassage": "PALOMA-1 PFS primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_palbociclib_breast_reg_clock",
+      "title": "Palbociclib (Ibrance) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_s_palbociclib_granted_fda_breakthrough_therapy_designation",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.782Z",
+        "firstPublicAt": "2014-08-18T00:00:00.000Z",
+        "effectiveAt": "2014-08-18T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:eed2ecb0a7f17b74d8e665e8",
+        "exactPassage": "Pfizer submitted palbociclib NDA Aug 2014 under breakthrough; FDA approval Feb 3 2015.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

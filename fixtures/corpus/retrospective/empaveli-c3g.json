@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_empaveli_c3g",
+    "preferredName": "Empaveli (pegcetacoplan) C3G",
+    "modality": "peptide",
+    "mechanismIds": [
+      "mech_empaveli_c3g"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_empaveli_c3g",
+    "name": "Apellis",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_empaveli_c3g",
+    "name": "C3 glomerulopathy",
+    "therapeuticArea": "nephrology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_empaveli_c3g",
+    "drugAssetId": "drug_empaveli_c3g",
+    "indicationId": "ind_empaveli_c3g",
+    "sponsorId": "sponsor_empaveli_c3g",
+    "name": "Empaveli (pegcetacoplan) C3G — C3 glomerulopathy",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_empaveli_c3g",
+      "name": "C3 inhibition",
+      "target": "C3",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct05067127",
+      "nctId": "NCT05067127",
+      "programId": "prog_empaveli_c3g",
+      "phase": "III",
+      "title": "VALIANT pegcetacoplan C3G",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 124,
+      "actualEnrollment": 124,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2023-10-01T12:00:00.000Z",
+      "studyStartAt": "2023-10-01T12:00:00.000Z",
+      "primaryCompletionAt": "2025-07-28T12:00:00.000Z",
+      "completionAt": "2025-07-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_empaveli_c3g_primary",
+      "trialId": "trial_nct05067127",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_empaveli_c3g_primary",
+      "trialId": "trial_nct05067127",
+      "endpointId": "ep_empaveli_c3g_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05067127",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2023-10-01T00:00:00.000Z",
+        "effectiveAt": "2023-10-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2fd24ae2daeed42c00e0aa98",
+        "exactPassage": "VALIANT primary endpoint met in C3G.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda217171",
+    "programId": "prog_empaveli_c3g",
+    "applicationNumber": "NDA217171",
+    "applicationType": "sNDA",
+    "indicationId": "ind_empaveli_c3g",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2023-02-17T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number:\"NDA217171\"",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:41.515Z",
+      "firstPublicAt": "2023-02-17T00:00:00.000Z",
+      "effectiveAt": "2023-02-17T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:0635a8df7ef877c10f340c08",
+      "exactPassage": "Drugs@FDA ORIG approval 2023-02-17 for NDA217171.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_empaveli_c3g_approval",
+    "applicationId": "app_nda217171",
+    "actionType": "approval",
+    "actionDate": "2025-07-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT05067127",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.515Z",
+      "firstPublicAt": "2025-07-28T00:00:00.000Z",
+      "effectiveAt": "2025-07-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:ea04a7def84bc049a5c054e9",
+      "exactPassage": "FDA approval date 2025-07-28T00:00:00.000Z for Empaveli (pegcetacoplan) C3G",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_empaveli_c3g_orphan_0",
+      "programId": "prog_empaveli_c3g",
+      "applicationId": "app_nda217171",
+      "designationType": "orphan",
+      "grantedAt": "2014-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2014-01-01T00:00:00.000Z",
+        "effectiveAt": "2014-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:654d76b4699b86016c8b4231",
+        "exactPassage": "orphan designation for Empaveli (pegcetacoplan) C3G",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_empaveli_c3g_0_supportive_care",
+      "indicationId": "ind_empaveli_c3g",
+      "drugAssetId": "drug_comp_supportive_care",
+      "drugName": "Supportive care",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05067127",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2023-10-01T12:00:00.000Z",
+        "effectiveAt": "2023-10-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0e6fc28416024d3581e8adc5",
+        "exactPassage": "Approved / clinical candidate in indication: Supportive care",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_empaveli_c3g_ct",
+      "title": "VALIANT pegcetacoplan C3G",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05067127",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2023-10-01T12:00:00.000Z",
+        "effectiveAt": "2023-10-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:dfef5574e1ed9c01e4ec0805",
+        "exactPassage": "VALIANT pegcetacoplan C3G",
+        "locator": "NCT05067127",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_empaveli_c3g_result_press",
+      "title": "Empaveli (pegcetacoplan) C3G primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05067127",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2023-10-01T00:00:00.000Z",
+        "effectiveAt": "2023-10-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2fd24ae2daeed42c00e0aa98",
+        "exactPassage": "VALIANT primary endpoint met in C3G.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_empaveli_c3g_reg_clock",
+      "title": "Empaveli (pegcetacoplan) C3G regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number:\"NDA217171\"",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.515Z",
+        "firstPublicAt": "2023-02-17T00:00:00.000Z",
+        "effectiveAt": "2023-02-17T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0635a8df7ef877c10f340c08",
+        "exactPassage": "Drugs@FDA ORIG approval 2023-02-17 for NDA217171.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

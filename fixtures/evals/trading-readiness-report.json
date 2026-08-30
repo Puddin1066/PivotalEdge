@@ -1,0 +1,24 @@
+{
+  "kind": "trading_readiness_report",
+  "generatedAt": "2026-08-28T12:33:59.939Z",
+  "clinicalConviction": "calibrated",
+  "liveTradingEnabled": false,
+  "checks": {
+    "clinicalBeatsBaseRate": true,
+    "clinicalCases": 100,
+    "clinicalOos": 92,
+    "kgHoldoutBeatsBaseRate": true,
+    "kgHoldoutCases": 44,
+    "quoteVaultRows": 79,
+    "quoteVaultMarkets": 5,
+    "quoteVaultMinRows": true,
+    "quoteVaultDistinctDays": 3,
+    "quoteVaultSpanDays": 2,
+    "quoteVaultFresh": true,
+    "openPaperPositions": 5,
+    "openBetActions": 3
+  },
+  "blockers": [],
+  "paperReady": true,
+  "notes": "Calibrated conviction = clinical+KG beat base rate (≥80 chrono / ≥15 KG holdout) with fresh executable asks (≤48h). Multi-day vault depth is informational for eventual market-edge proof — FDA books do not need daily novelty. Live trading stays off until resolved prospective PnL + execution adapter."
+}

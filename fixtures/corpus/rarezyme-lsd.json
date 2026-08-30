@@ -1,0 +1,152 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_rarezyme",
+    "preferredName": "Rarezyme",
+    "modality": "enzyme_replacement",
+    "mechanismIds": ["mech_ert"]
+  },
+  "sponsor": {
+    "id": "sponsor_orphigen",
+    "name": "Orphigen",
+    "cik": "0001000006"
+  },
+  "indication": {
+    "id": "ind_lsd",
+    "name": "Lysosomal storage disorder",
+    "therapeuticArea": "rare_disease",
+    "efoId": "EFO_0005566"
+  },
+  "program": {
+    "id": "prog_rarezyme_lsd",
+    "drugAssetId": "drug_rarezyme",
+    "indicationId": "ind_lsd",
+    "sponsorId": "sponsor_orphigen",
+    "name": "Rarezyme LSD program",
+    "status": "crl"
+  },
+  "trials": [
+    {
+      "id": "trial_nct00000006",
+      "nctId": "NCT00000006",
+      "programId": "prog_rarezyme_lsd",
+      "phase": "III",
+      "title": "Rarezyme in LSD",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 80,
+      "actualEnrollment": 72,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": false
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000006_primary",
+      "trialId": "trial_nct00000006",
+      "endpointId": "ep_6mwt",
+      "primaryEndpointMet": true,
+      "effectEstimate": 42,
+      "confidenceInterval": [18, 66],
+      "pValue": 0.01,
+      "provenance": {
+        "sourceUrl": "fixture://corpus/rarezyme-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2020-03-01T12:00:00.000Z",
+        "effectiveAt": "2020-03-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:corpus-rare-001",
+        "exactPassage": "6-minute walk test improved vs placebo (p=0.01).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla_rare_006",
+    "programId": "prog_rarezyme_lsd",
+    "applicationNumber": "BLA-FIXTURE-006",
+    "applicationType": "BLA",
+    "indicationId": "ind_lsd"
+  },
+  "regulatoryAction": {
+    "id": "action_crl_rare_006",
+    "applicationId": "app_bla_rare_006",
+    "actionType": "crl",
+    "actionDate": "2021-11-10T15:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://corpus/rarezyme-crl",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2021-11-10T15:00:00.000Z",
+      "effectiveAt": "2021-11-10T15:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:corpus-rare-crl-001",
+      "exactPassage": "FDA CRL requested additional CMC data.",
+      "locator": "8k#item8.01",
+      "accessClass": "open"
+    }
+  },
+  "documents": [],
+  "mechanisms": [
+    {
+      "id": "mech_ert",
+      "name": "Enzyme replacement",
+      "target": null,
+      "firstInClass": true
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_6mwt",
+      "trialId": "trial_nct00000006",
+      "name": "Biomarker / clinical composite",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "designations": [
+    {
+      "id": "des_prog_rarezyme_lsd_orphan",
+      "programId": "prog_rarezyme_lsd",
+      "applicationId": "app_bla_rare_006",
+      "designationType": "orphan",
+      "grantedAt": "2017-05-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/rarezyme-lsd.json#orphan",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2017-05-01T00:00:00.000Z",
+        "effectiveAt": "2017-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-rarezyme-lsd.json-0",
+        "exactPassage": "Designation orphan",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_prog_rarezyme_lsd_priority_review",
+      "programId": "prog_rarezyme_lsd",
+      "applicationId": "app_bla_rare_006",
+      "designationType": "priority_review",
+      "grantedAt": "2019-08-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/rarezyme-lsd.json#priority_review",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2019-08-01T00:00:00.000Z",
+        "effectiveAt": "2019-08-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-rarezyme-lsd.json-1",
+        "exactPassage": "Designation priority_review",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": []
+}

@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_faricimab_amd",
+    "preferredName": "Faricimab (Vabysmo)",
+    "modality": "bispecific_antibody",
+    "mechanismIds": [
+      "mech_faricimab_amd"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_faricimab_amd",
+    "name": "Genentech",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_faricimab_amd",
+    "name": "nAMD / DME",
+    "therapeuticArea": "ophthalmology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_faricimab_amd",
+    "drugAssetId": "drug_faricimab_amd",
+    "indicationId": "ind_faricimab_amd",
+    "sponsorId": "sponsor_faricimab_amd",
+    "name": "Faricimab (Vabysmo) — nAMD / DME",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_faricimab_amd",
+      "name": "Ang-2/VEGF-A",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03823287",
+      "nctId": "NCT03823287",
+      "programId": "prog_faricimab_amd",
+      "phase": "III",
+      "title": "TENAYA faricimab",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 671,
+      "actualEnrollment": 671,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2021-02-01T12:00:00.000Z",
+      "studyStartAt": "2021-02-01T12:00:00.000Z",
+      "primaryCompletionAt": "2022-01-28T12:00:00.000Z",
+      "completionAt": "2022-01-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_faricimab_amd_primary",
+      "trialId": "trial_nct03823287",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_faricimab_amd_primary",
+      "trialId": "trial_nct03823287",
+      "endpointId": "ep_faricimab_amd_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.144Z",
+        "firstPublicAt": "2021-02-01T00:00:00.000Z",
+        "effectiveAt": "2021-02-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:545e13a82f9f943bee1e79a7",
+        "exactPassage": "TENAYA/LUCERNE primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761235",
+    "programId": "prog_faricimab_amd",
+    "applicationNumber": "BLA761235",
+    "applicationType": "BLA",
+    "indicationId": "ind_faricimab_amd",
+    "filedAt": "2021-01-29T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2022-01-28T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.gene.com/media/press-releases/15063/2021-01-29/genentech-submits-biologics-license-application-to",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:43.144Z",
+      "firstPublicAt": "2021-01-29T00:00:00.000Z",
+      "effectiveAt": "2021-01-29T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:da2df862cfcafb05d5defa58",
+      "exactPassage": "Genentech submitted faricimab BLA Jan 29 2021; FDA approval Jan 28 2022.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_faricimab_amd_approval",
+    "applicationId": "app_bla761235",
+    "actionType": "approval",
+    "actionDate": "2022-01-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.144Z",
+      "firstPublicAt": "2022-01-28T00:00:00.000Z",
+      "effectiveAt": "2022-01-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:d67ed3df45b9e5d00f3a74f4",
+      "exactPassage": "FDA approval date 2022-01-28T00:00:00.000Z for Faricimab (Vabysmo)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_faricimab_amd_ct",
+      "title": "TENAYA faricimab",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03823287",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.144Z",
+        "firstPublicAt": "2021-02-01T12:00:00.000Z",
+        "effectiveAt": "2021-02-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:77a12186ee0a1329bebe09c8",
+        "exactPassage": "TENAYA faricimab",
+        "locator": "NCT03823287",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_faricimab_amd_result_press",
+      "title": "Faricimab (Vabysmo) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.144Z",
+        "firstPublicAt": "2021-02-01T00:00:00.000Z",
+        "effectiveAt": "2021-02-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:545e13a82f9f943bee1e79a7",
+        "exactPassage": "TENAYA/LUCERNE primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_faricimab_amd_reg_clock",
+      "title": "Faricimab (Vabysmo) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.gene.com/media/press-releases/15063/2021-01-29/genentech-submits-biologics-license-application-to",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.144Z",
+        "firstPublicAt": "2021-01-29T00:00:00.000Z",
+        "effectiveAt": "2021-01-29T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:da2df862cfcafb05d5defa58",
+        "exactPassage": "Genentech submitted faricimab BLA Jan 29 2021; FDA approval Jan 28 2022.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

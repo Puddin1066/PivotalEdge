@@ -1,0 +1,160 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_iniparib_breast_fail",
+    "preferredName": "Iniparib",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_iniparib_breast_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_iniparib_breast_fail",
+    "name": "Sanofi",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_iniparib_breast_fail",
+    "name": "Triple-negative breast cancer",
+    "therapeuticArea": "oncology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_iniparib_breast_fail",
+    "drugAssetId": "drug_iniparib_breast_fail",
+    "indicationId": "ind_iniparib_breast_fail",
+    "sponsorId": "sponsor_iniparib_breast_fail",
+    "name": "Iniparib — Triple-negative breast cancer",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_iniparib_breast_fail",
+      "name": "Putative PARP",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00938652",
+      "nctId": "NCT00938652",
+      "programId": "prog_iniparib_breast_fail",
+      "phase": "III",
+      "title": "Iniparib TNBC",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 519,
+      "actualEnrollment": 519,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2011-01-27T12:00:00.000Z",
+      "studyStartAt": "2011-01-27T12:00:00.000Z",
+      "primaryCompletionAt": "2011-02-03T12:00:00.000Z",
+      "completionAt": "2011-02-03T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_iniparib_breast_fail_primary",
+      "trialId": "trial_nct00938652",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_iniparib_breast_fail_primary",
+      "trialId": "trial_nct00938652",
+      "endpointId": "ep_iniparib_breast_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.179Z",
+        "firstPublicAt": "2011-01-27T00:00:00.000Z",
+        "effectiveAt": "2011-01-27T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:60bbc9529a947316c1f31aaa",
+        "exactPassage": "Phase 3 missed OS/PFS primaries.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_iniparib_breast_fail_pending",
+    "programId": "prog_iniparib_breast_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_iniparib_breast_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2011-02-03T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_iniparib_breast_fail_withdrawal",
+    "applicationId": "app_iniparib_breast_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2011-02-03T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.179Z",
+      "firstPublicAt": "2011-02-03T00:00:00.000Z",
+      "effectiveAt": "2011-02-03T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:57da88994aa79a89f50e3591",
+      "exactPassage": "Program discontinuation disclosure 2011-02-03T00:00:00.000Z for Iniparib",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_iniparib_breast_fail_ct",
+      "title": "Iniparib TNBC",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00938652",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.179Z",
+        "firstPublicAt": "2011-01-27T12:00:00.000Z",
+        "effectiveAt": "2011-01-27T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d2c5fced752befab6ced5140",
+        "exactPassage": "Iniparib TNBC",
+        "locator": "NCT00938652",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_iniparib_breast_fail_result_press",
+      "title": "Iniparib primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.179Z",
+        "firstPublicAt": "2011-01-27T00:00:00.000Z",
+        "effectiveAt": "2011-01-27T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:60bbc9529a947316c1f31aaa",
+        "exactPassage": "Phase 3 missed OS/PFS primaries.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

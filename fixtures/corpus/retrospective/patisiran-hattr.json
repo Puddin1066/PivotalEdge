@@ -1,0 +1,208 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_patisiran_hattr",
+    "preferredName": "Patisiran (Onpattro)",
+    "modality": "siRNA",
+    "mechanismIds": [
+      "mech_patisiran_hattr"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_patisiran_hattr",
+    "name": "Alnylam",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_patisiran_hattr",
+    "name": "hATTR",
+    "therapeuticArea": "rare_disease",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_patisiran_hattr",
+    "drugAssetId": "drug_patisiran_hattr",
+    "indicationId": "ind_patisiran_hattr",
+    "sponsorId": "sponsor_patisiran_hattr",
+    "name": "Patisiran (Onpattro) — hATTR",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_patisiran_hattr",
+      "name": "TTR RNAi",
+      "target": "TTR",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01960348",
+      "nctId": "NCT01960348",
+      "programId": "prog_patisiran_hattr",
+      "phase": "III",
+      "title": "APOLLO patisiran",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 225,
+      "actualEnrollment": 225,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2017-11-01T12:00:00.000Z",
+      "studyStartAt": "2017-11-01T12:00:00.000Z",
+      "primaryCompletionAt": "2018-08-10T12:00:00.000Z",
+      "completionAt": "2018-08-10T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_patisiran_hattr_primary",
+      "trialId": "trial_nct01960348",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_patisiran_hattr_primary",
+      "trialId": "trial_nct01960348",
+      "endpointId": "ep_patisiran_hattr_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.621Z",
+        "firstPublicAt": "2017-11-01T00:00:00.000Z",
+        "effectiveAt": "2017-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:09ce92978b70f05a86f2495a",
+        "exactPassage": "APOLLO primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda210922",
+    "programId": "prog_patisiran_hattr",
+    "applicationNumber": "NDA210922",
+    "applicationType": "NDA",
+    "indicationId": "ind_patisiran_hattr",
+    "filedAt": "2017-10-18T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2018-08-10T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://investors.alnylam.com/press-release?id=24206",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:42.621Z",
+      "firstPublicAt": "2017-10-18T00:00:00.000Z",
+      "effectiveAt": "2017-10-18T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:0954b13b9ce683374892a429",
+      "exactPassage": "Alnylam submitted patisiran NDA Oct 18 2017; FDA approval Aug 10 2018.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_patisiran_hattr_approval",
+    "applicationId": "app_nda210922",
+    "actionType": "approval",
+    "actionDate": "2018-08-10T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:42.621Z",
+      "firstPublicAt": "2018-08-10T00:00:00.000Z",
+      "effectiveAt": "2018-08-10T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:bc42828c6a0e51c3dd8800ec",
+      "exactPassage": "FDA approval date 2018-08-10T00:00:00.000Z for Patisiran (Onpattro)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_patisiran_hattr_orphan_0",
+      "programId": "prog_patisiran_hattr",
+      "applicationId": "app_nda210922",
+      "designationType": "orphan",
+      "grantedAt": "2012-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.621Z",
+        "firstPublicAt": "2012-01-01T00:00:00.000Z",
+        "effectiveAt": "2012-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c5a6ff3ce1218fedd09311ae",
+        "exactPassage": "orphan designation for Patisiran (Onpattro)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_patisiran_hattr_ct",
+      "title": "APOLLO patisiran",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01960348",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:42.621Z",
+        "firstPublicAt": "2017-11-01T12:00:00.000Z",
+        "effectiveAt": "2017-11-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a89bd6ce494568c5199a5924",
+        "exactPassage": "APOLLO patisiran",
+        "locator": "NCT01960348",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_patisiran_hattr_result_press",
+      "title": "Patisiran (Onpattro) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.621Z",
+        "firstPublicAt": "2017-11-01T00:00:00.000Z",
+        "effectiveAt": "2017-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:09ce92978b70f05a86f2495a",
+        "exactPassage": "APOLLO primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_patisiran_hattr_reg_clock",
+      "title": "Patisiran (Onpattro) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investors.alnylam.com/press-release?id=24206",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.621Z",
+        "firstPublicAt": "2017-10-18T00:00:00.000Z",
+        "effectiveAt": "2017-10-18T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0954b13b9ce683374892a429",
+        "exactPassage": "Alnylam submitted patisiran NDA Oct 18 2017; FDA approval Aug 10 2018.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

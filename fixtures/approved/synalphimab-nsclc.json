@@ -1,0 +1,229 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_syn_alpha",
+    "preferredName": "Synalphimab",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": ["mech_pd1"]
+  },
+  "sponsor": {
+    "id": "sponsor_synbio",
+    "name": "SynBio Therapeutics",
+    "cik": "0001000001"
+  },
+  "indication": {
+    "id": "ind_nsclc",
+    "name": "Non-small cell lung cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0003060"
+  },
+  "program": {
+    "id": "prog_syn_alpha_nsclc",
+    "drugAssetId": "drug_syn_alpha",
+    "indicationId": "ind_nsclc",
+    "sponsorId": "sponsor_synbio",
+    "name": "Synalphimab NSCLC pivotal program",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_pd1",
+      "name": "PD-1 inhibition",
+      "target": "PDCD1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00000001",
+      "nctId": "NCT00000001",
+      "programId": "prog_syn_alpha_nsclc",
+      "phase": "III",
+      "title": "Synalphimab vs chemotherapy in metastatic NSCLC",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 600,
+      "actualEnrollment": 582,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": true
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_os",
+      "trialId": "trial_nct00000001",
+      "name": "Overall survival",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000001_primary",
+      "trialId": "trial_nct00000001",
+      "endpointId": "ep_os",
+      "primaryEndpointMet": true,
+      "effectEstimate": 0.72,
+      "confidenceInterval": [0.61, 0.85],
+      "pValue": 0.0001,
+      "provenance": {
+        "sourceUrl": "fixture://approved/synalphimab-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2022-03-15T14:00:00.000Z",
+        "effectiveAt": "2022-03-15T14:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:approved-result-001",
+        "exactPassage": "Primary endpoint of overall survival was met (HR 0.72, 95% CI 0.61-0.85, p=0.0001).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla_syn_001",
+    "programId": "prog_syn_alpha_nsclc",
+    "applicationNumber": "BLA-FIXTURE-001",
+    "applicationType": "BLA",
+    "indicationId": "ind_nsclc"
+  },
+  "regulatoryAction": {
+    "id": "action_approve_syn_001",
+    "applicationId": "app_bla_syn_001",
+    "actionType": "approval",
+    "actionDate": "2023-01-10T16:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://approved/synalphimab-fda-approval",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2023-01-10T16:00:00.000Z",
+      "effectiveAt": "2023-01-10T16:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:approved-fda-001",
+      "exactPassage": "FDA approved Synalphimab for metastatic NSCLC.",
+      "locator": "approval-letter#1",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_syn_bt",
+      "programId": "prog_syn_alpha_nsclc",
+      "applicationId": "app_bla_syn_001",
+      "designationType": "breakthrough",
+      "grantedAt": "2021-11-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://approved/synalphimab-breakthrough",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2021-11-01T00:00:00.000Z",
+        "effectiveAt": "2021-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:approved-des-bt",
+        "exactPassage": "FDA granted Breakthrough Therapy designation for Synalphimab in NSCLC.",
+        "locator": "designation#bt",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_syn_pr",
+      "programId": "prog_syn_alpha_nsclc",
+      "applicationId": "app_bla_syn_001",
+      "designationType": "priority_review",
+      "grantedAt": "2022-07-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://approved/synalphimab-priority",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2022-07-01T00:00:00.000Z",
+        "effectiveAt": "2022-07-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:approved-des-pr",
+        "exactPassage": "Priority Review granted for Synalphimab BLA.",
+        "locator": "designation#pr",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_nsclc_pembro",
+      "indicationId": "ind_nsclc",
+      "drugAssetId": "drug_pembrolizumab",
+      "drugName": "Pembrolizumab",
+      "approvedAt": "2015-10-02T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/pembrolizumab-nsclc",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2015-10-02T00:00:00.000Z",
+        "effectiveAt": "2015-10-02T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-pembro",
+        "exactPassage": "Pembrolizumab approved for NSCLC.",
+        "locator": "label#1",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_nsclc_nivo",
+      "indicationId": "ind_nsclc",
+      "drugAssetId": "drug_nivolumab",
+      "drugName": "Nivolumab",
+      "approvedAt": "2015-03-04T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/nivolumab-nsclc",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2015-03-04T00:00:00.000Z",
+        "effectiveAt": "2015-03-04T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-nivo",
+        "exactPassage": "Nivolumab approved for NSCLC.",
+        "locator": "label#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [
+    {
+      "id": "prior_syn_melanoma",
+      "drugAssetId": "drug_syn_alpha",
+      "indicationId": "ind_melanoma",
+      "indicationName": "Melanoma",
+      "approvedAt": "2020-06-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://approved/synalphimab-melanoma",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2020-06-01T00:00:00.000Z",
+        "effectiveAt": "2020-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:prior-melanoma",
+        "exactPassage": "Synalphimab previously approved for melanoma.",
+        "locator": "label#melanoma",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_syn_approval",
+      "title": "Synalphimab approval letter (synthetic)",
+      "documentType": "review",
+      "provenance": {
+        "sourceUrl": "fixture://approved/synalphimab-fda-approval",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2023-01-10T16:00:00.000Z",
+        "effectiveAt": "2023-01-10T16:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:approved-fda-001",
+        "exactPassage": null,
+        "locator": null,
+        "accessClass": "open"
+      }
+    }
+  ]
+}

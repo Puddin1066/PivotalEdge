@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pe-ink: #0c1222;
+  --pe-muted: #5c6b7a;
+  --pe-surface: #f3f6f4;
+  --pe-panel: #ffffff;
+  --pe-accent: #0f766e;
+  --pe-accent-soft: #ccfbf1;
+  --pe-warn: #b45309;
+  --pe-danger: #b91c1c;
+  --pe-line: #d8e0dc;
+}
+
+body {
+  @apply antialiased;
+  color: var(--pe-ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(15, 118, 110, 0.08), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(15, 23, 42, 0.04), transparent 50%),
+    var(--pe-surface);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+}
+
+.font-mono-pe {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}

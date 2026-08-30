@@ -1,0 +1,224 @@
+{
+  "kind": "pe_to_filing_lag_priors",
+  "version": 1,
+  "description": "Median days from public primary-endpoint readout to filing milestone (filedAt, acceptance, or sponsor guidance). Default strata used when measured n=0.",
+  "strata": {
+    "oncology:III": {
+      "medianDays": 89,
+      "sampleSize": 4,
+      "source": "measured",
+      "p25Days": 65,
+      "p75Days": 132
+    },
+    "metabolic:III": {
+      "medianDays": 228,
+      "sampleSize": 3,
+      "source": "measured",
+      "p25Days": 167,
+      "p75Days": 271
+    },
+    "default:III": {
+      "medianDays": 365,
+      "sampleSize": 0,
+      "source": "default_prior"
+    },
+    "oncology:II": {
+      "medianDays": 182,
+      "sampleSize": 3,
+      "source": "measured",
+      "p25Days": 121,
+      "p75Days": 192
+    },
+    "dermatology:III": {
+      "medianDays": 25,
+      "sampleSize": 1,
+      "source": "measured",
+      "p25Days": 25,
+      "p75Days": 25
+    },
+    "neurology:III": {
+      "medianDays": 113,
+      "sampleSize": 3,
+      "source": "measured",
+      "p25Days": 96,
+      "p75Days": 142
+    },
+    "cardiology:III": {
+      "medianDays": 144,
+      "sampleSize": 1,
+      "source": "measured",
+      "p25Days": 144,
+      "p75Days": 144
+    },
+    "infectious_disease:III": {
+      "medianDays": 7,
+      "sampleSize": 1,
+      "source": "measured",
+      "p25Days": 7,
+      "p75Days": 7
+    },
+    "rheumatology:III": {
+      "medianDays": 202,
+      "sampleSize": 1,
+      "source": "measured",
+      "p25Days": 202,
+      "p75Days": 202
+    }
+  },
+  "measuredPrograms": [
+    {
+      "programId": "prog_daraxonrasib_pdac",
+      "drugName": "Daraxonrasib",
+      "therapeuticArea": "oncology",
+      "phase": "III",
+      "lagDays": 100.17013888888889,
+      "guidanceProxy": false,
+      "acceptanceProxy": true
+    },
+    {
+      "programId": "prog_retatrutide_obesity",
+      "drugName": "Retatrutide",
+      "therapeuticArea": "metabolic",
+      "phase": "III",
+      "lagDays": 314.49930555555557,
+      "guidanceProxy": true,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_atezolizumab_urothelial",
+      "drugName": "Atezolizumab (Tecentriq)",
+      "therapeuticArea": "oncology",
+      "phase": "II",
+      "lagDays": 59,
+      "guidanceProxy": false,
+      "acceptanceProxy": true
+    },
+    {
+      "programId": "prog_dupilumab_ad",
+      "drugName": "Dupilumab (Dupixent)",
+      "therapeuticArea": "dermatology",
+      "phase": "III",
+      "lagDays": 25,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_entrectinib_ntrk",
+      "drugName": "Entrectinib (Rozlytrek)",
+      "therapeuticArea": "oncology",
+      "phase": "II",
+      "lagDays": 182,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_fingolimod_ms",
+      "drugName": "Fingolimod (Gilenya)",
+      "therapeuticArea": "neurology",
+      "phase": "III",
+      "lagDays": 113,
+      "guidanceProxy": false,
+      "acceptanceProxy": true
+    },
+    {
+      "programId": "prog_inotersen_hattr",
+      "drugName": "Inotersen (Tegsedi)",
+      "therapeuticArea": "neurology",
+      "phase": "III",
+      "lagDays": 171,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_ipilimumab_melanoma",
+      "drugName": "Ipilimumab (Yervoy)",
+      "therapeuticArea": "oncology",
+      "phase": "III",
+      "lagDays": 78,
+      "guidanceProxy": false,
+      "acceptanceProxy": true
+    },
+    {
+      "programId": "prog_mavacamten_hcm",
+      "drugName": "Mavacamten (Camzyos)",
+      "therapeuticArea": "cardiology",
+      "phase": "III",
+      "lagDays": 144,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_nivolumab_melanoma",
+      "drugName": "Nivolumab (Opdivo)",
+      "therapeuticArea": "oncology",
+      "phase": "III",
+      "lagDays": 25,
+      "guidanceProxy": false,
+      "acceptanceProxy": true
+    },
+    {
+      "programId": "prog_ocrelizumab_ms",
+      "drugName": "Ocrelizumab (Ocrevus)",
+      "therapeuticArea": "neurology",
+      "phase": "III",
+      "lagDays": 78,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_odronextamab_fl_crl",
+      "drugName": "Odronextamab (Ordspono)",
+      "therapeuticArea": "oncology",
+      "phase": "III",
+      "lagDays": 228,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_resmetirom_mash",
+      "drugName": "Resmetirom (Rezdiffra)",
+      "therapeuticArea": "metabolic",
+      "phase": "III",
+      "lagDays": 228,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_rp1_melanoma_crl",
+      "drugName": "RP1 (vusolimogene oderparepvec)",
+      "therapeuticArea": "oncology",
+      "phase": "II",
+      "lagDays": 202,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_sofosbuvir_hcv",
+      "drugName": "Sofosbuvir (Sovaldi)",
+      "therapeuticArea": "infectious_disease",
+      "phase": "III",
+      "lagDays": 7,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_tirzepatide_t2d",
+      "drugName": "Tirzepatide (Mounjaro)",
+      "therapeuticArea": "metabolic",
+      "phase": "III",
+      "lagDays": 106,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    },
+    {
+      "programId": "prog_upadacitinib_ra",
+      "drugName": "Upadacitinib (Rinvoq)",
+      "therapeuticArea": "rheumatology",
+      "phase": "III",
+      "lagDays": 202,
+      "guidanceProxy": false,
+      "acceptanceProxy": false
+    }
+  ],
+  "updatedAt": "2026-08-28"
+}

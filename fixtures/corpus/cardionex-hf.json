@@ -1,0 +1,153 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_cardionex",
+    "preferredName": "Cardionex",
+    "modality": "small_molecule",
+    "mechanismIds": ["mech_sgk1"]
+  },
+  "sponsor": {
+    "id": "sponsor_heartline",
+    "name": "Heartline Therapeutics",
+    "cik": "0001000004"
+  },
+  "indication": {
+    "id": "ind_hf",
+    "name": "Heart failure",
+    "therapeuticArea": "cardiology",
+    "efoId": "EFO_0000373"
+  },
+  "program": {
+    "id": "prog_cardionex_hf",
+    "drugAssetId": "drug_cardionex",
+    "indicationId": "ind_hf",
+    "sponsorId": "sponsor_heartline",
+    "name": "Cardionex HF program",
+    "status": "crl"
+  },
+  "trials": [
+    {
+      "id": "trial_nct00000004",
+      "nctId": "NCT00000004",
+      "programId": "prog_cardionex_hf",
+      "phase": "III",
+      "title": "Cardionex in chronic heart failure",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 800,
+      "actualEnrollment": 760,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000004_primary",
+      "trialId": "trial_nct00000004",
+      "endpointId": "ep_mace",
+      "primaryEndpointMet": false,
+      "effectEstimate": 0.04,
+      "confidenceInterval": [-0.02, 0.1],
+      "pValue": 0.18,
+      "provenance": {
+        "sourceUrl": "fixture://corpus/cardionex-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2021-05-01T12:00:00.000Z",
+        "effectiveAt": "2021-05-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:corpus-cardio-001",
+        "exactPassage": "MACE endpoint not met (HR 1.04, p=0.18).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda_cardio_004",
+    "programId": "prog_cardionex_hf",
+    "applicationNumber": "NDA-FIXTURE-004",
+    "applicationType": "NDA",
+    "indicationId": "ind_hf"
+  },
+  "regulatoryAction": {
+    "id": "action_crl_cardio_004",
+    "applicationId": "app_nda_cardio_004",
+    "actionType": "crl",
+    "actionDate": "2022-09-01T15:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://corpus/cardionex-crl",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2022-09-01T15:00:00.000Z",
+      "effectiveAt": "2022-09-01T15:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:corpus-cardio-crl-001",
+      "exactPassage": "FDA issued CRL citing insufficient efficacy evidence.",
+      "locator": "8k#item8.01",
+      "accessClass": "open"
+    }
+  },
+  "documents": [],
+  "mechanisms": [
+    {
+      "id": "mech_arn",
+      "name": "ARNI pathway",
+      "target": "NPR1",
+      "firstInClass": false
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_mace",
+      "trialId": "trial_nct00000004",
+      "name": "CV death / HF hospitalization",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "designations": [
+    {
+      "id": "des_prog_cardionex_hf_fast_track",
+      "programId": "prog_cardionex_hf",
+      "applicationId": "app_nda_cardio_004",
+      "designationType": "fast_track",
+      "grantedAt": "2018-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/cardionex-hf.json#fast_track",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2018-01-01T00:00:00.000Z",
+        "effectiveAt": "2018-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-cardionex-hf.json-0",
+        "exactPassage": "Designation fast_track",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_ind_hf_0",
+      "indicationId": "ind_hf",
+      "drugAssetId": "drug_entresto",
+      "drugName": "Sacubitril/Valsartan",
+      "approvedAt": "2015-07-07T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/drug_entresto",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2015-07-07T00:00:00.000Z",
+        "effectiveAt": "2015-07-07T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-cardionex-hf.json-0",
+        "exactPassage": "Sacubitril/Valsartan approved",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": []
+}

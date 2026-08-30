@@ -1,0 +1,420 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_intismeran_melanoma",
+    "preferredName": "Intismeran autogene",
+    "modality": "mRNA_vaccine",
+    "mechanismIds": [
+      "mech_intismeran_melanoma"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_intismeran_melanoma",
+    "name": "Merck Sharp & Dohme LLC",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_intismeran_melanoma",
+    "name": "Resected high-risk melanoma (adjuvant)",
+    "therapeuticArea": "oncology",
+    "efoId": "MONDO_0005105"
+  },
+  "program": {
+    "id": "prog_intismeran_melanoma",
+    "drugAssetId": "drug_intismeran_melanoma",
+    "indicationId": "ind_intismeran_melanoma",
+    "sponsorId": "sponsor_intismeran_melanoma",
+    "name": "Intismeran autogene — Resected high-risk melanoma (adjuvant)",
+    "status": "active"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_intismeran_melanoma",
+      "name": "Individualized neoantigen mRNA therapy",
+      "target": null,
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct05933577",
+      "nctId": "NCT05933577",
+      "programId": "prog_intismeran_melanoma",
+      "phase": "III",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo- and Active-Comparator-Controlled Clinical Study of Adjuvant V940 (mRNA-4157) Plus Pembrolizumab Versus Adjuvant Placebo Plus Pembrolizumab in Participants With High-Risk Stage II-IV Melanoma (INTerpath-001)",
+      "status": "active",
+      "terminationReason": null,
+      "plannedEnrollment": 1089,
+      "actualEnrollment": 1089,
+      "masking": "triple",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2023-06-27T12:00:00.000Z",
+      "studyStartAt": "2023-07-19T12:00:00.000Z",
+      "primaryCompletionAt": "2029-10-26T12:00:00.000Z",
+      "completionAt": "2030-09-26T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_intismeran_melanoma_primary",
+      "trialId": "trial_nct05933577",
+      "name": "Recurrence-Free Survival (RFS)",
+      "endpointFamily": "EFS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_intismeran_melanoma_primary",
+      "trialId": "trial_nct05933577",
+      "endpointId": "ep_intismeran_melanoma_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2026-08-19T12:00:00.000Z",
+        "effectiveAt": "2026-08-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0b82c79d8524142b0a226ac5",
+        "exactPassage": "Phase 3 INTerpath-001 met primary endpoint of recurrence-free survival (RFS) and key secondary distant metastasis-free survival (DMFS) for intismeran autogene plus pembrolizumab in resected stage IIB-IV melanoma.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_intismeran_melanoma_pending",
+    "programId": "prog_intismeran_melanoma",
+    "applicationNumber": null,
+    "applicationType": "BLA",
+    "indicationId": "ind_intismeran_melanoma",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": null,
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": {
+      "sourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T13:26:05.516Z",
+      "firstPublicAt": "2026-08-19T12:00:00.000Z",
+      "effectiveAt": "2026-08-19T12:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:1dce29fc6dfc8c21111199dc",
+      "exactPassage": "Sponsors will engage with regulators on filing submissions; no public BLA filing date or PDUFA target announced as of Phase 3 topline (2026-08-19).",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": null,
+  "designations": [
+    {
+      "id": "des_intismeran_melanoma_breakthrough_0",
+      "programId": "prog_intismeran_melanoma",
+      "applicationId": null,
+      "designationType": "breakthrough",
+      "grantedAt": "2023-02-22T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.cancernetwork.com/view/fda-grants-breakthrough-designation-to-mrna-vaccine-for-resected-melanoma",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-02-22T12:00:00.000Z",
+        "effectiveAt": "2023-02-22T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:dfbb2ccd991b150b4e19f983",
+        "exactPassage": "breakthrough designation for Intismeran autogene",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_intismeran_melanoma_0_pembrolizumab",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_pembrolizumab",
+      "drugName": "Pembrolizumab",
+      "approvedAt": "2014-09-04T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/retrospective/pembrolizumab-melanoma.json",
+        "sourceSystem": "kg.retrospective",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2014-09-04T00:00:00.000Z",
+        "effectiveAt": "2014-09-04T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bda417137f1df8ca6ce7d6df",
+        "exactPassage": "Retrospective KG: Pembrolizumab (Keytruda) approved 2014-09-04T00:00:00.000Z",
+        "locator": "retrospective#corpus/retrospective/pembrolizumab-melanoma.json",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_1_nivolumab",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_nivolumab",
+      "drugName": "Nivolumab",
+      "approvedAt": "2014-12-22T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/retrospective/nivolumab-melanoma.json",
+        "sourceSystem": "kg.retrospective",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2014-12-22T00:00:00.000Z",
+        "effectiveAt": "2014-12-22T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e3b84342ccc17e76a2d5599b",
+        "exactPassage": "Retrospective KG: Nivolumab (Opdivo) approved 2014-12-22T00:00:00.000Z",
+        "locator": "retrospective#corpus/retrospective/nivolumab-melanoma.json",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_2_ipilimumab",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_ipilimumab",
+      "drugName": "Ipilimumab",
+      "approvedAt": "2011-03-25T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/retrospective/ipilimumab-melanoma.json",
+        "sourceSystem": "kg.retrospective",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2011-03-25T00:00:00.000Z",
+        "effectiveAt": "2011-03-25T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3f5a202c19d131f9eddfdfe3",
+        "exactPassage": "Retrospective KG: Ipilimumab (Yervoy) approved 2011-03-25T00:00:00.000Z",
+        "locator": "retrospective#corpus/retrospective/ipilimumab-melanoma.json",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_3_qs_21",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_qs_21",
+      "drugName": "QS-21",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005105",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-07-19T12:00:00.000Z",
+        "effectiveAt": "2023-07-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2cd993bc9d2789a4cf17db87",
+        "exactPassage": "Approved / clinical candidate in indication: QS-21",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_4_trastuzumab_deruxtecan",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_trastuzumab_deruxtecan",
+      "drugName": "TRASTUZUMAB DERUXTECAN",
+      "approvedAt": "2019-12-20T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/761139s000lbl.pdf",
+        "sourceSystem": "enrichment_override",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2019-12-20T12:00:00.000Z",
+        "effectiveAt": "2019-12-20T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:57113243a61aa3ab58cd1599",
+        "exactPassage": "Curated override: Fam-trastuzumab deruxtecan-nxki (Enhertu) approved 2019-12-20T12:00:00.000Z",
+        "locator": "override#BLA761139",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_5_troculeucel",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_troculeucel",
+      "drugName": "TROCULEUCEL",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005105",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-07-19T12:00:00.000Z",
+        "effectiveAt": "2023-07-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e30f7a622edeb501da5183ef",
+        "exactPassage": "Approved / clinical candidate in indication: TROCULEUCEL",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_6_davanat",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_davanat",
+      "drugName": "DAVANAT",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005105",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-07-19T12:00:00.000Z",
+        "effectiveAt": "2023-07-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d9ac9c31886e1ccfd7f8a769",
+        "exactPassage": "Approved / clinical candidate in indication: DAVANAT",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_7_oxaliplatin",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_oxaliplatin",
+      "drugName": "OXALIPLATIN",
+      "approvedAt": "2009-08-07T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2009-08-07T12:00:00.000Z",
+        "effectiveAt": "2009-08-07T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e472ddf7ab4d5800bc3c992a",
+        "exactPassage": "Orange Book: OXALIPLATIN (appl 078810) approval 2009-08-07T12:00:00.000Z",
+        "locator": "orangebook#078810",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_8_pd_360324",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_pd_360324",
+      "drugName": "PD-360324",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005105",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-07-19T12:00:00.000Z",
+        "effectiveAt": "2023-07-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3575827dc13c6878a1900ff6",
+        "exactPassage": "Approved / clinical candidate in indication: PD-360324",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_9_palbociclib",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_palbociclib",
+      "drugName": "PALBOCICLIB",
+      "approvedAt": "2024-06-05T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2024-06-05T12:00:00.000Z",
+        "effectiveAt": "2024-06-05T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e8d48765c63f899268918137",
+        "exactPassage": "Orange Book: PALBOCICLIB (appl 215570) approval 2024-06-05T12:00:00.000Z",
+        "locator": "orangebook#215570",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_10_aluminum_hydroxide",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_aluminum_hydroxide",
+      "drugName": "ALUMINUM HYDROXIDE",
+      "approvedAt": "1987-11-27T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "1987-11-27T12:00:00.000Z",
+        "effectiveAt": "1987-11-27T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2f226f5d9edc3fda12d077f4",
+        "exactPassage": "Orange Book: ALUMINUM HYDROXIDE AND MAGNESIUM TRISILICATE (appl 089449) approval 1987-11-27T12:00:00.000Z",
+        "locator": "orangebook#089449",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_intismeran_melanoma_11_fludarabine_phosphate",
+      "indicationId": "ind_intismeran_melanoma",
+      "drugAssetId": "drug_comp_fludarabine_phosphate",
+      "drugName": "FLUDARABINE PHOSPHATE",
+      "approvedAt": "1991-04-18T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "1991-04-18T12:00:00.000Z",
+        "effectiveAt": "1991-04-18T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:22a4608e809711a40e029936",
+        "exactPassage": "Orange Book: FLUDARA (appl 020038) approval 1991-04-18T12:00:00.000Z",
+        "locator": "orangebook#020038",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_intismeran_melanoma_ct",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo- and Active-Comparator-Controlled Clinical Study of Adjuvant V940 (mRNA-4157) Plus Pembrolizumab Versus Adjuvant Placebo Plus Pembrolizumab in Participants With High-Risk Stage II-IV Melanoma (INTerpath-001)",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05933577",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2023-07-19T12:00:00.000Z",
+        "effectiveAt": "2023-07-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7e29ae0521b35bc711312f18",
+        "exactPassage": "A Phase 3, Randomized, Double-Blind, Placebo- and Active-Comparator-Controlled Clinical Study of Adjuvant V940 (mRNA-4157) Plus Pembrolizumab Versus Adjuvant Placebo Plus Pembrolizumab in Participants With High-Risk Stage II-IV Melanoma (INTerpath-001)",
+        "locator": "NCT05933577",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_intismeran_melanoma_result_press",
+      "title": "Intismeran autogene primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2026-08-19T12:00:00.000Z",
+        "effectiveAt": "2026-08-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0b82c79d8524142b0a226ac5",
+        "exactPassage": "Phase 3 INTerpath-001 met primary endpoint of recurrence-free survival (RFS) and key secondary distant metastasis-free survival (DMFS) for intismeran autogene plus pembrolizumab in resected stage IIB-IV melanoma.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_intismeran_melanoma_reg_clock",
+      "title": "Intismeran autogene regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:05.516Z",
+        "firstPublicAt": "2026-08-19T12:00:00.000Z",
+        "effectiveAt": "2026-08-19T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:1dce29fc6dfc8c21111199dc",
+        "exactPassage": "Sponsors will engage with regulators on filing submissions; no public BLA filing date or PDUFA target announced as of Phase 3 topline (2026-08-19).",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

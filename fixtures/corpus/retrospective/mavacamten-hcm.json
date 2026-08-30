@@ -1,0 +1,247 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_mavacamten_hcm",
+    "preferredName": "Mavacamten (Camzyos)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_mavacamten_hcm"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_mavacamten_hcm",
+    "name": "BMS/MyoKardia",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_mavacamten_hcm",
+    "name": "Obstructive HCM",
+    "therapeuticArea": "cardiology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_mavacamten_hcm",
+    "drugAssetId": "drug_mavacamten_hcm",
+    "indicationId": "ind_mavacamten_hcm",
+    "sponsorId": "sponsor_mavacamten_hcm",
+    "name": "Mavacamten (Camzyos) — Obstructive HCM",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_mavacamten_hcm",
+      "name": "Cardiac myosin inhibition",
+      "target": "MYH7",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03442764",
+      "nctId": "NCT03442764",
+      "programId": "prog_mavacamten_hcm",
+      "phase": "III",
+      "title": "EXPLORER-HCM mavacamten",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 251,
+      "actualEnrollment": 251,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2020-08-01T12:00:00.000Z",
+      "studyStartAt": "2020-08-01T12:00:00.000Z",
+      "primaryCompletionAt": "2022-04-28T12:00:00.000Z",
+      "completionAt": "2022-04-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_mavacamten_hcm_primary",
+      "trialId": "trial_nct03442764",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_mavacamten_hcm_primary",
+      "trialId": "trial_nct03442764",
+      "endpointId": "ep_mavacamten_hcm_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03442764",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-08-01T00:00:00.000Z",
+        "effectiveAt": "2020-08-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f956218f1140a775e19c9a03",
+        "exactPassage": "EXPLORER-HCM primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda214998",
+    "programId": "prog_mavacamten_hcm",
+    "applicationNumber": "NDA214998",
+    "applicationType": "NDA",
+    "indicationId": "ind_mavacamten_hcm",
+    "filedAt": "2020-12-23T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2022-04-28T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://ir.cytokinetics.com/news-releases/news-release-details/cytokinetics-announces-submission-new-drug-application-us-fda",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:40.746Z",
+      "firstPublicAt": "2020-12-23T00:00:00.000Z",
+      "effectiveAt": "2020-12-23T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:16754ebcae30b56a857fc868",
+      "exactPassage": "Cytokinetics submitted mavacamten NDA Dec 23 2020; FDA approval Apr 28 2022.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_mavacamten_hcm_approval",
+    "applicationId": "app_nda214998",
+    "actionType": "approval",
+    "actionDate": "2022-04-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT03442764",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:40.746Z",
+      "firstPublicAt": "2022-04-28T00:00:00.000Z",
+      "effectiveAt": "2022-04-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:cef5aac5b294c22aa208247a",
+      "exactPassage": "FDA approval date 2022-04-28T00:00:00.000Z for Mavacamten (Camzyos)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_mavacamten_hcm_orphan_0",
+      "programId": "prog_mavacamten_hcm",
+      "applicationId": "app_nda214998",
+      "designationType": "orphan",
+      "grantedAt": "2016-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2016-01-01T00:00:00.000Z",
+        "effectiveAt": "2016-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:79ab2d88584879b47b9b6e6f",
+        "exactPassage": "orphan designation for Mavacamten (Camzyos)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_mavacamten_hcm_breakthrough_1",
+      "programId": "prog_mavacamten_hcm",
+      "applicationId": "app_nda214998",
+      "designationType": "breakthrough",
+      "grantedAt": "2020-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-01-01T00:00:00.000Z",
+        "effectiveAt": "2020-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c7b223db88fc010196421583",
+        "exactPassage": "breakthrough designation for Mavacamten (Camzyos)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_mavacamten_hcm_0_disopyramide",
+      "indicationId": "ind_mavacamten_hcm",
+      "drugAssetId": "drug_comp_disopyramide",
+      "drugName": "Disopyramide",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03442764",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-08-01T12:00:00.000Z",
+        "effectiveAt": "2020-08-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:5e61775fed5477bb7e6ebb80",
+        "exactPassage": "Approved / clinical candidate in indication: Disopyramide",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_mavacamten_hcm_ct",
+      "title": "EXPLORER-HCM mavacamten",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03442764",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-08-01T12:00:00.000Z",
+        "effectiveAt": "2020-08-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f594ef39c3e6c55d260b2e96",
+        "exactPassage": "EXPLORER-HCM mavacamten",
+        "locator": "NCT03442764",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_mavacamten_hcm_result_press",
+      "title": "Mavacamten (Camzyos) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03442764",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-08-01T00:00:00.000Z",
+        "effectiveAt": "2020-08-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f956218f1140a775e19c9a03",
+        "exactPassage": "EXPLORER-HCM primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_mavacamten_hcm_reg_clock",
+      "title": "Mavacamten (Camzyos) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://ir.cytokinetics.com/news-releases/news-release-details/cytokinetics-announces-submission-new-drug-application-us-fda",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.746Z",
+        "firstPublicAt": "2020-12-23T00:00:00.000Z",
+        "effectiveAt": "2020-12-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:16754ebcae30b56a857fc868",
+        "exactPassage": "Cytokinetics submitted mavacamten NDA Dec 23 2020; FDA approval Apr 28 2022.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

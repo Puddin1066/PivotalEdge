@@ -1,0 +1,19 @@
+{
+  "kind": "orderbook_snapshot",
+  "orderBook": {
+    "id": "ob_synbetalib_yes_fixture",
+    "marketId": "pm_poly_syn_002",
+    "capturedAt": "2022-05-19T12:00:00.000Z",
+    "bids": [
+      { "price": 0.42, "size": 900 },
+      { "price": 0.41, "size": 700 }
+    ],
+    "asks": [
+      { "price": 0.46, "size": 800 },
+      { "price": 0.47, "size": 500 }
+    ],
+    "midpoint": 0.44,
+    "bestBid": 0.42,
+    "bestAsk": 0.46
+  }
+}

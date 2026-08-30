@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_resmetirom_mash",
+    "preferredName": "Resmetirom (Rezdiffra)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_resmetirom_mash"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_resmetirom_mash",
+    "name": "Madrigal",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_resmetirom_mash",
+    "name": "MASH",
+    "therapeuticArea": "metabolic",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_resmetirom_mash",
+    "drugAssetId": "drug_resmetirom_mash",
+    "indicationId": "ind_resmetirom_mash",
+    "sponsorId": "sponsor_resmetirom_mash",
+    "name": "Resmetirom (Rezdiffra) — MASH",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_resmetirom_mash",
+      "name": "THR-β agonist",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03900429",
+      "nctId": "NCT03900429",
+      "programId": "prog_resmetirom_mash",
+      "phase": "III",
+      "title": "MAESTRO-NASH",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 966,
+      "actualEnrollment": 966,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2022-12-01T12:00:00.000Z",
+      "studyStartAt": "2022-12-01T12:00:00.000Z",
+      "primaryCompletionAt": "2024-03-14T12:00:00.000Z",
+      "completionAt": "2024-03-14T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_resmetirom_mash_primary",
+      "trialId": "trial_nct03900429",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_resmetirom_mash_primary",
+      "trialId": "trial_nct03900429",
+      "endpointId": "ep_resmetirom_mash_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.980Z",
+        "firstPublicAt": "2022-12-01T00:00:00.000Z",
+        "effectiveAt": "2022-12-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:60eba409aeb5a5126ec39717",
+        "exactPassage": "MAESTRO-NASH primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda216993",
+    "programId": "prog_resmetirom_mash",
+    "applicationNumber": "NDA216993",
+    "applicationType": "NDA",
+    "indicationId": "ind_resmetirom_mash",
+    "filedAt": "2023-07-17T00:00:00.000Z",
+    "acceptedAt": "2023-09-13T00:00:00.000Z",
+    "pdufaDate": "2024-03-14T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://ir.madrigalpharma.com/news-releases/news-release-details/madrigal-pharmaceuticals-completes-submission-new-drug",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:42.980Z",
+      "firstPublicAt": "2023-07-17T00:00:00.000Z",
+      "effectiveAt": "2023-07-17T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:4d19ab256930c0de86b371f8",
+      "exactPassage": "Madrigal completed resmetirom NDA rolling submission Jul 17 2023; FDA priority review accepted Sep 13 2023; accelerated approval Mar 14 2024.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_resmetirom_mash_approval",
+    "applicationId": "app_nda216993",
+    "actionType": "approval",
+    "actionDate": "2024-03-14T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:42.980Z",
+      "firstPublicAt": "2024-03-14T00:00:00.000Z",
+      "effectiveAt": "2024-03-14T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:846ebbae2a56b13428bd4afa",
+      "exactPassage": "FDA approval date 2024-03-14T00:00:00.000Z for Resmetirom (Rezdiffra)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_resmetirom_mash_ct",
+      "title": "MAESTRO-NASH",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03900429",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:42.980Z",
+        "firstPublicAt": "2022-12-01T12:00:00.000Z",
+        "effectiveAt": "2022-12-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:b61b40602817aa76caa28963",
+        "exactPassage": "MAESTRO-NASH",
+        "locator": "NCT03900429",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_resmetirom_mash_result_press",
+      "title": "Resmetirom (Rezdiffra) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.980Z",
+        "firstPublicAt": "2022-12-01T00:00:00.000Z",
+        "effectiveAt": "2022-12-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:60eba409aeb5a5126ec39717",
+        "exactPassage": "MAESTRO-NASH primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_resmetirom_mash_reg_clock",
+      "title": "Resmetirom (Rezdiffra) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://ir.madrigalpharma.com/news-releases/news-release-details/madrigal-pharmaceuticals-completes-submission-new-drug",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.980Z",
+        "firstPublicAt": "2023-07-17T00:00:00.000Z",
+        "effectiveAt": "2023-07-17T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4d19ab256930c0de86b371f8",
+        "exactPassage": "Madrigal completed resmetirom NDA rolling submission Jul 17 2023; FDA priority review accepted Sep 13 2023; accelerated approval Mar 14 2024.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_upadacitinib_ra",
+    "preferredName": "Upadacitinib (Rinvoq)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_upadacitinib_ra"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_upadacitinib_ra",
+    "name": "AbbVie",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_upadacitinib_ra",
+    "name": "Rheumatoid arthritis",
+    "therapeuticArea": "rheumatology",
+    "efoId": "EFO_0000685"
+  },
+  "program": {
+    "id": "prog_upadacitinib_ra",
+    "drugAssetId": "drug_upadacitinib_ra",
+    "indicationId": "ind_upadacitinib_ra",
+    "sponsorId": "sponsor_upadacitinib_ra",
+    "name": "Upadacitinib (Rinvoq) — Rheumatoid arthritis",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_upadacitinib_ra",
+      "name": "JAK1 inhibition",
+      "target": "JAK1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct02629159",
+      "nctId": "NCT02629159",
+      "programId": "prog_upadacitinib_ra",
+      "phase": "III",
+      "title": "SELECT-COMPARE upadacitinib RA",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 1629,
+      "actualEnrollment": 1629,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2018-06-01T12:00:00.000Z",
+      "studyStartAt": "2018-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2019-08-16T12:00:00.000Z",
+      "completionAt": "2019-08-16T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_upadacitinib_ra_primary",
+      "trialId": "trial_nct02629159",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_upadacitinib_ra_primary",
+      "trialId": "trial_nct02629159",
+      "endpointId": "ep_upadacitinib_ra_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02629159",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-06-01T00:00:00.000Z",
+        "effectiveAt": "2018-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d9ed0b9c726c02952b942b87",
+        "exactPassage": "SELECT-COMPARE primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda211675",
+    "programId": "prog_upadacitinib_ra",
+    "applicationNumber": "NDA211675",
+    "applicationType": "NDA",
+    "indicationId": "ind_upadacitinib_ra",
+    "filedAt": "2018-12-20T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2019-08-16T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://news.abbvie.com/news/press-releases/abbvie-submits-new-drug-application-fda-upadacitinib-rheumatoid-arthritis.htm",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:40.565Z",
+      "firstPublicAt": "2018-12-20T00:00:00.000Z",
+      "effectiveAt": "2018-12-20T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:3771f6587e1d0069fa1f8fa3",
+      "exactPassage": "AbbVie submitted upadacitinib NDA Dec 20 2018; FDA approval Aug 16 2019.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_upadacitinib_ra_approval",
+    "applicationId": "app_nda211675",
+    "actionType": "approval",
+    "actionDate": "2019-08-16T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT02629159",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:40.565Z",
+      "firstPublicAt": "2019-08-16T00:00:00.000Z",
+      "effectiveAt": "2019-08-16T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:0231bac5f94dfff260783f9a",
+      "exactPassage": "FDA approval date 2019-08-16T00:00:00.000Z for Upadacitinib (Rinvoq)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_upadacitinib_ra_0_adalimumab",
+      "indicationId": "ind_upadacitinib_ra",
+      "drugAssetId": "drug_comp_adalimumab",
+      "drugName": "Adalimumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000685",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-06-01T12:00:00.000Z",
+        "effectiveAt": "2018-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ee0302c968d6b688784ed55e",
+        "exactPassage": "Approved / clinical candidate in indication: Adalimumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_upadacitinib_ra_1_methotrexate",
+      "indicationId": "ind_upadacitinib_ra",
+      "drugAssetId": "drug_comp_methotrexate",
+      "drugName": "Methotrexate",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000685",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-06-01T12:00:00.000Z",
+        "effectiveAt": "2018-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4c369e458edb5489fc1a0848",
+        "exactPassage": "Approved / clinical candidate in indication: Methotrexate",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_upadacitinib_ra_ct",
+      "title": "SELECT-COMPARE upadacitinib RA",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02629159",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-06-01T12:00:00.000Z",
+        "effectiveAt": "2018-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f072050c5c317de64f52a2e8",
+        "exactPassage": "SELECT-COMPARE upadacitinib RA",
+        "locator": "NCT02629159",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_upadacitinib_ra_result_press",
+      "title": "Upadacitinib (Rinvoq) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02629159",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-06-01T00:00:00.000Z",
+        "effectiveAt": "2018-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d9ed0b9c726c02952b942b87",
+        "exactPassage": "SELECT-COMPARE primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_upadacitinib_ra_reg_clock",
+      "title": "Upadacitinib (Rinvoq) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://news.abbvie.com/news/press-releases/abbvie-submits-new-drug-application-fda-upadacitinib-rheumatoid-arthritis.htm",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.565Z",
+        "firstPublicAt": "2018-12-20T00:00:00.000Z",
+        "effectiveAt": "2018-12-20T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3771f6587e1d0069fa1f8fa3",
+        "exactPassage": "AbbVie submitted upadacitinib NDA Dec 20 2018; FDA approval Aug 16 2019.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

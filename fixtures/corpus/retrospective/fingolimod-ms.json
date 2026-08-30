@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_fingolimod_ms",
+    "preferredName": "Fingolimod (Gilenya)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_fingolimod_ms"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_fingolimod_ms",
+    "name": "Novartis",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_fingolimod_ms",
+    "name": "Multiple sclerosis",
+    "therapeuticArea": "neurology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_fingolimod_ms",
+    "drugAssetId": "drug_fingolimod_ms",
+    "indicationId": "ind_fingolimod_ms",
+    "sponsorId": "sponsor_fingolimod_ms",
+    "name": "Fingolimod (Gilenya) — Multiple sclerosis",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_fingolimod_ms",
+      "name": "S1P modulator",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00355134",
+      "nctId": "NCT00355134",
+      "programId": "prog_fingolimod_ms",
+      "phase": "III",
+      "title": "FREEDOMS fingolimod",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 1272,
+      "actualEnrollment": 1272,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2009-09-01T12:00:00.000Z",
+      "studyStartAt": "2009-09-01T12:00:00.000Z",
+      "primaryCompletionAt": "2010-09-21T12:00:00.000Z",
+      "completionAt": "2010-09-21T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_fingolimod_ms_primary",
+      "trialId": "trial_nct00355134",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_fingolimod_ms_primary",
+      "trialId": "trial_nct00355134",
+      "endpointId": "ep_fingolimod_ms_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.853Z",
+        "firstPublicAt": "2009-09-01T00:00:00.000Z",
+        "effectiveAt": "2009-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a7598f651b8827fcf40ac225",
+        "exactPassage": "FREEDOMS primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda022527",
+    "programId": "prog_fingolimod_ms",
+    "applicationNumber": "NDA022527",
+    "applicationType": "NDA",
+    "indicationId": "ind_fingolimod_ms",
+    "filedAt": null,
+    "acceptedAt": "2009-12-23T00:00:00.000Z",
+    "pdufaDate": "2010-09-21T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.novartis.com/news/media-releases/novartis-drug-fingolimod-receives-fda-priority-review-designation-first-line-relapsing-remitting-multiple-sclerosis",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:41.853Z",
+      "firstPublicAt": "2009-12-23T00:00:00.000Z",
+      "effectiveAt": "2009-12-23T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:2c4d21b146bbacdecaccecfa",
+      "exactPassage": "FDA accepted fingolimod NDA for priority review Dec 2009; approval Sep 21 2010.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_fingolimod_ms_approval",
+    "applicationId": "app_nda022527",
+    "actionType": "approval",
+    "actionDate": "2010-09-21T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.853Z",
+      "firstPublicAt": "2010-09-21T00:00:00.000Z",
+      "effectiveAt": "2010-09-21T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:caa81b14304b2f05c741683c",
+      "exactPassage": "FDA approval date 2010-09-21T00:00:00.000Z for Fingolimod (Gilenya)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_fingolimod_ms_ct",
+      "title": "FREEDOMS fingolimod",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00355134",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.853Z",
+        "firstPublicAt": "2009-09-01T12:00:00.000Z",
+        "effectiveAt": "2009-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:1af9284862f6987d92da05d9",
+        "exactPassage": "FREEDOMS fingolimod",
+        "locator": "NCT00355134",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_fingolimod_ms_result_press",
+      "title": "Fingolimod (Gilenya) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.853Z",
+        "firstPublicAt": "2009-09-01T00:00:00.000Z",
+        "effectiveAt": "2009-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a7598f651b8827fcf40ac225",
+        "exactPassage": "FREEDOMS primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_fingolimod_ms_reg_clock",
+      "title": "Fingolimod (Gilenya) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.novartis.com/news/media-releases/novartis-drug-fingolimod-receives-fda-priority-review-designation-first-line-relapsing-remitting-multiple-sclerosis",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.853Z",
+        "firstPublicAt": "2009-12-23T00:00:00.000Z",
+        "effectiveAt": "2009-12-23T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2c4d21b146bbacdecaccecfa",
+        "exactPassage": "FDA accepted fingolimod NDA for priority review Dec 2009; approval Sep 21 2010.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

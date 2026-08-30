@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_ocrelizumab_ms",
+    "preferredName": "Ocrelizumab (Ocrevus)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_ocrelizumab_ms"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_ocrelizumab_ms",
+    "name": "Genentech",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_ocrelizumab_ms",
+    "name": "Multiple sclerosis",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0003885"
+  },
+  "program": {
+    "id": "prog_ocrelizumab_ms",
+    "drugAssetId": "drug_ocrelizumab_ms",
+    "indicationId": "ind_ocrelizumab_ms",
+    "sponsorId": "sponsor_ocrelizumab_ms",
+    "name": "Ocrelizumab (Ocrevus) — Multiple sclerosis",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_ocrelizumab_ms",
+      "name": "CD20 B-cell depletion",
+      "target": "MS4A1",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01247324",
+      "nctId": "NCT01247324",
+      "programId": "prog_ocrelizumab_ms",
+      "phase": "III",
+      "title": "OPERA ocrelizumab MS",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 821,
+      "actualEnrollment": 821,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2015-10-01T12:00:00.000Z",
+      "studyStartAt": "2015-10-01T12:00:00.000Z",
+      "primaryCompletionAt": "2017-03-28T12:00:00.000Z",
+      "completionAt": "2017-03-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_ocrelizumab_ms_primary",
+      "trialId": "trial_nct01247324",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_ocrelizumab_ms_primary",
+      "trialId": "trial_nct01247324",
+      "endpointId": "ep_ocrelizumab_ms_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01247324",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2015-10-01T00:00:00.000Z",
+        "effectiveAt": "2015-10-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9ad7bea467b69c6c4a1aa583",
+        "exactPassage": "OPERA primary endpoint met in RMS.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761053",
+    "programId": "prog_ocrelizumab_ms",
+    "applicationNumber": "BLA761053",
+    "applicationType": "BLA",
+    "indicationId": "ind_ocrelizumab_ms",
+    "filedAt": "2015-12-18T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2017-03-28T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.gene.com/media/press-releases/14807/2015-12-18/genentech-submits-biologics-license-application-to",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:38.751Z",
+      "firstPublicAt": "2015-12-18T00:00:00.000Z",
+      "effectiveAt": "2015-12-18T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:a75e96d46c7ddaac692873ee",
+      "exactPassage": "Genentech submitted ocrelizumab BLA Dec 18 2015; FDA approval Mar 28 2017.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_ocrelizumab_ms_approval",
+    "applicationId": "app_bla761053",
+    "actionType": "approval",
+    "actionDate": "2017-03-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01247324",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:38.751Z",
+      "firstPublicAt": "2017-03-28T00:00:00.000Z",
+      "effectiveAt": "2017-03-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:1e3bb07eb99635ee4a095305",
+      "exactPassage": "FDA approval date 2017-03-28T00:00:00.000Z for Ocrelizumab (Ocrevus)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_ocrelizumab_ms_breakthrough_0",
+      "programId": "prog_ocrelizumab_ms",
+      "applicationId": "app_bla761053",
+      "designationType": "breakthrough",
+      "grantedAt": "2016-02-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2016-02-01T00:00:00.000Z",
+        "effectiveAt": "2016-02-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:036e29b50fa9976bcf56595d",
+        "exactPassage": "breakthrough designation for Ocrelizumab (Ocrevus)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_ocrelizumab_ms_0_interferon_beta",
+      "indicationId": "ind_ocrelizumab_ms",
+      "drugAssetId": "drug_comp_interferon_beta",
+      "drugName": "Interferon beta",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0003885",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2015-10-01T12:00:00.000Z",
+        "effectiveAt": "2015-10-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f7893ea49c885149acffc8c1",
+        "exactPassage": "Approved / clinical candidate in indication: Interferon beta",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_ocrelizumab_ms_ct",
+      "title": "OPERA ocrelizumab MS",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01247324",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2015-10-01T12:00:00.000Z",
+        "effectiveAt": "2015-10-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9a9e4d7266ddb5b5581262db",
+        "exactPassage": "OPERA ocrelizumab MS",
+        "locator": "NCT01247324",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_ocrelizumab_ms_result_press",
+      "title": "Ocrelizumab (Ocrevus) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01247324",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2015-10-01T00:00:00.000Z",
+        "effectiveAt": "2015-10-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:9ad7bea467b69c6c4a1aa583",
+        "exactPassage": "OPERA primary endpoint met in RMS.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_ocrelizumab_ms_reg_clock",
+      "title": "Ocrelizumab (Ocrevus) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.gene.com/media/press-releases/14807/2015-12-18/genentech-submits-biologics-license-application-to",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.751Z",
+        "firstPublicAt": "2015-12-18T00:00:00.000Z",
+        "effectiveAt": "2015-12-18T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a75e96d46c7ddaac692873ee",
+        "exactPassage": "Genentech submitted ocrelizumab BLA Dec 18 2015; FDA approval Mar 28 2017.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

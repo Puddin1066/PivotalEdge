@@ -1,0 +1,160 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_bitopertin_schiz_fail",
+    "preferredName": "Bitopertin",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_bitopertin_schiz_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_bitopertin_schiz_fail",
+    "name": "Roche",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_bitopertin_schiz_fail",
+    "name": "Schizophrenia negative symptoms",
+    "therapeuticArea": "neurology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_bitopertin_schiz_fail",
+    "drugAssetId": "drug_bitopertin_schiz_fail",
+    "indicationId": "ind_bitopertin_schiz_fail",
+    "sponsorId": "sponsor_bitopertin_schiz_fail",
+    "name": "Bitopertin — Schizophrenia negative symptoms",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_bitopertin_schiz_fail",
+      "name": "GlyT1 inhibition",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01235520",
+      "nctId": "NCT01235520",
+      "programId": "prog_bitopertin_schiz_fail",
+      "phase": "III",
+      "title": "Bitopertin schizophrenia",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 600,
+      "actualEnrollment": 600,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2014-01-21T12:00:00.000Z",
+      "studyStartAt": "2014-01-21T12:00:00.000Z",
+      "primaryCompletionAt": "2014-01-28T12:00:00.000Z",
+      "completionAt": "2014-01-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_bitopertin_schiz_fail_primary",
+      "trialId": "trial_nct01235520",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_bitopertin_schiz_fail_primary",
+      "trialId": "trial_nct01235520",
+      "endpointId": "ep_bitopertin_schiz_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.177Z",
+        "firstPublicAt": "2014-01-21T00:00:00.000Z",
+        "effectiveAt": "2014-01-21T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ad3318f239a885f7a165ab21",
+        "exactPassage": "Phase 3 missed primary endpoints.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bitopertin_schiz_fail_pending",
+    "programId": "prog_bitopertin_schiz_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_bitopertin_schiz_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2014-01-28T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_bitopertin_schiz_fail_withdrawal",
+    "applicationId": "app_bitopertin_schiz_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2014-01-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.177Z",
+      "firstPublicAt": "2014-01-28T00:00:00.000Z",
+      "effectiveAt": "2014-01-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:8abcd853e33496adf2bad7cf",
+      "exactPassage": "Program discontinuation disclosure 2014-01-28T00:00:00.000Z for Bitopertin",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_bitopertin_schiz_fail_ct",
+      "title": "Bitopertin schizophrenia",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01235520",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.177Z",
+        "firstPublicAt": "2014-01-21T12:00:00.000Z",
+        "effectiveAt": "2014-01-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e1fad2bd23e1fecff4670111",
+        "exactPassage": "Bitopertin schizophrenia",
+        "locator": "NCT01235520",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_bitopertin_schiz_fail_result_press",
+      "title": "Bitopertin primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.177Z",
+        "firstPublicAt": "2014-01-21T00:00:00.000Z",
+        "effectiveAt": "2014-01-21T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ad3318f239a885f7a165ab21",
+        "exactPassage": "Phase 3 missed primary endpoints.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_aducanumab_ad",
+    "preferredName": "Aducanumab (Aduhelm)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_aducanumab_ad"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_aducanumab_ad",
+    "name": "Biogen",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_aducanumab_ad",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0000249"
+  },
+  "program": {
+    "id": "prog_aducanumab_ad",
+    "drugAssetId": "drug_aducanumab_ad",
+    "indicationId": "ind_aducanumab_ad",
+    "sponsorId": "sponsor_aducanumab_ad",
+    "name": "Aducanumab (Aduhelm) — Alzheimer disease",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_aducanumab_ad",
+      "name": "Amyloid-beta clearance",
+      "target": "APP",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct02477800",
+      "nctId": "NCT02477800",
+      "programId": "prog_aducanumab_ad",
+      "phase": "III",
+      "title": "EMERGE/ENGAGE aducanumab Alzheimer",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 1600,
+      "actualEnrollment": 1600,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2019-03-21T12:00:00.000Z",
+      "studyStartAt": "2019-03-21T12:00:00.000Z",
+      "primaryCompletionAt": "2021-06-07T12:00:00.000Z",
+      "completionAt": "2021-06-07T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_aducanumab_ad_primary",
+      "trialId": "trial_nct02477800",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_aducanumab_ad_primary",
+      "trialId": "trial_nct02477800",
+      "endpointId": "ep_aducanumab_ad_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://investors.biogen.com/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2019-03-21T00:00:00.000Z",
+        "effectiveAt": "2019-03-21T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bbda950a6c0252561a8c9d4c",
+        "exactPassage": "ENGAGE missed primary; EMERGE mixed — controversial package.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761178",
+    "programId": "prog_aducanumab_ad",
+    "applicationNumber": "BLA761178",
+    "applicationType": "BLA",
+    "indicationId": "ind_aducanumab_ad",
+    "filedAt": "2020-07-07T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2021-06-07T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://investors.biogen.com/news-releases/news-release-details/biogen-completes-submission-biologics-license-application-us-fda",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:40.249Z",
+      "firstPublicAt": "2020-07-07T00:00:00.000Z",
+      "effectiveAt": "2020-07-07T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:7bd101302a57304c9d7a8fa2",
+      "exactPassage": "Biogen submitted aducanumab BLA Jul 7 2020; accelerated approval Jun 7 2021.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_aducanumab_ad_approval",
+    "applicationId": "app_bla761178",
+    "actionType": "approval",
+    "actionDate": "2021-06-07T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://investors.biogen.com/",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:40.249Z",
+      "firstPublicAt": "2021-06-07T00:00:00.000Z",
+      "effectiveAt": "2021-06-07T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:90366fcc501fbc97dad72912",
+      "exactPassage": "FDA approval date 2021-06-07T00:00:00.000Z for Aducanumab (Aduhelm)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_aducanumab_ad_fast_track_0",
+      "programId": "prog_aducanumab_ad",
+      "applicationId": "app_bla761178",
+      "designationType": "fast_track",
+      "grantedAt": "2016-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2016-01-01T00:00:00.000Z",
+        "effectiveAt": "2016-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7fd2db8fa1b0e812bbc10116",
+        "exactPassage": "fast_track designation for Aducanumab (Aduhelm)",
+        "locator": "designation#fast_track",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_aducanumab_ad_0_donepezil",
+      "indicationId": "ind_aducanumab_ad",
+      "drugAssetId": "drug_comp_donepezil",
+      "drugName": "Donepezil",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000249",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2019-03-21T12:00:00.000Z",
+        "effectiveAt": "2019-03-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:534d628b834d2bfe4168c8af",
+        "exactPassage": "Approved / clinical candidate in indication: Donepezil",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_aducanumab_ad_ct",
+      "title": "EMERGE/ENGAGE aducanumab Alzheimer",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02477800",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2019-03-21T12:00:00.000Z",
+        "effectiveAt": "2019-03-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:82edeeff8be1291bddcd0825",
+        "exactPassage": "EMERGE/ENGAGE aducanumab Alzheimer",
+        "locator": "NCT02477800",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_aducanumab_ad_result_press",
+      "title": "Aducanumab (Aduhelm) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investors.biogen.com/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2019-03-21T00:00:00.000Z",
+        "effectiveAt": "2019-03-21T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bbda950a6c0252561a8c9d4c",
+        "exactPassage": "ENGAGE missed primary; EMERGE mixed — controversial package.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_aducanumab_ad_reg_clock",
+      "title": "Aducanumab (Aduhelm) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investors.biogen.com/news-releases/news-release-details/biogen-completes-submission-biologics-license-application-us-fda",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.249Z",
+        "firstPublicAt": "2020-07-07T00:00:00.000Z",
+        "effectiveAt": "2020-07-07T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7bd101302a57304c9d7a8fa2",
+        "exactPassage": "Biogen submitted aducanumab BLA Jul 7 2020; accelerated approval Jun 7 2021.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

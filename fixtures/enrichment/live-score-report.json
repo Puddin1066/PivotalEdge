@@ -1,0 +1,144 @@
+{
+  "kind": "live_kg_score_report",
+  "at": "2026-08-28T14:19:29.181Z",
+  "cutoff": "2026-08-28T14:19:29.181Z",
+  "disclaimer": "P from enriched KG + clinical chrono. Executable asks from live CLOB. Not live-traded.",
+  "opportunities": [
+    {
+      "slug": "intismeran-melanoma",
+      "polymarketId": "3725541",
+      "url": "https://polymarket.com/market/skin-cancer-vaccine-fda-approved-by-december-31-2027",
+      "question": "Skin cancer vaccine FDA approved by December 31, 2027?",
+      "eventType": "FDA_APPROVAL_BY_DATE",
+      "dataLane": "live_polymarket",
+      "tradability": "purchasable_now",
+      "clinicalNote": "P from enriched KG + clinical chrono. Executable asks from live CLOB. Not live-traded.",
+      "modelP": 0.19751345169204607,
+      "conservativeP": 0.13824380919983048,
+      "yesBestAsk": 0.68,
+      "noBestAsk": 0.33,
+      "action": "BET_NO",
+      "netEdge": 0.3696316465662726,
+      "stake": 200,
+      "evidenceConfidence": "moderate",
+      "fingerprint": "9fe929c5c021a6d858e81016d79baf1b2869c8f75444a9b4b3e0e0c7ffd8acf1",
+      "snapshot": "opportunities/live/intismeran-melanoma-3725541.json",
+      "thesis": "Conservative P(NO) exceeds executable NO ask plus fees by 37.0pp.",
+      "eventDeadline": "2027-12-31T23:59:00.000Z",
+      "closesAt": "2027-12-31T23:59:00.000Z",
+      "requiredPresent": [
+        "primaryEndpointMet",
+        "review_clock_inferred"
+      ],
+      "requiredMissing": [
+        "review_clock"
+      ],
+      "contractCoverage": "partial",
+      "calibrationBlocked": false,
+      "contractNotes": [
+        "Sponsor review clock missing; timing model uses cohort PE→filing prior (110d from PE public 2026-08-19). BET_YES remains blocked until acceptance, filing guidance, or PDUFA is public."
+      ]
+    },
+    {
+      "slug": "retatrutide-obesity",
+      "polymarketId": "1162139",
+      "url": "https://polymarket.com/market/fda-approves-retatrutide-this-year",
+      "question": "FDA approves Retatrutide this year?",
+      "eventType": "FDA_APPROVAL_BY_DATE",
+      "dataLane": "live_polymarket",
+      "tradability": "purchasable_now",
+      "clinicalNote": "P from enriched KG + clinical chrono. Executable asks from live CLOB. Not live-traded.",
+      "modelP": 0.004741324672618609,
+      "conservativeP": 0.0016363187318928635,
+      "yesBestAsk": 0.027,
+      "noBestAsk": 0.98,
+      "action": "NO_BET",
+      "netEdge": -0.04536368126810714,
+      "stake": 0,
+      "evidenceConfidence": "high",
+      "fingerprint": "80fda416720935ebc6eae8eeefc72fd976576b793dba04ef68946f82fe14fffa",
+      "snapshot": "opportunities/live/retatrutide-obesity-1162139.json",
+      "thesis": "Net edge below policy threshold after fees and conservative probability.",
+      "eventDeadline": "2026-12-31T00:00:00.000Z",
+      "closesAt": "2026-12-31T00:00:00.000Z",
+      "requiredPresent": [
+        "primaryEndpointMet",
+        "review_clock"
+      ],
+      "requiredMissing": [],
+      "contractCoverage": "complete",
+      "calibrationBlocked": false,
+      "contractNotes": []
+    },
+    {
+      "slug": "intismeran-melanoma",
+      "polymarketId": "3727493",
+      "url": "https://polymarket.com/market/skin-cancer-vaccine-bla-submitted-by-june-30-2027",
+      "question": "Skin cancer vaccine BLA submitted by June 30, 2027?",
+      "eventType": "NDA_BLA_SUBMISSION",
+      "dataLane": "live_polymarket",
+      "tradability": "purchasable_now",
+      "clinicalNote": "P from enriched KG + clinical chrono. Executable asks from live CLOB. Not live-traded.",
+      "modelP": 0.8670907812766346,
+      "conservativeP": 0.7819868570932831,
+      "yesBestAsk": 0.88,
+      "noBestAsk": 0.13,
+      "action": "NO_BET",
+      "netEdge": -0.06912370203237216,
+      "stake": 0,
+      "evidenceConfidence": "moderate",
+      "fingerprint": "e242ce4439bf1d1a2a2ffaadef3240dc69c3199d245995e5a7163504eb761431",
+      "snapshot": "opportunities/live/intismeran-melanoma-3727493.json",
+      "thesis": "Net edge below policy threshold after fees and conservative probability.",
+      "eventDeadline": "2027-07-01T03:59:00.000Z",
+      "closesAt": "2027-07-01T03:59:00.000Z",
+      "requiredPresent": [
+        "primaryEndpointMet",
+        "linkedTrialIds"
+      ],
+      "requiredMissing": [
+        "expectedFilingAt"
+      ],
+      "contractCoverage": "blocked",
+      "calibrationBlocked": true,
+      "contractNotes": [
+        "No public filing guidance — submission P must stay filing-clock–dominated; do not invent expectedFilingAt."
+      ]
+    },
+    {
+      "slug": "intismeran-melanoma",
+      "polymarketId": "3741934",
+      "url": "https://polymarket.com/market/skin-cancer-vaccine-fda-approved-by-june-30-2027",
+      "question": "Skin cancer vaccine FDA approved by June 30, 2027?",
+      "eventType": "FDA_APPROVAL_BY_DATE",
+      "dataLane": "live_polymarket",
+      "tradability": "purchasable_now",
+      "clinicalNote": "P from enriched KG + clinical chrono. Executable asks from live CLOB. Not live-traded.",
+      "modelP": 0.05379535037614534,
+      "conservativeP": 0.023114049304474235,
+      "yesBestAsk": 0.15,
+      "noBestAsk": 0.86,
+      "action": "NO_BET",
+      "netEdge": 0.015195805354137688,
+      "stake": 0,
+      "evidenceConfidence": "moderate",
+      "fingerprint": "17a56c317b83943c59fecd2fb742176370040f5ebce076f6fc5ffc36c0612a2d",
+      "snapshot": "opportunities/live/intismeran-melanoma-3741934.json",
+      "thesis": "Net edge below policy threshold after fees and conservative probability.",
+      "eventDeadline": "2027-06-30T23:59:00.000Z",
+      "closesAt": "2027-06-30T23:59:00.000Z",
+      "requiredPresent": [
+        "primaryEndpointMet",
+        "review_clock_inferred"
+      ],
+      "requiredMissing": [
+        "review_clock"
+      ],
+      "contractCoverage": "partial",
+      "calibrationBlocked": false,
+      "contractNotes": [
+        "Sponsor review clock missing; timing model uses cohort PE→filing prior (110d from PE public 2026-08-19). BET_YES remains blocked until acceptance, filing guidance, or PDUFA is public."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "quote_vault_summary",
+  "generatedAt": "2026-08-26T01:04:30.184Z",
+  "archivePath": "fixtures/quotes/archive.jsonl",
+  "totalRows": 40,
+  "distinctMarkets": 5,
+  "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+  "markets": [
+    {
+      "marketId": "1162139",
+      "slug": "retatrutide-obesity",
+      "rows": 8,
+      "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+      "latestBestAskYes": 0.027,
+      "latestBestAskNo": 0.974
+    },
+    {
+      "marketId": "2253151",
+      "slug": "daraxonrasib-pdac",
+      "rows": 8,
+      "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+      "latestBestAskYes": 0.91,
+      "latestBestAskNo": 0.11
+    },
+    {
+      "marketId": "3725541",
+      "slug": "intismeran-melanoma",
+      "rows": 8,
+      "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+      "latestBestAskYes": 0.69,
+      "latestBestAskNo": 0.32
+    },
+    {
+      "marketId": "3727493",
+      "slug": "intismeran-melanoma",
+      "rows": 8,
+      "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+      "latestBestAskYes": 0.88,
+      "latestBestAskNo": 0.13
+    },
+    {
+      "marketId": "3741934",
+      "slug": "intismeran-melanoma",
+      "rows": 8,
+      "latestCapturedAt": "2026-08-26T01:04:29.110Z",
+      "latestBestAskYes": 0.16,
+      "latestBestAskNo": 0.86
+    }
+  ]
+}

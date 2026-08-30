@@ -1,0 +1,32 @@
+{
+  "kind": "prediction_market",
+  "market": {
+    "id": "pm_poly_syn_001",
+    "platform": "polymarket",
+    "eventId": "event_syn_001",
+    "question": "Will Synalphimab be FDA-approved for NSCLC by December 31, 2025?",
+    "resolutionRules": "Resolves YES if FDA approves Synalphimab for any NSCLC indication on or before 2025-12-31 ET per Drugs@FDA or an official FDA press announcement. Conditional approval counts as approval. Resolves NO otherwise.",
+    "closesAt": "2025-12-31T23:59:59.000Z",
+    "tokenYesId": "token_yes_syn_001",
+    "tokenNoId": "token_no_syn_001",
+    "active": true
+  },
+  "marketQuestion": {
+    "marketId": "pm_poly_syn_001",
+    "eventType": "FDA_APPROVAL_BY_DATE",
+    "drugAssetId": "drug_syn_alpha",
+    "drugAliases": ["Synalphimab", "SYN-α"],
+    "sponsorId": "sponsor_synbio",
+    "indicationId": "ind_nsclc",
+    "population": "metastatic NSCLC",
+    "applicationId": "app_bla_syn_001",
+    "linkedTrialIds": ["trial_nct00000001"],
+    "endpointIds": ["ep_os"],
+    "eventDeadline": "2025-12-31T23:59:59.000Z",
+    "resolutionSource": "Drugs@FDA or official FDA announcement",
+    "resolutionDefinition": "FDA approval of Synalphimab for any NSCLC indication on or before the deadline; conditional approval counts.",
+    "conditionalApprovalCounts": true,
+    "ambiguityFlags": [],
+    "parserConfidence": 0.92
+  }
+}

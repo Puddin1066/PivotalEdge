@@ -1,0 +1,160 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_evacetrapib_cv_fail",
+    "preferredName": "Evacetrapib",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_evacetrapib_cv_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_evacetrapib_cv_fail",
+    "name": "Lilly",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_evacetrapib_cv_fail",
+    "name": "High-risk CVD",
+    "therapeuticArea": "cardiology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_evacetrapib_cv_fail",
+    "drugAssetId": "drug_evacetrapib_cv_fail",
+    "indicationId": "ind_evacetrapib_cv_fail",
+    "sponsorId": "sponsor_evacetrapib_cv_fail",
+    "name": "Evacetrapib — High-risk CVD",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_evacetrapib_cv_fail",
+      "name": "CETP inhibition",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01687998",
+      "nctId": "NCT01687998",
+      "programId": "prog_evacetrapib_cv_fail",
+      "phase": "III",
+      "title": "ACCELERATE evacetrapib",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 12092,
+      "actualEnrollment": 12092,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2015-10-12T12:00:00.000Z",
+      "studyStartAt": "2015-10-12T12:00:00.000Z",
+      "primaryCompletionAt": "2015-10-19T12:00:00.000Z",
+      "completionAt": "2015-10-19T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_evacetrapib_cv_fail_primary",
+      "trialId": "trial_nct01687998",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_evacetrapib_cv_fail_primary",
+      "trialId": "trial_nct01687998",
+      "endpointId": "ep_evacetrapib_cv_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.178Z",
+        "firstPublicAt": "2015-10-12T00:00:00.000Z",
+        "effectiveAt": "2015-10-12T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:aefd5e7402e6487b81d8129e",
+        "exactPassage": "ACCELERATE stopped for futility.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_evacetrapib_cv_fail_pending",
+    "programId": "prog_evacetrapib_cv_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_evacetrapib_cv_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2015-10-19T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_evacetrapib_cv_fail_withdrawal",
+    "applicationId": "app_evacetrapib_cv_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2015-10-19T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.178Z",
+      "firstPublicAt": "2015-10-19T00:00:00.000Z",
+      "effectiveAt": "2015-10-19T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:4f6b5d92c7b430ae23b6128d",
+      "exactPassage": "Program discontinuation disclosure 2015-10-19T00:00:00.000Z for Evacetrapib",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_evacetrapib_cv_fail_ct",
+      "title": "ACCELERATE evacetrapib",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01687998",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.178Z",
+        "firstPublicAt": "2015-10-12T12:00:00.000Z",
+        "effectiveAt": "2015-10-12T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:65256aa2a87a0a177a216509",
+        "exactPassage": "ACCELERATE evacetrapib",
+        "locator": "NCT01687998",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_evacetrapib_cv_fail_result_press",
+      "title": "Evacetrapib primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.178Z",
+        "firstPublicAt": "2015-10-12T00:00:00.000Z",
+        "effectiveAt": "2015-10-12T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:aefd5e7402e6487b81d8129e",
+        "exactPassage": "ACCELERATE stopped for futility.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

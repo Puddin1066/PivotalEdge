@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_transcon_hgh_adult",
+    "preferredName": "TransCon hGH (Skytrofa adult)",
+    "modality": "peptide",
+    "mechanismIds": [
+      "mech_transcon_hgh_adult"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_transcon_hgh_adult",
+    "name": "Ascendis",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_transcon_hgh_adult",
+    "name": "Adult growth hormone deficiency",
+    "therapeuticArea": "endocrinology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_transcon_hgh_adult",
+    "drugAssetId": "drug_transcon_hgh_adult",
+    "indicationId": "ind_transcon_hgh_adult",
+    "sponsorId": "sponsor_transcon_hgh_adult",
+    "name": "TransCon hGH (Skytrofa adult) — Adult growth hormone deficiency",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_transcon_hgh_adult",
+      "name": "Long-acting growth hormone",
+      "target": "GHR",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct05171855",
+      "nctId": "NCT05171855",
+      "programId": "prog_transcon_hgh_adult",
+      "phase": "III",
+      "title": "TransCon hGH adult GHD",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 80,
+      "actualEnrollment": 80,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2024-09-01T12:00:00.000Z",
+      "studyStartAt": "2024-09-01T12:00:00.000Z",
+      "primaryCompletionAt": "2025-07-28T12:00:00.000Z",
+      "completionAt": "2025-07-28T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_transcon_hgh_adult_primary",
+      "trialId": "trial_nct05171855",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_transcon_hgh_adult_primary",
+      "trialId": "trial_nct05171855",
+      "endpointId": "ep_transcon_hgh_adult_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05171855",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2024-09-01T00:00:00.000Z",
+        "effectiveAt": "2024-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d75b3e9b3a522934b5d6dbab",
+        "exactPassage": "Adult GHD sBLA efficacy package positive.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761177",
+    "programId": "prog_transcon_hgh_adult",
+    "applicationNumber": "BLA761177",
+    "applicationType": "sBLA",
+    "indicationId": "ind_transcon_hgh_adult",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2021-08-25T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "standard",
+    "clockProvenance": {
+      "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number:\"BLA761177\"",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:41.677Z",
+      "firstPublicAt": "2021-08-25T00:00:00.000Z",
+      "effectiveAt": "2021-08-25T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:c26afc9133817aed73eff2bb",
+      "exactPassage": "Drugs@FDA ORIG approval 2021-08-25 for BLA761177.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_transcon_hgh_adult_approval",
+    "applicationId": "app_bla761177",
+    "actionType": "approval",
+    "actionDate": "2025-07-28T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT05171855",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.677Z",
+      "firstPublicAt": "2025-07-28T00:00:00.000Z",
+      "effectiveAt": "2025-07-28T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:6eadd3bf3479b752ccc35d39",
+      "exactPassage": "FDA approval date 2025-07-28T00:00:00.000Z for TransCon hGH (Skytrofa adult)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_transcon_hgh_adult_orphan_0",
+      "programId": "prog_transcon_hgh_adult",
+      "applicationId": "app_bla761177",
+      "designationType": "orphan",
+      "grantedAt": "2018-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2018-01-01T00:00:00.000Z",
+        "effectiveAt": "2018-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:6e4bf650fbd6cba1e44089f8",
+        "exactPassage": "orphan designation for TransCon hGH (Skytrofa adult)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_transcon_hgh_adult_0_somatropin",
+      "indicationId": "ind_transcon_hgh_adult",
+      "drugAssetId": "drug_comp_somatropin",
+      "drugName": "Somatropin",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05171855",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2024-09-01T12:00:00.000Z",
+        "effectiveAt": "2024-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:94f6a755a1fb35cd4d74f83c",
+        "exactPassage": "Approved / clinical candidate in indication: Somatropin",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_transcon_hgh_adult_ct",
+      "title": "TransCon hGH adult GHD",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05171855",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2024-09-01T12:00:00.000Z",
+        "effectiveAt": "2024-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:b14933390f11233d8daea769",
+        "exactPassage": "TransCon hGH adult GHD",
+        "locator": "NCT05171855",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_transcon_hgh_adult_result_press",
+      "title": "TransCon hGH (Skytrofa adult) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05171855",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2024-09-01T00:00:00.000Z",
+        "effectiveAt": "2024-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d75b3e9b3a522934b5d6dbab",
+        "exactPassage": "Adult GHD sBLA efficacy package positive.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_transcon_hgh_adult_reg_clock",
+      "title": "TransCon hGH (Skytrofa adult) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number:\"BLA761177\"",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.677Z",
+        "firstPublicAt": "2021-08-25T00:00:00.000Z",
+        "effectiveAt": "2021-08-25T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c26afc9133817aed73eff2bb",
+        "exactPassage": "Drugs@FDA ORIG approval 2021-08-25 for BLA761177.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

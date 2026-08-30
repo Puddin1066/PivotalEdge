@@ -1,0 +1,32 @@
+{
+  "kind": "prediction_market",
+  "market": {
+    "id": "pm_poly_syn_002",
+    "platform": "polymarket",
+    "eventId": "event_syn_002",
+    "question": "Will Synbetalib be FDA-approved for RA by December 31, 2022?",
+    "resolutionRules": "Resolves YES if FDA approves Synbetalib for any RA indication on or before 2022-12-31 ET per Drugs@FDA or an official FDA press announcement. Resolves NO on CRL or missed deadline.",
+    "closesAt": "2022-12-31T23:59:59.000Z",
+    "tokenYesId": "token_yes_syn_002",
+    "tokenNoId": "token_no_syn_002",
+    "active": false
+  },
+  "marketQuestion": {
+    "marketId": "pm_poly_syn_002",
+    "eventType": "FDA_APPROVAL_BY_DATE",
+    "drugAssetId": "drug_syn_beta",
+    "drugAliases": ["Synbetalib", "SYN-β"],
+    "sponsorId": "sponsor_crestline",
+    "indicationId": "ind_ra",
+    "population": "moderate-to-severe RA",
+    "applicationId": "app_nda_syn_002",
+    "linkedTrialIds": ["trial_nct00000002"],
+    "endpointIds": ["ep_acr20"],
+    "eventDeadline": "2022-12-31T23:59:59.000Z",
+    "resolutionSource": "Drugs@FDA or official FDA announcement",
+    "resolutionDefinition": "FDA approval of Synbetalib for any RA indication on or before the deadline.",
+    "conditionalApprovalCounts": true,
+    "ambiguityFlags": [],
+    "parserConfidence": 0.9
+  }
+}

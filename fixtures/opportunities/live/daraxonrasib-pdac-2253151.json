@@ -1,0 +1,1628 @@
+{
+  "kind": "frozen_opportunity_snapshot",
+  "snapshotVersion": "live-1",
+  "frozenAt": "2026-08-26T17:00:34.423Z",
+  "marketQuestion": {
+    "marketId": "pm_2253151",
+    "eventType": "FDA_APPROVAL_BY_DATE",
+    "drugAssetId": "drug_daraxonrasib_pdac",
+    "drugAliases": [
+      "Daraxonrasib"
+    ],
+    "sponsorId": "sponsor_daraxonrasib_pdac",
+    "indicationId": "ind_daraxonrasib_pdac",
+    "population": null,
+    "applicationId": "app_daraxonrasib_pdac_pending",
+    "linkedTrialIds": [
+      "trial_nct06625320"
+    ],
+    "endpointIds": [
+      "ep_daraxonrasib_pdac_primary"
+    ],
+    "eventDeadline": "2026-12-31T00:00:00.000Z",
+    "resolutionSource": "polymarket_rules_and_fda",
+    "resolutionDefinition": "Daraxonrasib is an RAS inhibitor drug developed by Revolution Medicines and currently in trial to treat RAS-mutated cancers.\n\nThis market will resolve to \"Yes\" if the U.S. Food and Drug Administration (FDA) grants a full or conditional approval for a drug product whose active ingredient is Revolution Medicines’ daraxonrasib (including any brand name or identifier) for any use between market creation and December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No.\"\n\nAn approval is defined as:\nFor new drugs: FDA issuance of an approval letter for a New Drug Application (NDA) or Biologics License Application (BLA)\nFor already-marketed drugs seeking new indications: FDA approval of a supplemental NDA (sNDA) or supplemental BLA (sBLA) for the specific indication referenced\nFor generic drugs: FDA approval of an Abbreviated New Drug Application (ANDA)\nFor biosimilars: FDA approval of a 351(k) application\n\nThe following constitute qualifying approvals:\nStandard approval (traditional approval based on clinical benefit), Accelerated approval (based on surrogate endpoints), Approval with Risk Evaluation and Mitigation Strategy (REMS), Approval with restricted distribution or indication limitations, except compassionate use/expanded access programs\n\nThe following do not constitute qualifying approvals:\nApprovable letters that require additional actions before approval\nTentative approvals pending patent or exclusivity expiration\nFDA requests for additional information or studies\nExtension of Prescription Drug User Fee Amendments dates\nApproval for compassionate use or expanded access programs only\nApproval only for export or for use outside the United States\nEmergency Use Authorization (EUA) without full approval\nComplete Response Letters (CRLs) indicating the application cannot be approved in its current form\n\nIf the listed drug is approved within this market’s timeframe, the market will resolve to \"Yes,\" regardless of potential Advisory Committee votes against a",
+    "conditionalApprovalCounts": true,
+    "ambiguityFlags": [],
+    "parserConfidence": 0.7
+  },
+  "forecast": {
+    "id": "fc_live_daraxonrasib-pdac_2253151",
+    "marketQuestionId": "pm_2253151",
+    "programId": "prog_daraxonrasib_pdac",
+    "generatedAt": "2026-08-26T17:00:34.423Z",
+    "forecastCutoff": "2026-08-26T17:00:34.423Z",
+    "modelProbability": 0.6075804939764706,
+    "conservativeProbability": 0.5244165545155076,
+    "intervalLow": 0.5244165545155076,
+    "intervalHigh": 0.6841461978454227,
+    "modelVersion": "base-rate-calibrated@2",
+    "calibrationStatus": "held_out",
+    "components": [
+      {
+        "id": "comp_clinical",
+        "name": "clinical_adequacy",
+        "probability": 0.88,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_submission",
+        "name": "submission_by_T",
+        "probability": 0.95,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_acceptance",
+        "name": "acceptance_given_submission",
+        "probability": 0.93,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_approval",
+        "name": "approval_given_acceptance",
+        "probability": 0.7814741137733068,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      },
+      {
+        "id": "comp_decision",
+        "name": "decision_by_T",
+        "probability": 0.6075804939764706,
+        "intervalLow": null,
+        "intervalHigh": null,
+        "modelVersion": "base-rate-calibrated@2",
+        "calibrationStatus": "held_out"
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_daraxonrasib_pdac_primary",
+      "des_daraxonrasib_pdac_breakthrough_0",
+      "des_daraxonrasib_pdac_orphan_1",
+      "doc_daraxonrasib_pdac_ct",
+      "doc_daraxonrasib_pdac_result_press"
+    ],
+    "cutoffAudit": {
+      "forecastCutoff": "2026-08-26T17:00:34.423Z",
+      "checkedAt": "2026-08-26T17:00:35.870Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k",
+        "result_nct00000004_primary",
+        "action_crl_cardio_004",
+        "des_prog_cardionex_hf_fast_track",
+        "result_nct00000003_primary",
+        "action_approve_neuro_003",
+        "des_prog_neurovex_alz_breakthrough",
+        "des_prog_neurovex_alz_accelerated_approval",
+        "result_nct00000005_primary",
+        "action_approve_onco_005",
+        "des_prog_oncolix_her2_priority_review",
+        "result_nct00000006_primary",
+        "action_crl_rare_006",
+        "des_prog_rarezyme_lsd_orphan",
+        "des_prog_rarezyme_lsd_priority_review",
+        "result_daraxonrasib_pdac_primary",
+        "des_daraxonrasib_pdac_breakthrough_0",
+        "des_daraxonrasib_pdac_orphan_1",
+        "doc_daraxonrasib_pdac_ct",
+        "doc_daraxonrasib_pdac_result_press",
+        "result_intismeran_melanoma_primary",
+        "doc_intismeran_melanoma_ct",
+        "doc_intismeran_melanoma_result_press",
+        "result_retatrutide_obesity_primary",
+        "doc_retatrutide_obesity_ct",
+        "doc_retatrutide_obesity_result_press",
+        "result_aducanumab_ad_primary",
+        "action_aducanumab_ad_approval",
+        "des_aducanumab_ad_fast_track_0",
+        "doc_aducanumab_ad_ct",
+        "doc_aducanumab_ad_result_press",
+        "result_atezolizumab_urothelial_primary",
+        "action_atezolizumab_urothelial_approval",
+        "des_atezolizumab_urothelial_breakthrough_0",
+        "des_atezolizumab_urothelial_accelerated_approval_1",
+        "doc_atezolizumab_urothelial_ct",
+        "doc_atezolizumab_urothelial_result_press",
+        "result_bapineuzumab_ad_fail_primary",
+        "action_bapineuzumab_ad_fail_withdrawal",
+        "doc_bapineuzumab_ad_fail_ct",
+        "doc_bapineuzumab_ad_fail_result_press",
+        "result_bitopertin_schiz_fail_primary",
+        "action_bitopertin_schiz_fail_withdrawal",
+        "doc_bitopertin_schiz_fail_ct",
+        "doc_bitopertin_schiz_fail_result_press",
+        "result_dupilumab_ad_primary",
+        "action_dupilumab_ad_approval",
+        "des_dupilumab_ad_breakthrough_0",
+        "doc_dupilumab_ad_ct",
+        "doc_dupilumab_ad_result_press",
+        "result_empaveli_c3g_primary",
+        "action_empaveli_c3g_approval",
+        "des_empaveli_c3g_orphan_0",
+        "doc_empaveli_c3g_ct",
+        "doc_empaveli_c3g_result_press",
+        "result_entrectinib_ntrk_primary",
+        "action_entrectinib_ntrk_approval",
+        "des_entrectinib_ntrk_breakthrough_0",
+        "des_entrectinib_ntrk_orphan_1",
+        "doc_entrectinib_ntrk_ct",
+        "doc_entrectinib_ntrk_result_press",
+        "result_evacetrapib_cv_fail_primary",
+        "action_evacetrapib_cv_fail_withdrawal",
+        "doc_evacetrapib_cv_fail_ct",
+        "doc_evacetrapib_cv_fail_result_press",
+        "result_faricimab_amd_primary",
+        "action_faricimab_amd_approval",
+        "doc_faricimab_amd_ct",
+        "doc_faricimab_amd_result_press",
+        "result_figitumumab_nsclc_fail_primary",
+        "action_figitumumab_nsclc_fail_withdrawal",
+        "doc_figitumumab_nsclc_fail_ct",
+        "doc_figitumumab_nsclc_fail_result_press",
+        "result_fingolimod_ms_primary",
+        "action_fingolimod_ms_approval",
+        "doc_fingolimod_ms_ct",
+        "doc_fingolimod_ms_result_press",
+        "result_iniparib_breast_fail_primary",
+        "action_iniparib_breast_fail_withdrawal",
+        "doc_iniparib_breast_fail_ct",
+        "doc_iniparib_breast_fail_result_press",
+        "result_inotersen_hattr_primary",
+        "action_inotersen_hattr_approval",
+        "des_inotersen_hattr_orphan_0",
+        "doc_inotersen_hattr_ct",
+        "doc_inotersen_hattr_result_press",
+        "result_ipilimumab_melanoma_primary",
+        "action_ipilimumab_melanoma_approval",
+        "doc_ipilimumab_melanoma_ct",
+        "doc_ipilimumab_melanoma_result_press",
+        "result_mavacamten_hcm_primary",
+        "action_mavacamten_hcm_approval",
+        "des_mavacamten_hcm_orphan_0",
+        "des_mavacamten_hcm_breakthrough_1",
+        "doc_mavacamten_hcm_ct",
+        "doc_mavacamten_hcm_result_press",
+        "result_nivolumab_melanoma_primary",
+        "action_nivolumab_melanoma_approval",
+        "des_nivolumab_melanoma_breakthrough_0",
+        "doc_nivolumab_melanoma_ct",
+        "doc_nivolumab_melanoma_result_press",
+        "result_nivolumab_nsclc_primary",
+        "action_nivolumab_nsclc_approval",
+        "doc_nivolumab_nsclc_ct",
+        "doc_nivolumab_nsclc_result_press",
+        "result_ocrelizumab_ms_primary",
+        "action_ocrelizumab_ms_approval",
+        "des_ocrelizumab_ms_breakthrough_0",
+        "doc_ocrelizumab_ms_ct",
+        "doc_ocrelizumab_ms_result_press",
+        "result_odronextamab_fl_crl_primary",
+        "action_odronextamab_fl_crl_crl",
+        "des_odronextamab_fl_crl_orphan_0",
+        "doc_odronextamab_fl_crl_ct",
+        "doc_odronextamab_fl_crl_result_press",
+        "result_onc_phase2_fail_mock_primary",
+        "action_onc_phase2_fail_mock_withdrawal",
+        "doc_onc_phase2_fail_mock_ct",
+        "doc_onc_phase2_fail_mock_result_press",
+        "result_palbociclib_breast_primary",
+        "action_palbociclib_breast_approval",
+        "des_palbociclib_breast_breakthrough_0",
+        "doc_palbociclib_breast_ct",
+        "doc_palbociclib_breast_result_press",
+        "result_patisiran_hattr_primary",
+        "action_patisiran_hattr_approval",
+        "des_patisiran_hattr_orphan_0",
+        "doc_patisiran_hattr_ct",
+        "doc_patisiran_hattr_result_press",
+        "result_pembrolizumab_melanoma_primary",
+        "action_pembrolizumab_melanoma_approval",
+        "des_pembrolizumab_melanoma_breakthrough_0",
+        "doc_pembrolizumab_melanoma_ct",
+        "doc_pembrolizumab_melanoma_result_press",
+        "result_resmetirom_mash_primary",
+        "action_resmetirom_mash_approval",
+        "doc_resmetirom_mash_ct",
+        "doc_resmetirom_mash_result_press",
+        "result_rilotumumab_gastric_primary",
+        "action_rilotumumab_gastric_withdrawal",
+        "doc_rilotumumab_gastric_ct",
+        "doc_rilotumumab_gastric_result_press",
+        "result_rp1_melanoma_crl_primary",
+        "action_rp1_melanoma_crl_crl",
+        "des_rp1_melanoma_crl_breakthrough_0",
+        "doc_rp1_melanoma_crl_ct",
+        "doc_rp1_melanoma_crl_result_press",
+        "result_semagacestat_ad_fail_primary",
+        "action_semagacestat_ad_fail_withdrawal",
+        "doc_semagacestat_ad_fail_ct",
+        "doc_semagacestat_ad_fail_result_press",
+        "result_sepiapterin_pku_primary",
+        "action_sepiapterin_pku_approval",
+        "des_sepiapterin_pku_orphan_0",
+        "doc_sepiapterin_pku_ct",
+        "doc_sepiapterin_pku_result_press",
+        "result_sofosbuvir_hcv_primary",
+        "action_sofosbuvir_hcv_approval",
+        "doc_sofosbuvir_hcv_ct",
+        "doc_sofosbuvir_hcv_result_press",
+        "result_solanezumab_ad_fail_primary",
+        "action_solanezumab_ad_fail_withdrawal",
+        "doc_solanezumab_ad_fail_ct",
+        "doc_solanezumab_ad_fail_result_press",
+        "result_tirzepatide_t2d_primary",
+        "action_tirzepatide_t2d_approval",
+        "doc_tirzepatide_t2d_ct",
+        "doc_tirzepatide_t2d_result_press",
+        "result_torcetrapib_cv_fail_primary",
+        "action_torcetrapib_cv_fail_withdrawal",
+        "doc_torcetrapib_cv_fail_ct",
+        "doc_torcetrapib_cv_fail_result_press",
+        "result_transcon_hgh_adult_primary",
+        "action_transcon_hgh_adult_approval",
+        "des_transcon_hgh_adult_orphan_0",
+        "doc_transcon_hgh_adult_ct",
+        "doc_transcon_hgh_adult_result_press",
+        "result_upadacitinib_ra_primary",
+        "action_upadacitinib_ra_approval",
+        "doc_upadacitinib_ra_ct",
+        "doc_upadacitinib_ra_result_press",
+        "result_verubecestat_ad_fail_primary",
+        "action_verubecestat_ad_fail_withdrawal",
+        "doc_verubecestat_ad_fail_ct",
+        "doc_verubecestat_ad_fail_result_press"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "yesOrderBook": {
+    "id": "ob_pm_2253151_1787763635841",
+    "marketId": "pm_2253151",
+    "capturedAt": "2026-08-26T17:00:35.841Z",
+    "bids": [
+      {
+        "price": 0.996,
+        "size": 240
+      },
+      {
+        "price": 0.964,
+        "size": 9
+      },
+      {
+        "price": 0.962,
+        "size": 30
+      },
+      {
+        "price": 0.96,
+        "size": 366
+      },
+      {
+        "price": 0.951,
+        "size": 17.28
+      },
+      {
+        "price": 0.95,
+        "size": 1000
+      },
+      {
+        "price": 0.89,
+        "size": 15
+      },
+      {
+        "price": 0.88,
+        "size": 40
+      },
+      {
+        "price": 0.86,
+        "size": 77.78
+      },
+      {
+        "price": 0.72,
+        "size": 11.11
+      },
+      {
+        "price": 0.7,
+        "size": 10
+      },
+      {
+        "price": 0.61,
+        "size": 150
+      },
+      {
+        "price": 0.591,
+        "size": 16
+      },
+      {
+        "price": 0.59,
+        "size": 20
+      },
+      {
+        "price": 0.546,
+        "size": 199.99
+      },
+      {
+        "price": 0.545,
+        "size": 175
+      },
+      {
+        "price": 0.544,
+        "size": 40
+      },
+      {
+        "price": 0.53,
+        "size": 12.5
+      },
+      {
+        "price": 0.511,
+        "size": 56
+      },
+      {
+        "price": 0.51,
+        "size": 7.5
+      },
+      {
+        "price": 0.49,
+        "size": 20
+      },
+      {
+        "price": 0.401,
+        "size": 93
+      },
+      {
+        "price": 0.4,
+        "size": 9
+      },
+      {
+        "price": 0.262,
+        "size": 59
+      },
+      {
+        "price": 0.261,
+        "size": 99
+      },
+      {
+        "price": 0.26,
+        "size": 500
+      },
+      {
+        "price": 0.24,
+        "size": 55
+      },
+      {
+        "price": 0.23,
+        "size": 20
+      },
+      {
+        "price": 0.201,
+        "size": 230
+      },
+      {
+        "price": 0.2,
+        "size": 650
+      },
+      {
+        "price": 0.12,
+        "size": 350
+      },
+      {
+        "price": 0.119,
+        "size": 100
+      },
+      {
+        "price": 0.109,
+        "size": 100
+      },
+      {
+        "price": 0.1,
+        "size": 70.7
+      },
+      {
+        "price": 0.099,
+        "size": 100
+      },
+      {
+        "price": 0.09,
+        "size": 5.25
+      },
+      {
+        "price": 0.089,
+        "size": 100
+      },
+      {
+        "price": 0.079,
+        "size": 100
+      },
+      {
+        "price": 0.069,
+        "size": 100
+      },
+      {
+        "price": 0.059,
+        "size": 100
+      },
+      {
+        "price": 0.05,
+        "size": 605
+      },
+      {
+        "price": 0.049,
+        "size": 100
+      },
+      {
+        "price": 0.039,
+        "size": 100
+      },
+      {
+        "price": 0.029,
+        "size": 100
+      },
+      {
+        "price": 0.021,
+        "size": 6.37
+      },
+      {
+        "price": 0.02,
+        "size": 6.89
+      },
+      {
+        "price": 0.019,
+        "size": 100
+      },
+      {
+        "price": 0.01,
+        "size": 9894.33
+      },
+      {
+        "price": 0.009,
+        "size": 100
+      },
+      {
+        "price": 0.006,
+        "size": 9.69
+      },
+      {
+        "price": 0.005,
+        "size": 200
+      },
+      {
+        "price": 0.004,
+        "size": 250
+      },
+      {
+        "price": 0.003,
+        "size": 27386.12
+      },
+      {
+        "price": 0.002,
+        "size": 2070
+      },
+      {
+        "price": 0.001,
+        "size": 4206.37
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.999,
+        "size": 50
+      }
+    ],
+    "midpoint": 0.9975,
+    "bestBid": 0.996,
+    "bestAsk": 0.999
+  },
+  "noOrderBook": {
+    "id": "ob_pm_2253151_1787763635870",
+    "marketId": "pm_2253151",
+    "capturedAt": "2026-08-26T17:00:35.870Z",
+    "bids": [
+      {
+        "price": 0.001,
+        "size": 50
+      }
+    ],
+    "asks": [
+      {
+        "price": 0.004,
+        "size": 240
+      },
+      {
+        "price": 0.036,
+        "size": 9
+      },
+      {
+        "price": 0.038,
+        "size": 30
+      },
+      {
+        "price": 0.04,
+        "size": 366
+      },
+      {
+        "price": 0.049,
+        "size": 17.28
+      },
+      {
+        "price": 0.05,
+        "size": 1000
+      },
+      {
+        "price": 0.11,
+        "size": 15
+      },
+      {
+        "price": 0.12,
+        "size": 40
+      },
+      {
+        "price": 0.14,
+        "size": 77.78
+      },
+      {
+        "price": 0.28,
+        "size": 11.11
+      },
+      {
+        "price": 0.3,
+        "size": 10
+      },
+      {
+        "price": 0.39,
+        "size": 150
+      },
+      {
+        "price": 0.409,
+        "size": 16
+      },
+      {
+        "price": 0.41,
+        "size": 20
+      },
+      {
+        "price": 0.454,
+        "size": 199.99
+      },
+      {
+        "price": 0.455,
+        "size": 175
+      },
+      {
+        "price": 0.456,
+        "size": 40
+      },
+      {
+        "price": 0.47,
+        "size": 12.5
+      },
+      {
+        "price": 0.489,
+        "size": 56
+      },
+      {
+        "price": 0.49,
+        "size": 7.5
+      },
+      {
+        "price": 0.51,
+        "size": 20
+      },
+      {
+        "price": 0.599,
+        "size": 93
+      },
+      {
+        "price": 0.6,
+        "size": 9
+      },
+      {
+        "price": 0.738,
+        "size": 59
+      },
+      {
+        "price": 0.739,
+        "size": 99
+      },
+      {
+        "price": 0.74,
+        "size": 500
+      },
+      {
+        "price": 0.76,
+        "size": 55
+      },
+      {
+        "price": 0.77,
+        "size": 20
+      },
+      {
+        "price": 0.799,
+        "size": 230
+      },
+      {
+        "price": 0.8,
+        "size": 650
+      },
+      {
+        "price": 0.88,
+        "size": 350
+      },
+      {
+        "price": 0.881,
+        "size": 100
+      },
+      {
+        "price": 0.891,
+        "size": 100
+      },
+      {
+        "price": 0.9,
+        "size": 70.7
+      },
+      {
+        "price": 0.901,
+        "size": 100
+      },
+      {
+        "price": 0.91,
+        "size": 5.25
+      },
+      {
+        "price": 0.911,
+        "size": 100
+      },
+      {
+        "price": 0.921,
+        "size": 100
+      },
+      {
+        "price": 0.931,
+        "size": 100
+      },
+      {
+        "price": 0.941,
+        "size": 100
+      },
+      {
+        "price": 0.95,
+        "size": 605
+      },
+      {
+        "price": 0.951,
+        "size": 100
+      },
+      {
+        "price": 0.961,
+        "size": 100
+      },
+      {
+        "price": 0.971,
+        "size": 100
+      },
+      {
+        "price": 0.979,
+        "size": 6.37
+      },
+      {
+        "price": 0.98,
+        "size": 6.89
+      },
+      {
+        "price": 0.981,
+        "size": 100
+      },
+      {
+        "price": 0.99,
+        "size": 9894.33
+      },
+      {
+        "price": 0.991,
+        "size": 100
+      },
+      {
+        "price": 0.994,
+        "size": 9.69
+      },
+      {
+        "price": 0.995,
+        "size": 200
+      },
+      {
+        "price": 0.996,
+        "size": 250
+      },
+      {
+        "price": 0.997,
+        "size": 27386.12
+      },
+      {
+        "price": 0.998,
+        "size": 2070
+      },
+      {
+        "price": 0.999,
+        "size": 4206.37
+      }
+    ],
+    "midpoint": 0.0025,
+    "bestBid": 0.001,
+    "bestAsk": 0.004
+  },
+  "precedentBundle": {
+    "marketQuestionId": "pm_2253151",
+    "currentProgram": {
+      "programId": "prog_daraxonrasib_pdac",
+      "drugAssetId": "drug_daraxonrasib_pdac",
+      "drugName": "Daraxonrasib",
+      "sponsorId": "sponsor_daraxonrasib_pdac",
+      "sponsorName": "Revolution Medicines, Inc.",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "indicationName": "Previously treated metastatic PDAC",
+      "therapeuticArea": "oncology",
+      "status": "active",
+      "trialIds": [
+        "trial_nct06625320"
+      ],
+      "applicationId": "app_daraxonrasib_pdac_pending",
+      "primaryEndpointMet": true,
+      "endpointFamily": "OS",
+      "trialStatus": "active",
+      "plannedEnrollment": 500,
+      "actualEnrollment": 500,
+      "biomarkerEnriched": true,
+      "designationTypes": [
+        "breakthrough",
+        "orphan"
+      ],
+      "orphanDesignated": true,
+      "approvedTherapyCount": 10,
+      "priorApprovalCount": 0
+    },
+    "cohorts": [
+      {
+        "cohortDefinition": "Same therapeutic area and phase III",
+        "programs": [
+          {
+            "programId": "prog_syn_alpha_nsclc",
+            "drugName": "Synalphimab",
+            "indicationName": "Non-small cell lung cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "SynBio Therapeutics",
+            "evidenceIds": [
+              "result_nct00000001_primary",
+              "action_approve_syn_001",
+              "des_syn_bt",
+              "des_syn_pr",
+              "doc_syn_approval"
+            ]
+          },
+          {
+            "programId": "prog_oncolix_her2",
+            "drugName": "Oncolix",
+            "indicationName": "HER2+ breast cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Lumina Oncology",
+            "evidenceIds": [
+              "result_nct00000005_primary",
+              "action_approve_onco_005",
+              "des_prog_oncolix_her2_priority_review"
+            ]
+          },
+          {
+            "programId": "prog_ipilimumab_melanoma",
+            "drugName": "Ipilimumab (Yervoy)",
+            "indicationName": "Melanoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "BMS",
+            "evidenceIds": [
+              "result_ipilimumab_melanoma_primary",
+              "action_ipilimumab_melanoma_approval",
+              "doc_ipilimumab_melanoma_ct",
+              "doc_ipilimumab_melanoma_result_press"
+            ]
+          },
+          {
+            "programId": "prog_nivolumab_melanoma",
+            "drugName": "Nivolumab (Opdivo)",
+            "indicationName": "Advanced melanoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Bristol-Myers Squibb",
+            "evidenceIds": [
+              "result_nivolumab_melanoma_primary",
+              "action_nivolumab_melanoma_approval",
+              "des_nivolumab_melanoma_breakthrough_0",
+              "doc_nivolumab_melanoma_ct",
+              "doc_nivolumab_melanoma_result_press"
+            ]
+          },
+          {
+            "programId": "prog_nivolumab_nsclc",
+            "drugName": "Nivolumab NSCLC sBLA",
+            "indicationName": "Non-small cell lung cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Bristol-Myers Squibb",
+            "evidenceIds": [
+              "result_nivolumab_nsclc_primary",
+              "action_nivolumab_nsclc_approval",
+              "doc_nivolumab_nsclc_ct",
+              "doc_nivolumab_nsclc_result_press"
+            ]
+          },
+          {
+            "programId": "prog_palbociclib_breast",
+            "drugName": "Palbociclib (Ibrance)",
+            "indicationName": "HR+/HER2- breast cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Pfizer",
+            "evidenceIds": [
+              "result_palbociclib_breast_primary",
+              "action_palbociclib_breast_approval",
+              "des_palbociclib_breast_breakthrough_0",
+              "doc_palbociclib_breast_ct",
+              "doc_palbociclib_breast_result_press"
+            ]
+          },
+          {
+            "programId": "prog_pembrolizumab_melanoma",
+            "drugName": "Pembrolizumab (Keytruda)",
+            "indicationName": "Advanced melanoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Merck",
+            "evidenceIds": [
+              "result_pembrolizumab_melanoma_primary",
+              "action_pembrolizumab_melanoma_approval",
+              "des_pembrolizumab_melanoma_breakthrough_0",
+              "doc_pembrolizumab_melanoma_ct",
+              "doc_pembrolizumab_melanoma_result_press"
+            ]
+          }
+        ],
+        "approvals": 7,
+        "crls": 0,
+        "withdrawals": 0,
+        "unresolved": 0,
+        "empiricalRate": 1
+      },
+      {
+        "cohortDefinition": "Same endpoint family (overall survival)",
+        "programs": [
+          {
+            "programId": "prog_syn_alpha_nsclc",
+            "drugName": "Synalphimab",
+            "indicationName": "Non-small cell lung cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "SynBio Therapeutics",
+            "evidenceIds": [
+              "result_nct00000001_primary",
+              "action_approve_syn_001",
+              "des_syn_bt",
+              "des_syn_pr",
+              "doc_syn_approval"
+            ]
+          },
+          {
+            "programId": "prog_syn_beta_ra",
+            "drugName": "Synbetalib",
+            "indicationName": "Rheumatoid arthritis",
+            "therapeuticArea": "rheumatology",
+            "phase": "III",
+            "outcome": "crl",
+            "primaryEndpointMet": true,
+            "sponsorName": "Crestline Pharma",
+            "evidenceIds": [
+              "result_nct00000002_primary",
+              "action_crl_syn_002",
+              "des_beta_ft",
+              "doc_syn_crl_8k"
+            ]
+          },
+          {
+            "programId": "prog_cardionex_hf",
+            "drugName": "Cardionex",
+            "indicationName": "Heart failure",
+            "therapeuticArea": "cardiology",
+            "phase": "III",
+            "outcome": "crl",
+            "primaryEndpointMet": false,
+            "sponsorName": "Heartline Therapeutics",
+            "evidenceIds": [
+              "result_nct00000004_primary",
+              "action_crl_cardio_004",
+              "des_prog_cardionex_hf_fast_track"
+            ]
+          },
+          {
+            "programId": "prog_neurovex_alz",
+            "drugName": "Neurovex",
+            "indicationName": "Alzheimer disease",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "AxonBridge Bio",
+            "evidenceIds": [
+              "result_nct00000003_primary",
+              "action_approve_neuro_003",
+              "des_prog_neurovex_alz_breakthrough",
+              "des_prog_neurovex_alz_accelerated_approval"
+            ]
+          },
+          {
+            "programId": "prog_oncolix_her2",
+            "drugName": "Oncolix",
+            "indicationName": "HER2+ breast cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Lumina Oncology",
+            "evidenceIds": [
+              "result_nct00000005_primary",
+              "action_approve_onco_005",
+              "des_prog_oncolix_her2_priority_review"
+            ]
+          },
+          {
+            "programId": "prog_rarezyme_lsd",
+            "drugName": "Rarezyme",
+            "indicationName": "Lysosomal storage disorder",
+            "therapeuticArea": "rare_disease",
+            "phase": "III",
+            "outcome": "crl",
+            "primaryEndpointMet": true,
+            "sponsorName": "Orphigen",
+            "evidenceIds": [
+              "result_nct00000006_primary",
+              "action_crl_rare_006",
+              "des_prog_rarezyme_lsd_orphan",
+              "des_prog_rarezyme_lsd_priority_review"
+            ]
+          },
+          {
+            "programId": "prog_intismeran_melanoma",
+            "drugName": "Intismeran autogene",
+            "indicationName": "Resected high-risk melanoma (adjuvant)",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "unresolved",
+            "primaryEndpointMet": true,
+            "sponsorName": "Merck Sharp & Dohme LLC",
+            "evidenceIds": [
+              "result_intismeran_melanoma_primary",
+              "doc_intismeran_melanoma_ct",
+              "doc_intismeran_melanoma_result_press"
+            ]
+          },
+          {
+            "programId": "prog_retatrutide_obesity",
+            "drugName": "Retatrutide",
+            "indicationName": "Obesity / overweight",
+            "therapeuticArea": "metabolic",
+            "phase": "III",
+            "outcome": "unresolved",
+            "primaryEndpointMet": true,
+            "sponsorName": "Eli Lilly and Company",
+            "evidenceIds": [
+              "result_retatrutide_obesity_primary",
+              "doc_retatrutide_obesity_ct",
+              "doc_retatrutide_obesity_result_press"
+            ]
+          },
+          {
+            "programId": "prog_aducanumab_ad",
+            "drugName": "Aducanumab (Aduhelm)",
+            "indicationName": "Alzheimer disease",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": false,
+            "sponsorName": "Biogen",
+            "evidenceIds": [
+              "result_aducanumab_ad_primary",
+              "action_aducanumab_ad_approval",
+              "des_aducanumab_ad_fast_track_0",
+              "doc_aducanumab_ad_ct",
+              "doc_aducanumab_ad_result_press"
+            ]
+          },
+          {
+            "programId": "prog_bapineuzumab_ad_fail",
+            "drugName": "Bapineuzumab",
+            "indicationName": "Alzheimer disease",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "trial_failure",
+            "primaryEndpointMet": false,
+            "sponsorName": "Pfizer/Janssen",
+            "evidenceIds": [
+              "result_bapineuzumab_ad_fail_primary",
+              "action_bapineuzumab_ad_fail_withdrawal",
+              "doc_bapineuzumab_ad_fail_ct",
+              "doc_bapineuzumab_ad_fail_result_press"
+            ]
+          },
+          {
+            "programId": "prog_bitopertin_schiz_fail",
+            "drugName": "Bitopertin",
+            "indicationName": "Schizophrenia negative symptoms",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "trial_failure",
+            "primaryEndpointMet": false,
+            "sponsorName": "Roche",
+            "evidenceIds": [
+              "result_bitopertin_schiz_fail_primary",
+              "action_bitopertin_schiz_fail_withdrawal",
+              "doc_bitopertin_schiz_fail_ct",
+              "doc_bitopertin_schiz_fail_result_press"
+            ]
+          },
+          {
+            "programId": "prog_dupilumab_ad",
+            "drugName": "Dupilumab (Dupixent)",
+            "indicationName": "Atopic dermatitis",
+            "therapeuticArea": "dermatology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Regeneron/Sanofi",
+            "evidenceIds": [
+              "result_dupilumab_ad_primary",
+              "action_dupilumab_ad_approval",
+              "des_dupilumab_ad_breakthrough_0",
+              "doc_dupilumab_ad_ct",
+              "doc_dupilumab_ad_result_press"
+            ]
+          },
+          {
+            "programId": "prog_empaveli_c3g",
+            "drugName": "Empaveli (pegcetacoplan) C3G",
+            "indicationName": "C3 glomerulopathy",
+            "therapeuticArea": "nephrology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Apellis",
+            "evidenceIds": [
+              "result_empaveli_c3g_primary",
+              "action_empaveli_c3g_approval",
+              "des_empaveli_c3g_orphan_0",
+              "doc_empaveli_c3g_ct",
+              "doc_empaveli_c3g_result_press"
+            ]
+          },
+          {
+            "programId": "prog_evacetrapib_cv_fail",
+            "drugName": "Evacetrapib",
+            "indicationName": "High-risk CVD",
+            "therapeuticArea": "cardiology",
+            "phase": "III",
+            "outcome": "trial_failure",
+            "primaryEndpointMet": false,
+            "sponsorName": "Lilly",
+            "evidenceIds": [
+              "result_evacetrapib_cv_fail_primary",
+              "action_evacetrapib_cv_fail_withdrawal",
+              "doc_evacetrapib_cv_fail_ct",
+              "doc_evacetrapib_cv_fail_result_press"
+            ]
+          },
+          {
+            "programId": "prog_faricimab_amd",
+            "drugName": "Faricimab (Vabysmo)",
+            "indicationName": "nAMD / DME",
+            "therapeuticArea": "ophthalmology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Genentech",
+            "evidenceIds": [
+              "result_faricimab_amd_primary",
+              "action_faricimab_amd_approval",
+              "doc_faricimab_amd_ct",
+              "doc_faricimab_amd_result_press"
+            ]
+          },
+          {
+            "programId": "prog_figitumumab_nsclc_fail",
+            "drugName": "Figitumumab",
+            "indicationName": "Non-small cell lung cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "trial_failure",
+            "primaryEndpointMet": false,
+            "sponsorName": "Pfizer",
+            "evidenceIds": [
+              "result_figitumumab_nsclc_fail_primary",
+              "action_figitumumab_nsclc_fail_withdrawal",
+              "doc_figitumumab_nsclc_fail_ct",
+              "doc_figitumumab_nsclc_fail_result_press"
+            ]
+          },
+          {
+            "programId": "prog_fingolimod_ms",
+            "drugName": "Fingolimod (Gilenya)",
+            "indicationName": "Multiple sclerosis",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Novartis",
+            "evidenceIds": [
+              "result_fingolimod_ms_primary",
+              "action_fingolimod_ms_approval",
+              "doc_fingolimod_ms_ct",
+              "doc_fingolimod_ms_result_press"
+            ]
+          },
+          {
+            "programId": "prog_iniparib_breast_fail",
+            "drugName": "Iniparib",
+            "indicationName": "Triple-negative breast cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "trial_failure",
+            "primaryEndpointMet": false,
+            "sponsorName": "Sanofi",
+            "evidenceIds": [
+              "result_iniparib_breast_fail_primary",
+              "action_iniparib_breast_fail_withdrawal",
+              "doc_iniparib_breast_fail_ct",
+              "doc_iniparib_breast_fail_result_press"
+            ]
+          },
+          {
+            "programId": "prog_inotersen_hattr",
+            "drugName": "Inotersen (Tegsedi)",
+            "indicationName": "hATTR polyneuropathy",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Ionis/Akcea",
+            "evidenceIds": [
+              "result_inotersen_hattr_primary",
+              "action_inotersen_hattr_approval",
+              "des_inotersen_hattr_orphan_0",
+              "doc_inotersen_hattr_ct",
+              "doc_inotersen_hattr_result_press"
+            ]
+          },
+          {
+            "programId": "prog_ipilimumab_melanoma",
+            "drugName": "Ipilimumab (Yervoy)",
+            "indicationName": "Melanoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "BMS",
+            "evidenceIds": [
+              "result_ipilimumab_melanoma_primary",
+              "action_ipilimumab_melanoma_approval",
+              "doc_ipilimumab_melanoma_ct",
+              "doc_ipilimumab_melanoma_result_press"
+            ]
+          },
+          {
+            "programId": "prog_mavacamten_hcm",
+            "drugName": "Mavacamten (Camzyos)",
+            "indicationName": "Obstructive HCM",
+            "therapeuticArea": "cardiology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "BMS/MyoKardia",
+            "evidenceIds": [
+              "result_mavacamten_hcm_primary",
+              "action_mavacamten_hcm_approval",
+              "des_mavacamten_hcm_orphan_0",
+              "des_mavacamten_hcm_breakthrough_1",
+              "doc_mavacamten_hcm_ct",
+              "doc_mavacamten_hcm_result_press"
+            ]
+          },
+          {
+            "programId": "prog_nivolumab_melanoma",
+            "drugName": "Nivolumab (Opdivo)",
+            "indicationName": "Advanced melanoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Bristol-Myers Squibb",
+            "evidenceIds": [
+              "result_nivolumab_melanoma_primary",
+              "action_nivolumab_melanoma_approval",
+              "des_nivolumab_melanoma_breakthrough_0",
+              "doc_nivolumab_melanoma_ct",
+              "doc_nivolumab_melanoma_result_press"
+            ]
+          },
+          {
+            "programId": "prog_nivolumab_nsclc",
+            "drugName": "Nivolumab NSCLC sBLA",
+            "indicationName": "Non-small cell lung cancer",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Bristol-Myers Squibb",
+            "evidenceIds": [
+              "result_nivolumab_nsclc_primary",
+              "action_nivolumab_nsclc_approval",
+              "doc_nivolumab_nsclc_ct",
+              "doc_nivolumab_nsclc_result_press"
+            ]
+          },
+          {
+            "programId": "prog_ocrelizumab_ms",
+            "drugName": "Ocrelizumab (Ocrevus)",
+            "indicationName": "Multiple sclerosis",
+            "therapeuticArea": "neurology",
+            "phase": "III",
+            "outcome": "approval",
+            "primaryEndpointMet": true,
+            "sponsorName": "Genentech",
+            "evidenceIds": [
+              "result_ocrelizumab_ms_primary",
+              "action_ocrelizumab_ms_approval",
+              "des_ocrelizumab_ms_breakthrough_0",
+              "doc_ocrelizumab_ms_ct",
+              "doc_ocrelizumab_ms_result_press"
+            ]
+          },
+          {
+            "programId": "prog_odronextamab_fl_crl",
+            "drugName": "Odronextamab (Ordspono)",
+            "indicationName": "Follicular lymphoma",
+            "therapeuticArea": "oncology",
+            "phase": "III",
+            "outcome": "crl",
+            "primaryEndpointMet": true,
+            "sponsorName": "Regeneron",
+            "evidenceIds": [
+              "result_odronextamab_fl_crl_primary",
+              "action_odronextamab_fl_crl_crl",
+              "des_odronextamab_fl_crl_orphan_0",
+              "doc_odronextamab_fl_crl_ct",
+              "doc_odronextamab_fl_crl_result_press"
+            ]
+          }
+        ],
+        "approvals": 14,
+        "crls": 4,
+        "withdrawals": 0,
+        "unresolved": 2,
+        "empiricalRate": 0.7777777777777778
+      }
+    ],
+    "exactAnalogues": [
+      {
+        "programId": "prog_odronextamab_fl_crl",
+        "similarities": [
+          "Same therapeutic area: oncology",
+          "Same phase: III"
+        ],
+        "differences": [
+          "Sponsor Revolution Medicines, Inc. vs Regeneron"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      },
+      {
+        "programId": "prog_rp1_melanoma_crl",
+        "similarities": [
+          "Same therapeutic area: oncology"
+        ],
+        "differences": [
+          "Sponsor Revolution Medicines, Inc. vs Replimune"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      },
+      {
+        "programId": "prog_syn_alpha_nsclc",
+        "similarities": [
+          "Same therapeutic area: oncology",
+          "Same phase: III"
+        ],
+        "differences": [
+          "Sponsor Revolution Medicines, Inc. vs SynBio Therapeutics"
+        ],
+        "outcome": "approval",
+        "cutoffCompliant": true
+      },
+      {
+        "programId": "prog_syn_beta_ra",
+        "similarities": [
+          "Same phase: III"
+        ],
+        "differences": [
+          "Therapeutic area oncology vs rheumatology",
+          "Sponsor Revolution Medicines, Inc. vs Crestline Pharma"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      },
+      {
+        "programId": "prog_cardionex_hf",
+        "similarities": [
+          "Same phase: III"
+        ],
+        "differences": [
+          "Therapeutic area oncology vs cardiology",
+          "Sponsor Revolution Medicines, Inc. vs Heartline Therapeutics"
+        ],
+        "outcome": "crl",
+        "cutoffCompliant": true
+      }
+    ],
+    "supportingEvidenceIds": [
+      "result_daraxonrasib_pdac_primary",
+      "des_daraxonrasib_pdac_breakthrough_0",
+      "des_daraxonrasib_pdac_orphan_1",
+      "doc_daraxonrasib_pdac_ct",
+      "doc_daraxonrasib_pdac_result_press"
+    ],
+    "contradictoryEvidenceIds": [
+      "result_odronextamab_fl_crl_primary",
+      "action_odronextamab_fl_crl_crl",
+      "des_odronextamab_fl_crl_orphan_0",
+      "doc_odronextamab_fl_crl_ct",
+      "doc_odronextamab_fl_crl_result_press",
+      "result_rp1_melanoma_crl_primary",
+      "action_rp1_melanoma_crl_crl",
+      "des_rp1_melanoma_crl_breakthrough_0",
+      "doc_rp1_melanoma_crl_ct",
+      "doc_rp1_melanoma_crl_result_press"
+    ],
+    "missingHighValueEvidence": [],
+    "cutoffCompliance": {
+      "forecastCutoff": "2026-08-26T17:00:34.423Z",
+      "checkedAt": "2026-08-26T17:00:35.870Z",
+      "includedAssertionIds": [
+        "result_nct00000001_primary",
+        "action_approve_syn_001",
+        "des_syn_bt",
+        "des_syn_pr",
+        "doc_syn_approval",
+        "result_nct00000002_primary",
+        "action_crl_syn_002",
+        "des_beta_ft",
+        "doc_syn_crl_8k",
+        "result_nct00000004_primary",
+        "action_crl_cardio_004",
+        "des_prog_cardionex_hf_fast_track",
+        "result_nct00000003_primary",
+        "action_approve_neuro_003",
+        "des_prog_neurovex_alz_breakthrough",
+        "des_prog_neurovex_alz_accelerated_approval",
+        "result_nct00000005_primary",
+        "action_approve_onco_005",
+        "des_prog_oncolix_her2_priority_review",
+        "result_nct00000006_primary",
+        "action_crl_rare_006",
+        "des_prog_rarezyme_lsd_orphan",
+        "des_prog_rarezyme_lsd_priority_review",
+        "result_daraxonrasib_pdac_primary",
+        "des_daraxonrasib_pdac_breakthrough_0",
+        "des_daraxonrasib_pdac_orphan_1",
+        "doc_daraxonrasib_pdac_ct",
+        "doc_daraxonrasib_pdac_result_press",
+        "result_intismeran_melanoma_primary",
+        "doc_intismeran_melanoma_ct",
+        "doc_intismeran_melanoma_result_press",
+        "result_retatrutide_obesity_primary",
+        "doc_retatrutide_obesity_ct",
+        "doc_retatrutide_obesity_result_press",
+        "result_aducanumab_ad_primary",
+        "action_aducanumab_ad_approval",
+        "des_aducanumab_ad_fast_track_0",
+        "doc_aducanumab_ad_ct",
+        "doc_aducanumab_ad_result_press",
+        "result_atezolizumab_urothelial_primary",
+        "action_atezolizumab_urothelial_approval",
+        "des_atezolizumab_urothelial_breakthrough_0",
+        "des_atezolizumab_urothelial_accelerated_approval_1",
+        "doc_atezolizumab_urothelial_ct",
+        "doc_atezolizumab_urothelial_result_press",
+        "result_bapineuzumab_ad_fail_primary",
+        "action_bapineuzumab_ad_fail_withdrawal",
+        "doc_bapineuzumab_ad_fail_ct",
+        "doc_bapineuzumab_ad_fail_result_press",
+        "result_bitopertin_schiz_fail_primary",
+        "action_bitopertin_schiz_fail_withdrawal",
+        "doc_bitopertin_schiz_fail_ct",
+        "doc_bitopertin_schiz_fail_result_press",
+        "result_dupilumab_ad_primary",
+        "action_dupilumab_ad_approval",
+        "des_dupilumab_ad_breakthrough_0",
+        "doc_dupilumab_ad_ct",
+        "doc_dupilumab_ad_result_press",
+        "result_empaveli_c3g_primary",
+        "action_empaveli_c3g_approval",
+        "des_empaveli_c3g_orphan_0",
+        "doc_empaveli_c3g_ct",
+        "doc_empaveli_c3g_result_press",
+        "result_entrectinib_ntrk_primary",
+        "action_entrectinib_ntrk_approval",
+        "des_entrectinib_ntrk_breakthrough_0",
+        "des_entrectinib_ntrk_orphan_1",
+        "doc_entrectinib_ntrk_ct",
+        "doc_entrectinib_ntrk_result_press",
+        "result_evacetrapib_cv_fail_primary",
+        "action_evacetrapib_cv_fail_withdrawal",
+        "doc_evacetrapib_cv_fail_ct",
+        "doc_evacetrapib_cv_fail_result_press",
+        "result_faricimab_amd_primary",
+        "action_faricimab_amd_approval",
+        "doc_faricimab_amd_ct",
+        "doc_faricimab_amd_result_press",
+        "result_figitumumab_nsclc_fail_primary",
+        "action_figitumumab_nsclc_fail_withdrawal",
+        "doc_figitumumab_nsclc_fail_ct",
+        "doc_figitumumab_nsclc_fail_result_press",
+        "result_fingolimod_ms_primary",
+        "action_fingolimod_ms_approval",
+        "doc_fingolimod_ms_ct",
+        "doc_fingolimod_ms_result_press",
+        "result_iniparib_breast_fail_primary",
+        "action_iniparib_breast_fail_withdrawal",
+        "doc_iniparib_breast_fail_ct",
+        "doc_iniparib_breast_fail_result_press",
+        "result_inotersen_hattr_primary",
+        "action_inotersen_hattr_approval",
+        "des_inotersen_hattr_orphan_0",
+        "doc_inotersen_hattr_ct",
+        "doc_inotersen_hattr_result_press",
+        "result_ipilimumab_melanoma_primary",
+        "action_ipilimumab_melanoma_approval",
+        "doc_ipilimumab_melanoma_ct",
+        "doc_ipilimumab_melanoma_result_press",
+        "result_mavacamten_hcm_primary",
+        "action_mavacamten_hcm_approval",
+        "des_mavacamten_hcm_orphan_0",
+        "des_mavacamten_hcm_breakthrough_1",
+        "doc_mavacamten_hcm_ct",
+        "doc_mavacamten_hcm_result_press",
+        "result_nivolumab_melanoma_primary",
+        "action_nivolumab_melanoma_approval",
+        "des_nivolumab_melanoma_breakthrough_0",
+        "doc_nivolumab_melanoma_ct",
+        "doc_nivolumab_melanoma_result_press",
+        "result_nivolumab_nsclc_primary",
+        "action_nivolumab_nsclc_approval",
+        "doc_nivolumab_nsclc_ct",
+        "doc_nivolumab_nsclc_result_press",
+        "result_ocrelizumab_ms_primary",
+        "action_ocrelizumab_ms_approval",
+        "des_ocrelizumab_ms_breakthrough_0",
+        "doc_ocrelizumab_ms_ct",
+        "doc_ocrelizumab_ms_result_press",
+        "result_odronextamab_fl_crl_primary",
+        "action_odronextamab_fl_crl_crl",
+        "des_odronextamab_fl_crl_orphan_0",
+        "doc_odronextamab_fl_crl_ct",
+        "doc_odronextamab_fl_crl_result_press",
+        "result_onc_phase2_fail_mock_primary",
+        "action_onc_phase2_fail_mock_withdrawal",
+        "doc_onc_phase2_fail_mock_ct",
+        "doc_onc_phase2_fail_mock_result_press",
+        "result_palbociclib_breast_primary",
+        "action_palbociclib_breast_approval",
+        "des_palbociclib_breast_breakthrough_0",
+        "doc_palbociclib_breast_ct",
+        "doc_palbociclib_breast_result_press",
+        "result_patisiran_hattr_primary",
+        "action_patisiran_hattr_approval",
+        "des_patisiran_hattr_orphan_0",
+        "doc_patisiran_hattr_ct",
+        "doc_patisiran_hattr_result_press",
+        "result_pembrolizumab_melanoma_primary",
+        "action_pembrolizumab_melanoma_approval",
+        "des_pembrolizumab_melanoma_breakthrough_0",
+        "doc_pembrolizumab_melanoma_ct",
+        "doc_pembrolizumab_melanoma_result_press",
+        "result_resmetirom_mash_primary",
+        "action_resmetirom_mash_approval",
+        "doc_resmetirom_mash_ct",
+        "doc_resmetirom_mash_result_press",
+        "result_rilotumumab_gastric_primary",
+        "action_rilotumumab_gastric_withdrawal",
+        "doc_rilotumumab_gastric_ct",
+        "doc_rilotumumab_gastric_result_press",
+        "result_rp1_melanoma_crl_primary",
+        "action_rp1_melanoma_crl_crl",
+        "des_rp1_melanoma_crl_breakthrough_0",
+        "doc_rp1_melanoma_crl_ct",
+        "doc_rp1_melanoma_crl_result_press",
+        "result_semagacestat_ad_fail_primary",
+        "action_semagacestat_ad_fail_withdrawal",
+        "doc_semagacestat_ad_fail_ct",
+        "doc_semagacestat_ad_fail_result_press",
+        "result_sepiapterin_pku_primary",
+        "action_sepiapterin_pku_approval",
+        "des_sepiapterin_pku_orphan_0",
+        "doc_sepiapterin_pku_ct",
+        "doc_sepiapterin_pku_result_press",
+        "result_sofosbuvir_hcv_primary",
+        "action_sofosbuvir_hcv_approval",
+        "doc_sofosbuvir_hcv_ct",
+        "doc_sofosbuvir_hcv_result_press",
+        "result_solanezumab_ad_fail_primary",
+        "action_solanezumab_ad_fail_withdrawal",
+        "doc_solanezumab_ad_fail_ct",
+        "doc_solanezumab_ad_fail_result_press",
+        "result_tirzepatide_t2d_primary",
+        "action_tirzepatide_t2d_approval",
+        "doc_tirzepatide_t2d_ct",
+        "doc_tirzepatide_t2d_result_press",
+        "result_torcetrapib_cv_fail_primary",
+        "action_torcetrapib_cv_fail_withdrawal",
+        "doc_torcetrapib_cv_fail_ct",
+        "doc_torcetrapib_cv_fail_result_press",
+        "result_transcon_hgh_adult_primary",
+        "action_transcon_hgh_adult_approval",
+        "des_transcon_hgh_adult_orphan_0",
+        "doc_transcon_hgh_adult_ct",
+        "doc_transcon_hgh_adult_result_press",
+        "result_upadacitinib_ra_primary",
+        "action_upadacitinib_ra_approval",
+        "doc_upadacitinib_ra_ct",
+        "doc_upadacitinib_ra_result_press",
+        "result_verubecestat_ad_fail_primary",
+        "action_verubecestat_ad_fail_withdrawal",
+        "doc_verubecestat_ad_fail_ct",
+        "doc_verubecestat_ad_fail_result_press"
+      ],
+      "excludedAssertionIds": [],
+      "leakageDetected": false,
+      "notes": []
+    }
+  },
+  "bankroll": 10000
+}

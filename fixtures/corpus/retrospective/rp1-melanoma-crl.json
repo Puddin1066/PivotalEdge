@@ -1,0 +1,228 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_rp1_melanoma_crl",
+    "preferredName": "RP1 (vusolimogene oderparepvec)",
+    "modality": "oncolytic_virus",
+    "mechanismIds": [
+      "mech_rp1_melanoma_crl"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_rp1_melanoma_crl",
+    "name": "Replimune",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_rp1_melanoma_crl",
+    "name": "Advanced melanoma",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0000756"
+  },
+  "program": {
+    "id": "prog_rp1_melanoma_crl",
+    "drugAssetId": "drug_rp1_melanoma_crl",
+    "indicationId": "ind_rp1_melanoma_crl",
+    "sponsorId": "sponsor_rp1_melanoma_crl",
+    "name": "RP1 (vusolimogene oderparepvec) — Advanced melanoma",
+    "status": "crl"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_rp1_melanoma_crl",
+      "name": "Oncolytic immunotherapy",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03767348",
+      "nctId": "NCT03767348",
+      "programId": "prog_rp1_melanoma_crl",
+      "phase": "II",
+      "title": "IGNYTE RP1 melanoma",
+      "status": "active",
+      "terminationReason": null,
+      "plannedEnrollment": 140,
+      "actualEnrollment": 140,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2024-06-01T12:00:00.000Z",
+      "studyStartAt": "2024-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2025-07-22T12:00:00.000Z",
+      "completionAt": "2025-07-22T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_rp1_melanoma_crl_primary",
+      "trialId": "trial_nct03767348",
+      "name": "ORR",
+      "endpointFamily": "ORR",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_rp1_melanoma_crl_primary",
+      "trialId": "trial_nct03767348",
+      "endpointId": "ep_rp1_melanoma_crl_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03767348",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2024-06-01T00:00:00.000Z",
+        "effectiveAt": "2024-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a4e49f0c0cd9b47d6038155d",
+        "exactPassage": "IGNYTE primary response data disclosed prior to CRL.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761401",
+    "programId": "prog_rp1_melanoma_crl",
+    "applicationNumber": "BLA761401",
+    "applicationType": "BLA",
+    "indicationId": "ind_rp1_melanoma_crl",
+    "filedAt": "2024-12-20T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2025-07-22T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://investors.replimune.com/news-releases/news-release-details/replimune-announces-fda-acceptance-biologics-license-application",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:41.004Z",
+      "firstPublicAt": "2024-12-20T00:00:00.000Z",
+      "effectiveAt": "2024-12-20T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:dfe322332efcd99360c73d32",
+      "exactPassage": "Replimune submitted RP1 BLA Dec 2024; FDA issued CRL Jul 22 2025.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_rp1_melanoma_crl_crl",
+    "applicationId": "app_bla761401",
+    "actionType": "crl",
+    "actionDate": "2025-07-22T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT03767348",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.004Z",
+      "firstPublicAt": "2025-07-22T00:00:00.000Z",
+      "effectiveAt": "2025-07-22T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:c1d7c16049def7d43319adcd",
+      "exactPassage": "Complete response / non-approval disclosure 2025-07-22T00:00:00.000Z for RP1 (vusolimogene oderparepvec)",
+      "locator": "action#crl",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_rp1_melanoma_crl_breakthrough_0",
+      "programId": "prog_rp1_melanoma_crl",
+      "applicationId": "app_bla761401",
+      "designationType": "breakthrough",
+      "grantedAt": "2022-11-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2022-11-01T00:00:00.000Z",
+        "effectiveAt": "2022-11-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:147acc0f6bf984af845b134e",
+        "exactPassage": "breakthrough designation for RP1 (vusolimogene oderparepvec)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_rp1_melanoma_crl_0_pembrolizumab",
+      "indicationId": "ind_rp1_melanoma_crl",
+      "drugAssetId": "drug_comp_pembrolizumab",
+      "drugName": "Pembrolizumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000756",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2024-06-01T12:00:00.000Z",
+        "effectiveAt": "2024-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bb3d2d7b71281a01e8b3664c",
+        "exactPassage": "Approved / clinical candidate in indication: Pembrolizumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_rp1_melanoma_crl_ct",
+      "title": "IGNYTE RP1 melanoma",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03767348",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2024-06-01T12:00:00.000Z",
+        "effectiveAt": "2024-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:1d3755a5d704610e354fba48",
+        "exactPassage": "IGNYTE RP1 melanoma",
+        "locator": "NCT03767348",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_rp1_melanoma_crl_result_press",
+      "title": "RP1 (vusolimogene oderparepvec) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03767348",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2024-06-01T00:00:00.000Z",
+        "effectiveAt": "2024-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a4e49f0c0cd9b47d6038155d",
+        "exactPassage": "IGNYTE primary response data disclosed prior to CRL.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_rp1_melanoma_crl_reg_clock",
+      "title": "RP1 (vusolimogene oderparepvec) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investors.replimune.com/news-releases/news-release-details/replimune-announces-fda-acceptance-biologics-license-application",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.004Z",
+        "firstPublicAt": "2024-12-20T00:00:00.000Z",
+        "effectiveAt": "2024-12-20T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:dfe322332efcd99360c73d32",
+        "exactPassage": "Replimune submitted RP1 BLA Dec 2024; FDA issued CRL Jul 22 2025.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

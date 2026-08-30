@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "composite": false,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "schemas/**/*.ts",
+    "ingestion/**/*.ts",
+    "entity-resolution/**/*.ts",
+    "event-study/**/*.ts",
+    "embeddings/**/*.ts",
+    "agents/**/*.ts",
+    "orchestration/**/*.ts",
+    "models/**/*.ts",
+    "portfolio/**/*.ts",
+    "backtest/**/*.ts",
+    "db/**/*.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}

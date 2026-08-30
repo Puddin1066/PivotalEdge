@@ -1,0 +1,229 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_retatrutide_obesity",
+    "preferredName": "Retatrutide",
+    "modality": "peptide",
+    "mechanismIds": [
+      "mech_retatrutide_obesity"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_retatrutide_obesity",
+    "name": "Eli Lilly and Company",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_retatrutide_obesity",
+    "name": "Obesity / overweight",
+    "therapeuticArea": "metabolic",
+    "efoId": "EFO_0001073"
+  },
+  "program": {
+    "id": "prog_retatrutide_obesity",
+    "drugAssetId": "drug_retatrutide_obesity",
+    "indicationId": "ind_retatrutide_obesity",
+    "sponsorId": "sponsor_retatrutide_obesity",
+    "name": "Retatrutide — Obesity / overweight",
+    "status": "active"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_retatrutide_obesity",
+      "name": "GIP/GLP-1/glucagon triple agonist",
+      "target": "GIPR/GLP1R/GCGR",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct05929066",
+      "nctId": "NCT05929066",
+      "programId": "prog_retatrutide_obesity",
+      "phase": "III",
+      "title": "A Master Protocol to Investigate the Efficacy and Safety of LY3437943 Once Weekly in Participants Without Type 2 Diabetes Who Have Obesity or Overweight: A Randomized, Double-Blind, Placebo-Controlled Trial (TRIUMPH-1)",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 2335,
+      "actualEnrollment": 2335,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2023-06-26T12:00:00.000Z",
+      "studyStartAt": "2023-07-10T12:00:00.000Z",
+      "primaryCompletionAt": "2026-04-06T12:00:00.000Z",
+      "completionAt": "2026-04-30T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_retatrutide_obesity_primary",
+      "trialId": "trial_nct05929066",
+      "name": "Percent Change From Baseline in Body Weight",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_retatrutide_obesity_primary",
+      "trialId": "trial_nct05929066",
+      "endpointId": "ep_retatrutide_obesity_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2026-05-21T12:00:00.000Z",
+        "effectiveAt": "2026-05-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e93f38447a9dd3e3661c7d15",
+        "exactPassage": "TRIUMPH-1 Phase 3: all retatrutide doses met primary and key secondary obesity endpoints at 80 weeks.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_retatrutide_obesity_planned",
+    "programId": "prog_retatrutide_obesity",
+    "applicationNumber": null,
+    "applicationType": "BLA",
+    "indicationId": "ind_retatrutide_obesity",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": null,
+    "expectedFilingAt": "2027-03-31T23:59:00.000Z",
+    "reviewProgram": "unknown",
+    "clockProvenance": {
+      "sourceUrl": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c-302832674.html",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T13:26:06.420Z",
+      "firstPublicAt": "2026-07-23T12:00:00.000Z",
+      "effectiveAt": "2026-07-23T12:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:e975a7f06e6815eedc8b5a20",
+      "exactPassage": "Lilly plans to submit a Biologics License Application (BLA) for retatrutide to FDA in Q1 2027.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": null,
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_retatrutide_obesity_0_tirzepatide",
+      "indicationId": "ind_retatrutide_obesity",
+      "drugAssetId": "drug_comp_tirzepatide",
+      "drugName": "Tirzepatide",
+      "approvedAt": "2022-05-13T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/retrospective/tirzepatide-t2d.json",
+        "sourceSystem": "kg.retrospective",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2022-05-13T00:00:00.000Z",
+        "effectiveAt": "2022-05-13T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:b9d62c53a9bce6f7786a8dfa",
+        "exactPassage": "Retrospective KG: Tirzepatide (Mounjaro) approved 2022-05-13T00:00:00.000Z",
+        "locator": "retrospective#corpus/retrospective/tirzepatide-t2d.json",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_retatrutide_obesity_1_semaglutide",
+      "indicationId": "ind_retatrutide_obesity",
+      "drugAssetId": "drug_comp_semaglutide",
+      "drugName": "Semaglutide",
+      "approvedAt": "2017-12-05T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2017/209637Orig1s000TOC.cfm",
+        "sourceSystem": "enrichment_override",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2017-12-05T12:00:00.000Z",
+        "effectiveAt": "2017-12-05T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:528bf5bd4835c3a73d8930b9",
+        "exactPassage": "Curated override: Semaglutide (Ozempic) approved 2017-12-05T12:00:00.000Z",
+        "locator": "override#NDA209637",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_retatrutide_obesity_2_liraglutide",
+      "indicationId": "ind_retatrutide_obesity",
+      "drugAssetId": "drug_comp_liraglutide",
+      "drugName": "Liraglutide",
+      "approvedAt": "2024-12-23T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2024-12-23T12:00:00.000Z",
+        "effectiveAt": "2024-12-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2dba7d9a54a11f089d51212b",
+        "exactPassage": "Orange Book: LIRAGLUTIDE (appl 215503) approval 2024-12-23T12:00:00.000Z",
+        "locator": "orangebook#215503",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_retatrutide_obesity_ct",
+      "title": "A Master Protocol to Investigate the Efficacy and Safety of LY3437943 Once Weekly in Participants Without Type 2 Diabetes Who Have Obesity or Overweight: A Randomized, Double-Blind, Placebo-Controlled Trial (TRIUMPH-1)",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05929066",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2023-07-10T12:00:00.000Z",
+        "effectiveAt": "2023-07-10T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:229384d58b26084e7e71195d",
+        "exactPassage": "A Master Protocol to Investigate the Efficacy and Safety of LY3437943 Once Weekly in Participants Without Type 2 Diabetes Who Have Obesity or Overweight: A Randomized, Double-Blind, Placebo-Controlled Trial (TRIUMPH-1)",
+        "locator": "NCT05929066",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_retatrutide_obesity_result_press",
+      "title": "Retatrutide primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2026-05-21T12:00:00.000Z",
+        "effectiveAt": "2026-05-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e93f38447a9dd3e3661c7d15",
+        "exactPassage": "TRIUMPH-1 Phase 3: all retatrutide doses met primary and key secondary obesity endpoints at 80 weeks.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_retatrutide_obesity_reg_clock",
+      "title": "Retatrutide regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c-302832674.html",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:06.420Z",
+        "firstPublicAt": "2026-07-23T12:00:00.000Z",
+        "effectiveAt": "2026-07-23T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e975a7f06e6815eedc8b5a20",
+        "exactPassage": "Lilly plans to submit a Biologics License Application (BLA) for retatrutide to FDA in Q1 2027.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

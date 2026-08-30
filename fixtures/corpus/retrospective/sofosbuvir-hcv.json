@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_sofosbuvir_hcv",
+    "preferredName": "Sofosbuvir (Sovaldi)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_sofosbuvir_hcv"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_sofosbuvir_hcv",
+    "name": "Gilead",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_sofosbuvir_hcv",
+    "name": "Hepatitis C",
+    "therapeuticArea": "infectious_disease",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_sofosbuvir_hcv",
+    "drugAssetId": "drug_sofosbuvir_hcv",
+    "indicationId": "ind_sofosbuvir_hcv",
+    "sponsorId": "sponsor_sofosbuvir_hcv",
+    "name": "Sofosbuvir (Sovaldi) — Hepatitis C",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_sofosbuvir_hcv",
+      "name": "NS5B inhibitor",
+      "target": "HCV NS5B",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01497366",
+      "nctId": "NCT01497366",
+      "programId": "prog_sofosbuvir_hcv",
+      "phase": "III",
+      "title": "NEUTRINO sofosbuvir",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 327,
+      "actualEnrollment": 327,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2013-04-01T12:00:00.000Z",
+      "studyStartAt": "2013-04-01T12:00:00.000Z",
+      "primaryCompletionAt": "2013-12-06T12:00:00.000Z",
+      "completionAt": "2013-12-06T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_sofosbuvir_hcv_primary",
+      "trialId": "trial_nct01497366",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_sofosbuvir_hcv_primary",
+      "trialId": "trial_nct01497366",
+      "endpointId": "ep_sofosbuvir_hcv_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.169Z",
+        "firstPublicAt": "2013-04-01T00:00:00.000Z",
+        "effectiveAt": "2013-04-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:67310fb8c1ef63d94e26eb78",
+        "exactPassage": "NEUTRINO SVR primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda204671",
+    "programId": "prog_sofosbuvir_hcv",
+    "applicationNumber": "NDA204671",
+    "applicationType": "NDA",
+    "indicationId": "ind_sofosbuvir_hcv",
+    "filedAt": "2013-04-08T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2013-12-06T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.gilead.com/news-and-press/press-room/press-releases/2013/4/gilead-submits-new-drug-application-to-us-fda-for-sofosbuvir-for-the-treatment-of-hepatitis-c",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:42.169Z",
+      "firstPublicAt": "2013-04-08T00:00:00.000Z",
+      "effectiveAt": "2013-04-08T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:ff470d3b154d7f21cc967f47",
+      "exactPassage": "Gilead submitted sofosbuvir NDA Apr 2013; FDA approval Dec 6 2013.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_sofosbuvir_hcv_approval",
+    "applicationId": "app_nda204671",
+    "actionType": "approval",
+    "actionDate": "2013-12-06T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:42.169Z",
+      "firstPublicAt": "2013-12-06T00:00:00.000Z",
+      "effectiveAt": "2013-12-06T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:be1450cff734ec8fa6d3fcae",
+      "exactPassage": "FDA approval date 2013-12-06T00:00:00.000Z for Sofosbuvir (Sovaldi)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_sofosbuvir_hcv_ct",
+      "title": "NEUTRINO sofosbuvir",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01497366",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:42.169Z",
+        "firstPublicAt": "2013-04-01T12:00:00.000Z",
+        "effectiveAt": "2013-04-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:174e9ca5abb62f773e0a99cb",
+        "exactPassage": "NEUTRINO sofosbuvir",
+        "locator": "NCT01497366",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_sofosbuvir_hcv_result_press",
+      "title": "Sofosbuvir (Sovaldi) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.169Z",
+        "firstPublicAt": "2013-04-01T00:00:00.000Z",
+        "effectiveAt": "2013-04-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:67310fb8c1ef63d94e26eb78",
+        "exactPassage": "NEUTRINO SVR primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_sofosbuvir_hcv_reg_clock",
+      "title": "Sofosbuvir (Sovaldi) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.gilead.com/news-and-press/press-room/press-releases/2013/4/gilead-submits-new-drug-application-to-us-fda-for-sofosbuvir-for-the-treatment-of-hepatitis-c",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.169Z",
+        "firstPublicAt": "2013-04-08T00:00:00.000Z",
+        "effectiveAt": "2013-04-08T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ff470d3b154d7f21cc967f47",
+        "exactPassage": "Gilead submitted sofosbuvir NDA Apr 2013; FDA approval Dec 6 2013.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

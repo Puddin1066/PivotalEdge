@@ -1,0 +1,19 @@
+{
+  "kind": "orderbook_snapshot",
+  "orderBook": {
+    "id": "ob_synalpha_no_fixture",
+    "marketId": "pm_poly_syn_001",
+    "capturedAt": "2024-06-01T12:00:00.000Z",
+    "bids": [
+      { "price": 0.26, "size": 700 },
+      { "price": 0.25, "size": 500 }
+    ],
+    "asks": [
+      { "price": 0.3, "size": 850 },
+      { "price": 0.31, "size": 400 }
+    ],
+    "midpoint": 0.28,
+    "bestBid": 0.26,
+    "bestAsk": 0.3
+  }
+}

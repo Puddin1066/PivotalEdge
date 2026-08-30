@@ -1,0 +1,188 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_tirzepatide_t2d",
+    "preferredName": "Tirzepatide (Mounjaro)",
+    "modality": "peptide",
+    "mechanismIds": [
+      "mech_tirzepatide_t2d"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_tirzepatide_t2d",
+    "name": "Lilly",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_tirzepatide_t2d",
+    "name": "Type 2 diabetes",
+    "therapeuticArea": "metabolic",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_tirzepatide_t2d",
+    "drugAssetId": "drug_tirzepatide_t2d",
+    "indicationId": "ind_tirzepatide_t2d",
+    "sponsorId": "sponsor_tirzepatide_t2d",
+    "name": "Tirzepatide (Mounjaro) — Type 2 diabetes",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_tirzepatide_t2d",
+      "name": "GIP/GLP-1 dual agonist",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct03882970",
+      "nctId": "NCT03882970",
+      "programId": "prog_tirzepatide_t2d",
+      "phase": "III",
+      "title": "SURPASS tirzepatide",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 1879,
+      "actualEnrollment": 1879,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2021-06-01T12:00:00.000Z",
+      "studyStartAt": "2021-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2022-05-13T12:00:00.000Z",
+      "completionAt": "2022-05-13T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_tirzepatide_t2d_primary",
+      "trialId": "trial_nct03882970",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_tirzepatide_t2d_primary",
+      "trialId": "trial_nct03882970",
+      "endpointId": "ep_tirzepatide_t2d_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.809Z",
+        "firstPublicAt": "2021-06-01T00:00:00.000Z",
+        "effectiveAt": "2021-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d3cf31061520a0dae763df63",
+        "exactPassage": "SURPASS primary met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda215866",
+    "programId": "prog_tirzepatide_t2d",
+    "applicationNumber": "NDA215866",
+    "applicationType": "NDA",
+    "indicationId": "ind_tirzepatide_t2d",
+    "filedAt": "2021-09-15T00:00:00.000Z",
+    "acceptedAt": null,
+    "pdufaDate": "2022-05-13T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/215866Orig1s000NameR.pdf",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:42.809Z",
+      "firstPublicAt": "2021-09-15T00:00:00.000Z",
+      "effectiveAt": "2021-09-15T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:4aaa849181d32f41d305c3e1",
+      "exactPassage": "Lilly submitted tirzepatide NDA Sep 15 2021 with priority review voucher; approved May 13 2022.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_tirzepatide_t2d_approval",
+    "applicationId": "app_nda215866",
+    "actionType": "approval",
+    "actionDate": "2022-05-13T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:42.809Z",
+      "firstPublicAt": "2022-05-13T00:00:00.000Z",
+      "effectiveAt": "2022-05-13T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:cc840b5bc99d41637c45fdde",
+      "exactPassage": "FDA approval date 2022-05-13T00:00:00.000Z for Tirzepatide (Mounjaro)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_tirzepatide_t2d_ct",
+      "title": "SURPASS tirzepatide",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT03882970",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:42.809Z",
+        "firstPublicAt": "2021-06-01T12:00:00.000Z",
+        "effectiveAt": "2021-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:8d1b9cd491d99ea7d3af0757",
+        "exactPassage": "SURPASS tirzepatide",
+        "locator": "NCT03882970",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_tirzepatide_t2d_result_press",
+      "title": "Tirzepatide (Mounjaro) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.809Z",
+        "firstPublicAt": "2021-06-01T00:00:00.000Z",
+        "effectiveAt": "2021-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d3cf31061520a0dae763df63",
+        "exactPassage": "SURPASS primary met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_tirzepatide_t2d_reg_clock",
+      "title": "Tirzepatide (Mounjaro) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/215866Orig1s000NameR.pdf",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:42.809Z",
+        "firstPublicAt": "2021-09-15T00:00:00.000Z",
+        "effectiveAt": "2021-09-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4aaa849181d32f41d305c3e1",
+        "exactPassage": "Lilly submitted tirzepatide NDA Sep 15 2021 with priority review voucher; approved May 13 2022.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

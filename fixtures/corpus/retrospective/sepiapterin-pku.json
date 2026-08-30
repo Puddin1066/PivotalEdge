@@ -1,0 +1,200 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_sepiapterin_pku",
+    "preferredName": "Sepiapterin (Sephience)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_sepiapterin_pku"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_sepiapterin_pku",
+    "name": "PTC Therapeutics",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_sepiapterin_pku",
+    "name": "Phenylketonuria",
+    "therapeuticArea": "rare_disease",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_sepiapterin_pku",
+    "drugAssetId": "drug_sepiapterin_pku",
+    "indicationId": "ind_sepiapterin_pku",
+    "sponsorId": "sponsor_sepiapterin_pku",
+    "name": "Sepiapterin (Sephience) — Phenylketonuria",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_sepiapterin_pku",
+      "name": "BH4 pathway",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct05099640",
+      "nctId": "NCT05099640",
+      "programId": "prog_sepiapterin_pku",
+      "phase": "III",
+      "title": "APHENITY sepiapterin PKU",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 156,
+      "actualEnrollment": 156,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2024-05-01T12:00:00.000Z",
+      "studyStartAt": "2024-05-01T12:00:00.000Z",
+      "primaryCompletionAt": "2025-07-29T12:00:00.000Z",
+      "completionAt": "2025-07-29T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_sepiapterin_pku_primary",
+      "trialId": "trial_nct05099640",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_sepiapterin_pku_primary",
+      "trialId": "trial_nct05099640",
+      "endpointId": "ep_sepiapterin_pku_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05099640",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.358Z",
+        "firstPublicAt": "2024-05-01T00:00:00.000Z",
+        "effectiveAt": "2024-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a0708e9954db405441bb190e",
+        "exactPassage": "APHENITY primary endpoint met in PKU.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda218070",
+    "programId": "prog_sepiapterin_pku",
+    "applicationNumber": "NDA218070",
+    "applicationType": "NDA",
+    "indicationId": "ind_sepiapterin_pku",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2025-07-29T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_sepiapterin_pku_approval",
+    "applicationId": "app_nda218070",
+    "actionType": "approval",
+    "actionDate": "2025-07-29T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT05099640",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.358Z",
+      "firstPublicAt": "2025-07-29T00:00:00.000Z",
+      "effectiveAt": "2025-07-29T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:a2660547800ace50c7671b03",
+      "exactPassage": "FDA approval date 2025-07-29T00:00:00.000Z for Sepiapterin (Sephience)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_sepiapterin_pku_orphan_0",
+      "programId": "prog_sepiapterin_pku",
+      "applicationId": "app_nda218070",
+      "designationType": "orphan",
+      "grantedAt": "2019-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.358Z",
+        "firstPublicAt": "2019-01-01T00:00:00.000Z",
+        "effectiveAt": "2019-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:e259158e36969022bc2e6208",
+        "exactPassage": "orphan designation for Sepiapterin (Sephience)",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_sepiapterin_pku_0_pegvaliase",
+      "indicationId": "ind_sepiapterin_pku",
+      "drugAssetId": "drug_comp_pegvaliase",
+      "drugName": "Pegvaliase",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05099640",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.358Z",
+        "firstPublicAt": "2024-05-01T12:00:00.000Z",
+        "effectiveAt": "2024-05-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:75ae2fa584d80c99425bf1f8",
+        "exactPassage": "Approved / clinical candidate in indication: Pegvaliase",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_sepiapterin_pku_ct",
+      "title": "APHENITY sepiapterin PKU",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05099640",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.358Z",
+        "firstPublicAt": "2024-05-01T12:00:00.000Z",
+        "effectiveAt": "2024-05-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4aeb31ab2e26e051dc406ac7",
+        "exactPassage": "APHENITY sepiapterin PKU",
+        "locator": "NCT05099640",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_sepiapterin_pku_result_press",
+      "title": "Sepiapterin (Sephience) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT05099640",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.358Z",
+        "firstPublicAt": "2024-05-01T00:00:00.000Z",
+        "effectiveAt": "2024-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a0708e9954db405441bb190e",
+        "exactPassage": "APHENITY primary endpoint met in PKU.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

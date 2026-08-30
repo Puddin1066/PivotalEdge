@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_onc_phase2_fail_mock",
+    "preferredName": "Oncofailmab (mock Phase II miss)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_onc_phase2_fail_mock"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_onc_phase2_fail_mock",
+    "name": "MockBio",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_onc_phase2_fail_mock",
+    "name": "Solid tumors",
+    "therapeuticArea": "oncology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_onc_phase2_fail_mock",
+    "drugAssetId": "drug_onc_phase2_fail_mock",
+    "indicationId": "ind_onc_phase2_fail_mock",
+    "sponsorId": "sponsor_onc_phase2_fail_mock",
+    "name": "Oncofailmab (mock Phase II miss) — Solid tumors",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_onc_phase2_fail_mock",
+      "name": "Novel IO target",
+      "target": null,
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00009901",
+      "nctId": "NCT00009901",
+      "programId": "prog_onc_phase2_fail_mock",
+      "phase": "II",
+      "title": "Oncofailmab Phase II solid tumors",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 68,
+      "actualEnrollment": 68,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2019-06-01T12:00:00.000Z",
+      "studyStartAt": "2019-06-01T12:00:00.000Z",
+      "primaryCompletionAt": "2019-06-15T12:00:00.000Z",
+      "completionAt": "2019-06-15T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_onc_phase2_fail_mock_primary",
+      "trialId": "trial_nct00009901",
+      "name": "ORR",
+      "endpointFamily": "ORR",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_onc_phase2_fail_mock_primary",
+      "trialId": "trial_nct00009901",
+      "endpointId": "ep_onc_phase2_fail_mock_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective/onc-phase2-fail",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.678Z",
+        "firstPublicAt": "2019-06-01T00:00:00.000Z",
+        "effectiveAt": "2019-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:52e6d1e4dc1b5f1eac6de476",
+        "exactPassage": "Phase II ORR futility — program discontinued.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_onc_phase2_fail_mock_pending",
+    "programId": "prog_onc_phase2_fail_mock",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_onc_phase2_fail_mock",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2019-06-15T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_onc_phase2_fail_mock_withdrawal",
+    "applicationId": "app_onc_phase2_fail_mock_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2019-06-15T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective/onc-phase2-fail",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.678Z",
+      "firstPublicAt": "2019-06-15T00:00:00.000Z",
+      "effectiveAt": "2019-06-15T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:b39daa2de216b6d1b545ab8f",
+      "exactPassage": "Program discontinuation disclosure 2019-06-15T00:00:00.000Z for Oncofailmab (mock Phase II miss)",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_onc_phase2_fail_mock_0_pembrolizumab",
+      "indicationId": "ind_onc_phase2_fail_mock",
+      "drugAssetId": "drug_comp_pembrolizumab",
+      "drugName": "Pembrolizumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00009901",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.678Z",
+        "firstPublicAt": "2019-06-01T12:00:00.000Z",
+        "effectiveAt": "2019-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c6de79d95209b8bd27b04eed",
+        "exactPassage": "Approved / clinical candidate in indication: Pembrolizumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_onc_phase2_fail_mock_ct",
+      "title": "Oncofailmab Phase II solid tumors",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00009901",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.678Z",
+        "firstPublicAt": "2019-06-01T12:00:00.000Z",
+        "effectiveAt": "2019-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:1f3577a1c421ada46ace7d26",
+        "exactPassage": "Oncofailmab Phase II solid tumors",
+        "locator": "NCT00009901",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_onc_phase2_fail_mock_result_press",
+      "title": "Oncofailmab (mock Phase II miss) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective/onc-phase2-fail",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.678Z",
+        "firstPublicAt": "2019-06-01T00:00:00.000Z",
+        "effectiveAt": "2019-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:52e6d1e4dc1b5f1eac6de476",
+        "exactPassage": "Phase II ORR futility — program discontinued.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

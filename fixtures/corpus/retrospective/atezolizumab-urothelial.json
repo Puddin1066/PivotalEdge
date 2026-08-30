@@ -1,0 +1,247 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_atezolizumab_urothelial",
+    "preferredName": "Atezolizumab (Tecentriq)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_atezolizumab_urothelial"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_atezolizumab_urothelial",
+    "name": "Genentech",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_atezolizumab_urothelial",
+    "name": "Urothelial carcinoma",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0008529"
+  },
+  "program": {
+    "id": "prog_atezolizumab_urothelial",
+    "drugAssetId": "drug_atezolizumab_urothelial",
+    "indicationId": "ind_atezolizumab_urothelial",
+    "sponsorId": "sponsor_atezolizumab_urothelial",
+    "name": "Atezolizumab (Tecentriq) — Urothelial carcinoma",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_atezolizumab_urothelial",
+      "name": "PD-L1 inhibition",
+      "target": "CD274",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct02108652",
+      "nctId": "NCT02108652",
+      "programId": "prog_atezolizumab_urothelial",
+      "phase": "II",
+      "title": "IMvigor210 atezolizumab urothelial",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 310,
+      "actualEnrollment": 310,
+      "masking": "open",
+      "allocation": "non_randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2016-01-15T12:00:00.000Z",
+      "studyStartAt": "2016-01-15T12:00:00.000Z",
+      "primaryCompletionAt": "2016-05-18T12:00:00.000Z",
+      "completionAt": "2016-05-18T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_atezolizumab_urothelial_primary",
+      "trialId": "trial_nct02108652",
+      "name": "ORR",
+      "endpointFamily": "ORR",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_atezolizumab_urothelial_primary",
+      "trialId": "trial_nct02108652",
+      "endpointId": "ep_atezolizumab_urothelial_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02108652",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-01-15T00:00:00.000Z",
+        "effectiveAt": "2016-01-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a36872ad80ef7b0463a70634",
+        "exactPassage": "IMvigor accelerated-approval ORR package positive.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla761034",
+    "programId": "prog_atezolizumab_urothelial",
+    "applicationNumber": "BLA761034",
+    "applicationType": "BLA",
+    "indicationId": "ind_atezolizumab_urothelial",
+    "filedAt": null,
+    "acceptedAt": "2016-03-14T00:00:00.000Z",
+    "pdufaDate": "2016-05-18T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://www.gene.com/media/press-releases/14667/2016-03-14/fda-accepts-genentechs-biologics-license",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:39.065Z",
+      "firstPublicAt": "2016-03-14T00:00:00.000Z",
+      "effectiveAt": "2016-03-14T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:547a19de00d4f963c0c9df6e",
+      "exactPassage": "FDA accepted atezolizumab BLA for priority review Mar 14 2016; accelerated approval May 18 2016.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_atezolizumab_urothelial_approval",
+    "applicationId": "app_bla761034",
+    "actionType": "approval",
+    "actionDate": "2016-05-18T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT02108652",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:39.065Z",
+      "firstPublicAt": "2016-05-18T00:00:00.000Z",
+      "effectiveAt": "2016-05-18T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:fd4b5edbe2f70aa0ec403eff",
+      "exactPassage": "FDA approval date 2016-05-18T00:00:00.000Z for Atezolizumab (Tecentriq)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_atezolizumab_urothelial_breakthrough_0",
+      "programId": "prog_atezolizumab_urothelial",
+      "applicationId": "app_bla761034",
+      "designationType": "breakthrough",
+      "grantedAt": "2014-05-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2014-05-01T00:00:00.000Z",
+        "effectiveAt": "2014-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a3f08cb9ac33400c388aa69b",
+        "exactPassage": "breakthrough designation for Atezolizumab (Tecentriq)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_atezolizumab_urothelial_accelerated_approval_1",
+      "programId": "prog_atezolizumab_urothelial",
+      "applicationId": "app_bla761034",
+      "designationType": "accelerated_approval",
+      "grantedAt": "2016-05-18T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-05-18T00:00:00.000Z",
+        "effectiveAt": "2016-05-18T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f31a1cd21df512bd396ca758",
+        "exactPassage": "accelerated_approval designation for Atezolizumab (Tecentriq)",
+        "locator": "designation#accelerated_approval",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_atezolizumab_urothelial_0_chemotherapy",
+      "indicationId": "ind_atezolizumab_urothelial",
+      "drugAssetId": "drug_comp_chemotherapy",
+      "drugName": "Chemotherapy",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0008529",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-01-15T12:00:00.000Z",
+        "effectiveAt": "2016-01-15T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4844fbd7363d3afa8238b6ee",
+        "exactPassage": "Approved / clinical candidate in indication: Chemotherapy",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_atezolizumab_urothelial_ct",
+      "title": "IMvigor210 atezolizumab urothelial",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02108652",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-01-15T12:00:00.000Z",
+        "effectiveAt": "2016-01-15T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:196d5a96bbc3f4c39fb8fe12",
+        "exactPassage": "IMvigor210 atezolizumab urothelial",
+        "locator": "NCT02108652",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_atezolizumab_urothelial_result_press",
+      "title": "Atezolizumab (Tecentriq) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT02108652",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-01-15T00:00:00.000Z",
+        "effectiveAt": "2016-01-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a36872ad80ef7b0463a70634",
+        "exactPassage": "IMvigor accelerated-approval ORR package positive.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_atezolizumab_urothelial_reg_clock",
+      "title": "Atezolizumab (Tecentriq) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.gene.com/media/press-releases/14667/2016-03-14/fda-accepts-genentechs-biologics-license",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:39.065Z",
+        "firstPublicAt": "2016-03-14T00:00:00.000Z",
+        "effectiveAt": "2016-03-14T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:547a19de00d4f963c0c9df6e",
+        "exactPassage": "FDA accepted atezolizumab BLA for priority review Mar 14 2016; accelerated approval May 18 2016.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

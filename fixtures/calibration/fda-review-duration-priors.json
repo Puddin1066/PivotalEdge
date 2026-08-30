@@ -1,0 +1,19 @@
+{
+  "kind": "fda_review_duration_priors",
+  "version": 1,
+  "description": "Default FDA review window lengths (days) by review program for decision_by_T when PDUFA is absent. Public-domain FDA calendar conventions; CNPV is empirical pilot length.",
+  "sourceNotes": [
+    "Standard NDA/BLA: ~10 months from filing acceptance (~300 calendar days used as model prior).",
+    "Priority / accelerated: ~6 months (~180 days).",
+    "CNPV (Commissioner's National Priority Voucher) pilot: ~1–2 months target; model uses 45 days until larger sample exists.",
+    "Unknown / missing program: 240 days (between priority and standard)."
+  ],
+  "windowsDays": {
+    "cnpv": 45,
+    "priority": 180,
+    "accelerated": 180,
+    "standard": 300,
+    "unknown": 240
+  },
+  "updatedAt": "2026-08-26"
+}

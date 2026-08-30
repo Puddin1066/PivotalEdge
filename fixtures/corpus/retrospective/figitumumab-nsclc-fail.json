@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_figitumumab_nsclc_fail",
+    "preferredName": "Figitumumab",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_figitumumab_nsclc_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_figitumumab_nsclc_fail",
+    "name": "Pfizer",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_figitumumab_nsclc_fail",
+    "name": "Non-small cell lung cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0003060"
+  },
+  "program": {
+    "id": "prog_figitumumab_nsclc_fail",
+    "drugAssetId": "drug_figitumumab_nsclc_fail",
+    "indicationId": "ind_figitumumab_nsclc_fail",
+    "sponsorId": "sponsor_figitumumab_nsclc_fail",
+    "name": "Figitumumab — Non-small cell lung cancer",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_figitumumab_nsclc_fail",
+      "name": "IGF-1R inhibition",
+      "target": "IGF1R",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00596830",
+      "nctId": "NCT00596830",
+      "programId": "prog_figitumumab_nsclc_fail",
+      "phase": "III",
+      "title": "Figitumumab NSCLC Phase 3",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 681,
+      "actualEnrollment": 681,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2010-03-11T12:00:00.000Z",
+      "studyStartAt": "2010-03-11T12:00:00.000Z",
+      "primaryCompletionAt": "2010-03-20T12:00:00.000Z",
+      "completionAt": "2010-03-20T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_figitumumab_nsclc_fail_primary",
+      "trialId": "trial_nct00596830",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_figitumumab_nsclc_fail_primary",
+      "trialId": "trial_nct00596830",
+      "endpointId": "ep_figitumumab_nsclc_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00596830",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.680Z",
+        "firstPublicAt": "2010-03-11T00:00:00.000Z",
+        "effectiveAt": "2010-03-11T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a3937b2a91caa18de0269a17",
+        "exactPassage": "Phase 3 NSCLC OS miss / discontinued.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_figitumumab_nsclc_fail_pending",
+    "programId": "prog_figitumumab_nsclc_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_figitumumab_nsclc_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2010-03-20T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_figitumumab_nsclc_fail_withdrawal",
+    "applicationId": "app_figitumumab_nsclc_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2010-03-20T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT00596830",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:41.680Z",
+      "firstPublicAt": "2010-03-20T00:00:00.000Z",
+      "effectiveAt": "2010-03-20T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:81577946ee691ebe3830802e",
+      "exactPassage": "Program discontinuation disclosure 2010-03-20T00:00:00.000Z for Figitumumab",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_figitumumab_nsclc_fail_0_erlotinib",
+      "indicationId": "ind_figitumumab_nsclc_fail",
+      "drugAssetId": "drug_comp_erlotinib",
+      "drugName": "Erlotinib",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0003060",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:41.680Z",
+        "firstPublicAt": "2010-03-11T12:00:00.000Z",
+        "effectiveAt": "2010-03-11T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:3b0c0213acde5a9cb37f2529",
+        "exactPassage": "Approved / clinical candidate in indication: Erlotinib",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_figitumumab_nsclc_fail_ct",
+      "title": "Figitumumab NSCLC Phase 3",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00596830",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:41.680Z",
+        "firstPublicAt": "2010-03-11T12:00:00.000Z",
+        "effectiveAt": "2010-03-11T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4570345a0cff95fb92ba708b",
+        "exactPassage": "Figitumumab NSCLC Phase 3",
+        "locator": "NCT00596830",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_figitumumab_nsclc_fail_result_press",
+      "title": "Figitumumab primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00596830",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:41.680Z",
+        "firstPublicAt": "2010-03-11T00:00:00.000Z",
+        "effectiveAt": "2010-03-11T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a3937b2a91caa18de0269a17",
+        "exactPassage": "Phase 3 NSCLC OS miss / discontinued.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_neurovex",
+    "preferredName": "Neurovex",
+    "modality": "small_molecule",
+    "mechanismIds": ["mech_nmda"]
+  },
+  "sponsor": {
+    "id": "sponsor_axonbridge",
+    "name": "AxonBridge Bio",
+    "cik": "0001000003"
+  },
+  "indication": {
+    "id": "ind_alz",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0000249"
+  },
+  "program": {
+    "id": "prog_neurovex_alz",
+    "drugAssetId": "drug_neurovex",
+    "indicationId": "ind_alz",
+    "sponsorId": "sponsor_axonbridge",
+    "name": "Neurovex AD pivotal program",
+    "status": "approved"
+  },
+  "trials": [
+    {
+      "id": "trial_nct00000003",
+      "nctId": "NCT00000003",
+      "programId": "prog_neurovex_alz",
+      "phase": "III",
+      "title": "Neurovex in early Alzheimer disease",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 1600,
+      "actualEnrollment": 1540,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000003_primary",
+      "trialId": "trial_nct00000003",
+      "endpointId": "ep_cdr",
+      "primaryEndpointMet": true,
+      "effectEstimate": 0.31,
+      "confidenceInterval": [0.12, 0.5],
+      "pValue": 0.002,
+      "provenance": {
+        "sourceUrl": "fixture://corpus/neurovex-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2020-11-01T12:00:00.000Z",
+        "effectiveAt": "2020-11-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:corpus-neuro-001",
+        "exactPassage": "CDR-SB change met primary endpoint (p=0.002).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda_neuro_003",
+    "programId": "prog_neurovex_alz",
+    "applicationNumber": "NDA-FIXTURE-003",
+    "applicationType": "NDA",
+    "indicationId": "ind_alz"
+  },
+  "regulatoryAction": {
+    "id": "action_approve_neuro_003",
+    "applicationId": "app_nda_neuro_003",
+    "actionType": "approval",
+    "actionDate": "2022-04-15T16:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://corpus/neurovex-fda",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2022-04-15T16:00:00.000Z",
+      "effectiveAt": "2022-04-15T16:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:corpus-neuro-fda-001",
+      "exactPassage": "FDA approved Neurovex for Alzheimer disease.",
+      "locator": "approval-letter#1",
+      "accessClass": "open"
+    }
+  },
+  "documents": [],
+  "mechanisms": [
+    {
+      "id": "mech_amyloid",
+      "name": "Anti-amyloid",
+      "target": "APP",
+      "firstInClass": false
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_cdr",
+      "trialId": "trial_nct00000003",
+      "name": "CDR-SB",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "designations": [
+    {
+      "id": "des_prog_neurovex_alz_breakthrough",
+      "programId": "prog_neurovex_alz",
+      "applicationId": "app_nda_neuro_003",
+      "designationType": "breakthrough",
+      "grantedAt": "2021-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/neurovex-alz.json#breakthrough",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2021-01-01T00:00:00.000Z",
+        "effectiveAt": "2021-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-neurovex-alz.json-0",
+        "exactPassage": "Designation breakthrough",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_prog_neurovex_alz_accelerated_approval",
+      "programId": "prog_neurovex_alz",
+      "applicationId": "app_nda_neuro_003",
+      "designationType": "accelerated_approval",
+      "grantedAt": "2022-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/neurovex-alz.json#accelerated_approval",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2022-01-01T00:00:00.000Z",
+        "effectiveAt": "2022-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-neurovex-alz.json-1",
+        "exactPassage": "Designation accelerated_approval",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_ind_alz_0",
+      "indicationId": "ind_alz",
+      "drugAssetId": "drug_aducanumab",
+      "drugName": "Aducanumab",
+      "approvedAt": "2021-06-07T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/drug_aducanumab",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2021-06-07T00:00:00.000Z",
+        "effectiveAt": "2021-06-07T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-neurovex-alz.json-0",
+        "exactPassage": "Aducanumab approved",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": []
+}

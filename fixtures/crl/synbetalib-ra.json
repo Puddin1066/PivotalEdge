@@ -1,0 +1,171 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_syn_beta",
+    "preferredName": "Synbetalib",
+    "modality": "small_molecule",
+    "mechanismIds": ["mech_jak"]
+  },
+  "sponsor": {
+    "id": "sponsor_crestline",
+    "name": "Crestline Pharma",
+    "cik": "0001000002"
+  },
+  "indication": {
+    "id": "ind_ra",
+    "name": "Rheumatoid arthritis",
+    "therapeuticArea": "rheumatology",
+    "efoId": "EFO_0000685"
+  },
+  "program": {
+    "id": "prog_syn_beta_ra",
+    "drugAssetId": "drug_syn_beta",
+    "indicationId": "ind_ra",
+    "sponsorId": "sponsor_crestline",
+    "name": "Synbetalib RA pivotal program",
+    "status": "crl"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_jak",
+      "name": "JAK inhibition",
+      "target": "JAK1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00000002",
+      "nctId": "NCT00000002",
+      "programId": "prog_syn_beta_ra",
+      "phase": "III",
+      "title": "Synbetalib vs placebo in moderate-to-severe RA",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 450,
+      "actualEnrollment": 438,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_acr20",
+      "trialId": "trial_nct00000002",
+      "name": "ACR20 response",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000002_primary",
+      "trialId": "trial_nct00000002",
+      "endpointId": "ep_acr20",
+      "primaryEndpointMet": true,
+      "effectEstimate": 0.18,
+      "confidenceInterval": [0.09, 0.27],
+      "pValue": 0.001,
+      "provenance": {
+        "sourceUrl": "fixture://crl/synbetalib-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2021-08-01T12:00:00.000Z",
+        "effectiveAt": "2021-08-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:crl-result-001",
+        "exactPassage": "ACR20 response rate difference versus placebo was 18% (95% CI 9-27%, p=0.001).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_nda_syn_002",
+    "programId": "prog_syn_beta_ra",
+    "applicationNumber": "NDA-FIXTURE-002",
+    "applicationType": "NDA",
+    "indicationId": "ind_ra"
+  },
+  "regulatoryAction": {
+    "id": "action_crl_syn_002",
+    "applicationId": "app_nda_syn_002",
+    "actionType": "crl",
+    "actionDate": "2022-05-20T15:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://crl/synbetalib-crl-announcement",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2022-05-20T15:00:00.000Z",
+      "effectiveAt": "2022-05-20T15:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:crl-fda-001",
+      "exactPassage": "FDA issued a Complete Response Letter citing manufacturing inspection deficiencies. CRL contents are not inferred beyond this public statement.",
+      "locator": "8k#item8.01",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_beta_ft",
+      "programId": "prog_syn_beta_ra",
+      "applicationId": "app_nda_syn_002",
+      "designationType": "fast_track",
+      "grantedAt": "2020-09-15T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://crl/synbetalib-fast-track",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2020-09-15T00:00:00.000Z",
+        "effectiveAt": "2020-09-15T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:crl-des-ft",
+        "exactPassage": "Fast Track designation for Synbetalib in RA.",
+        "locator": "designation#ft",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_ra_tofa",
+      "indicationId": "ind_ra",
+      "drugAssetId": "drug_tofacitinib",
+      "drugName": "Tofacitinib",
+      "approvedAt": "2012-11-06T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/tofacitinib-ra",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2012-11-06T00:00:00.000Z",
+        "effectiveAt": "2012-11-06T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-tofa",
+        "exactPassage": "Tofacitinib approved for RA.",
+        "locator": "label#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_syn_crl_8k",
+      "title": "Crestline 8-K announcing CRL (synthetic)",
+      "documentType": "sec_filing",
+      "provenance": {
+        "sourceUrl": "fixture://crl/synbetalib-crl-announcement",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2022-05-20T15:00:00.000Z",
+        "effectiveAt": "2022-05-20T15:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:crl-fda-001",
+        "exactPassage": null,
+        "locator": null,
+        "accessClass": "open"
+      }
+    }
+  ]
+}

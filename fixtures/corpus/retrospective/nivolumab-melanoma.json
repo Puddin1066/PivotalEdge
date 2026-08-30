@@ -1,0 +1,247 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_nivolumab_melanoma",
+    "preferredName": "Nivolumab (Opdivo)",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_nivolumab_melanoma"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_nivolumab_melanoma",
+    "name": "Bristol-Myers Squibb",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_nivolumab_melanoma",
+    "name": "Advanced melanoma",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0000756"
+  },
+  "program": {
+    "id": "prog_nivolumab_melanoma",
+    "drugAssetId": "drug_nivolumab_melanoma",
+    "indicationId": "ind_nivolumab_melanoma",
+    "sponsorId": "sponsor_nivolumab_melanoma",
+    "name": "Nivolumab (Opdivo) — Advanced melanoma",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_nivolumab_melanoma",
+      "name": "PD-1 inhibition",
+      "target": "PDCD1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01721746",
+      "nctId": "NCT01721746",
+      "programId": "prog_nivolumab_melanoma",
+      "phase": "III",
+      "title": "Nivolumab vs chemotherapy melanoma",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 418,
+      "actualEnrollment": 418,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2014-09-01T12:00:00.000Z",
+      "studyStartAt": "2014-09-01T12:00:00.000Z",
+      "primaryCompletionAt": "2014-12-22T12:00:00.000Z",
+      "completionAt": "2014-12-22T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_nivolumab_melanoma_primary",
+      "trialId": "trial_nct01721746",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nivolumab_melanoma_primary",
+      "trialId": "trial_nct01721746",
+      "endpointId": "ep_nivolumab_melanoma_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01721746",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-01T00:00:00.000Z",
+        "effectiveAt": "2014-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2c41dd0d433d05d8409c7e03",
+        "exactPassage": "CheckMate melanoma primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla125554",
+    "programId": "prog_nivolumab_melanoma",
+    "applicationNumber": "BLA125554",
+    "applicationType": "BLA",
+    "indicationId": "ind_nivolumab_melanoma",
+    "filedAt": null,
+    "acceptedAt": "2014-09-26T00:00:00.000Z",
+    "pdufaDate": "2014-12-22T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://news.bms.com/news/details/2014/Bristol-Myers-Squibb-Announces-U-S--Food-and-Drug-Administration-Accepts-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Patients-with-Previously-Treated-Unresectable-or-Metastatic-Melanoma/default.aspx",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:37.610Z",
+      "firstPublicAt": "2014-09-26T00:00:00.000Z",
+      "effectiveAt": "2014-09-26T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:27411e7aaff97497d7596fd7",
+      "exactPassage": "FDA accepted nivolumab BLA for priority review Sep 26 2014; approved Dec 22 2014.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_nivolumab_melanoma_approval",
+    "applicationId": "app_bla125554",
+    "actionType": "approval",
+    "actionDate": "2014-12-22T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01721746",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:37.610Z",
+      "firstPublicAt": "2014-12-22T00:00:00.000Z",
+      "effectiveAt": "2014-12-22T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:25e6c6a18518bba3c1da1cee",
+      "exactPassage": "FDA approval date 2014-12-22T00:00:00.000Z for Nivolumab (Opdivo)",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_nivolumab_melanoma_breakthrough_0",
+      "programId": "prog_nivolumab_melanoma",
+      "applicationId": "app_bla125554",
+      "designationType": "breakthrough",
+      "grantedAt": "2014-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.fda.gov/",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-01-01T00:00:00.000Z",
+        "effectiveAt": "2014-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:6b9ea21871513ab15182e495",
+        "exactPassage": "breakthrough designation for Nivolumab (Opdivo)",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_nivolumab_melanoma_0_pembrolizumab",
+      "indicationId": "ind_nivolumab_melanoma",
+      "drugAssetId": "drug_comp_pembrolizumab",
+      "drugName": "Pembrolizumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000756",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-01T12:00:00.000Z",
+        "effectiveAt": "2014-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:63305c1a875b23e6873ee821",
+        "exactPassage": "Approved / clinical candidate in indication: Pembrolizumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_nivolumab_melanoma_1_ipilimumab",
+      "indicationId": "ind_nivolumab_melanoma",
+      "drugAssetId": "drug_comp_ipilimumab",
+      "drugName": "Ipilimumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000756",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-01T12:00:00.000Z",
+        "effectiveAt": "2014-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:0a2347ce1f248b607a6aa27f",
+        "exactPassage": "Approved / clinical candidate in indication: Ipilimumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_nivolumab_melanoma_ct",
+      "title": "Nivolumab vs chemotherapy melanoma",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01721746",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-01T12:00:00.000Z",
+        "effectiveAt": "2014-09-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:986d5145298dba4d86bb3fbc",
+        "exactPassage": "Nivolumab vs chemotherapy melanoma",
+        "locator": "NCT01721746",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_nivolumab_melanoma_result_press",
+      "title": "Nivolumab (Opdivo) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01721746",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-01T00:00:00.000Z",
+        "effectiveAt": "2014-09-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:2c41dd0d433d05d8409c7e03",
+        "exactPassage": "CheckMate melanoma primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_nivolumab_melanoma_reg_clock",
+      "title": "Nivolumab (Opdivo) regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://news.bms.com/news/details/2014/Bristol-Myers-Squibb-Announces-U-S--Food-and-Drug-Administration-Accepts-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Patients-with-Previously-Treated-Unresectable-or-Metastatic-Melanoma/default.aspx",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:37.610Z",
+        "firstPublicAt": "2014-09-26T00:00:00.000Z",
+        "effectiveAt": "2014-09-26T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:27411e7aaff97497d7596fd7",
+        "exactPassage": "FDA accepted nivolumab BLA for priority review Sep 26 2014; approved Dec 22 2014.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

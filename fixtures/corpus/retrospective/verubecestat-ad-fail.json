@@ -1,0 +1,180 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_verubecestat_ad_fail",
+    "preferredName": "Verubecestat (Alzheimer)",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_verubecestat_ad_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_verubecestat_ad_fail",
+    "name": "Merck",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_verubecestat_ad_fail",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": "EFO_0000249"
+  },
+  "program": {
+    "id": "prog_verubecestat_ad_fail",
+    "drugAssetId": "drug_verubecestat_ad_fail",
+    "indicationId": "ind_verubecestat_ad_fail",
+    "sponsorId": "sponsor_verubecestat_ad_fail",
+    "name": "Verubecestat (Alzheimer) — Alzheimer disease",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_verubecestat_ad_fail",
+      "name": "BACE1 inhibition",
+      "target": "BACE1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01953601",
+      "nctId": "NCT01953601",
+      "programId": "prog_verubecestat_ad_fail",
+      "phase": "III",
+      "title": "EPOCH verubecestat Alzheimer",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 1454,
+      "actualEnrollment": 1454,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2017-02-14T12:00:00.000Z",
+      "studyStartAt": "2017-02-14T12:00:00.000Z",
+      "primaryCompletionAt": "2017-02-15T12:00:00.000Z",
+      "completionAt": "2017-02-15T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_verubecestat_ad_fail_primary",
+      "trialId": "trial_nct01953601",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_verubecestat_ad_fail_primary",
+      "trialId": "trial_nct01953601",
+      "endpointId": "ep_verubecestat_ad_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01953601",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.382Z",
+        "firstPublicAt": "2017-02-14T00:00:00.000Z",
+        "effectiveAt": "2017-02-14T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d293c1f4be2dd64ab7930121",
+        "exactPassage": "EPOCH Phase 3 stopped for futility.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_verubecestat_ad_fail_pending",
+    "programId": "prog_verubecestat_ad_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_verubecestat_ad_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2017-02-15T12:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_verubecestat_ad_fail_withdrawal",
+    "applicationId": "app_verubecestat_ad_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2017-02-15T12:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01953601",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:40.382Z",
+      "firstPublicAt": "2017-02-15T12:00:00.000Z",
+      "effectiveAt": "2017-02-15T12:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:50986f9c8bd542c53d100744",
+      "exactPassage": "Program discontinuation disclosure 2017-02-15T12:00:00.000Z for Verubecestat (Alzheimer)",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_verubecestat_ad_fail_0_aducanumab",
+      "indicationId": "ind_verubecestat_ad_fail",
+      "drugAssetId": "drug_comp_aducanumab",
+      "drugName": "Aducanumab",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0000249",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:40.382Z",
+        "firstPublicAt": "2017-02-14T12:00:00.000Z",
+        "effectiveAt": "2017-02-14T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:fb83ba0960009abbe7a7760b",
+        "exactPassage": "Approved / clinical candidate in indication: Aducanumab",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_verubecestat_ad_fail_ct",
+      "title": "EPOCH verubecestat Alzheimer",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01953601",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:40.382Z",
+        "firstPublicAt": "2017-02-14T12:00:00.000Z",
+        "effectiveAt": "2017-02-14T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:837889102c38a204a57f66aa",
+        "exactPassage": "EPOCH verubecestat Alzheimer",
+        "locator": "NCT01953601",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_verubecestat_ad_fail_result_press",
+      "title": "Verubecestat (Alzheimer) primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01953601",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:40.382Z",
+        "firstPublicAt": "2017-02-14T00:00:00.000Z",
+        "effectiveAt": "2017-02-14T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:d293c1f4be2dd64ab7930121",
+        "exactPassage": "EPOCH Phase 3 stopped for futility.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

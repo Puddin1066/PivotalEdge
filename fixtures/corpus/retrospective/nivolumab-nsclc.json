@@ -1,0 +1,208 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_nivolumab_nsclc",
+    "preferredName": "Nivolumab NSCLC sBLA",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": [
+      "mech_nivolumab_nsclc"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_nivolumab_nsclc",
+    "name": "Bristol-Myers Squibb",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_nivolumab_nsclc",
+    "name": "Non-small cell lung cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0003060"
+  },
+  "program": {
+    "id": "prog_nivolumab_nsclc",
+    "drugAssetId": "drug_nivolumab_nsclc",
+    "indicationId": "ind_nivolumab_nsclc",
+    "sponsorId": "sponsor_nivolumab_nsclc",
+    "name": "Nivolumab NSCLC sBLA — Non-small cell lung cancer",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_nivolumab_nsclc",
+      "name": "PD-1 inhibition",
+      "target": "PDCD1",
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct01673867",
+      "nctId": "NCT01673867",
+      "programId": "prog_nivolumab_nsclc",
+      "phase": "III",
+      "title": "CheckMate-057 nivolumab NSCLC",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 582,
+      "actualEnrollment": 582,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2015-05-01T12:00:00.000Z",
+      "studyStartAt": "2015-05-01T12:00:00.000Z",
+      "primaryCompletionAt": "2015-10-09T12:00:00.000Z",
+      "completionAt": "2015-10-09T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_nivolumab_nsclc_primary",
+      "trialId": "trial_nct01673867",
+      "name": "OS",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nivolumab_nsclc_primary",
+      "trialId": "trial_nct01673867",
+      "endpointId": "ep_nivolumab_nsclc_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01673867",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.441Z",
+        "firstPublicAt": "2015-05-01T00:00:00.000Z",
+        "effectiveAt": "2015-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:cbd563b9af5fae9a72fbc443",
+        "exactPassage": "CheckMate-057 OS primary endpoint met.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla125554",
+    "programId": "prog_nivolumab_nsclc",
+    "applicationNumber": "BLA125554",
+    "applicationType": "sBLA",
+    "indicationId": "ind_nivolumab_nsclc",
+    "filedAt": null,
+    "acceptedAt": "2015-03-04T00:00:00.000Z",
+    "pdufaDate": "2015-10-09T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "priority",
+    "clockProvenance": {
+      "sourceUrl": "https://news.bms.com/news/details/2015/Bristol-Myers-Squibb-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Advanced-Non-Small-Cell-Lung-Cancer/default.aspx",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T14:18:38.441Z",
+      "firstPublicAt": "2015-03-04T00:00:00.000Z",
+      "effectiveAt": "2015-03-04T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:aade4f34066c81c53a490ba5",
+      "exactPassage": "FDA accepted nivolumab NSCLC sBLA Mar 4 2015; approved Oct 9 2015.",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_nivolumab_nsclc_approval",
+    "applicationId": "app_bla125554",
+    "actionType": "approval",
+    "actionDate": "2015-10-09T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT01673867",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:38.441Z",
+      "firstPublicAt": "2015-10-09T00:00:00.000Z",
+      "effectiveAt": "2015-10-09T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:5708d141747a2f73e92cca78",
+      "exactPassage": "FDA approval date 2015-10-09T00:00:00.000Z for Nivolumab NSCLC sBLA",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_nivolumab_nsclc_0_docetaxel",
+      "indicationId": "ind_nivolumab_nsclc",
+      "drugAssetId": "drug_comp_docetaxel",
+      "drugName": "Docetaxel",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/EFO_0003060",
+        "sourceSystem": "enrichment_seed",
+        "retrievedAt": "2026-08-28T14:18:38.441Z",
+        "firstPublicAt": "2015-05-01T12:00:00.000Z",
+        "effectiveAt": "2015-05-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:961cc33e183cc1f191b6b49a",
+        "exactPassage": "Approved / clinical candidate in indication: Docetaxel",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_nivolumab_nsclc_ct",
+      "title": "CheckMate-057 nivolumab NSCLC",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01673867",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:38.441Z",
+        "firstPublicAt": "2015-05-01T12:00:00.000Z",
+        "effectiveAt": "2015-05-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7b0acd241ed6770a7c5beabe",
+        "exactPassage": "CheckMate-057 nivolumab NSCLC",
+        "locator": "NCT01673867",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_nivolumab_nsclc_result_press",
+      "title": "Nivolumab NSCLC sBLA primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT01673867",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.441Z",
+        "firstPublicAt": "2015-05-01T00:00:00.000Z",
+        "effectiveAt": "2015-05-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:cbd563b9af5fae9a72fbc443",
+        "exactPassage": "CheckMate-057 OS primary endpoint met.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_nivolumab_nsclc_reg_clock",
+      "title": "Nivolumab NSCLC sBLA regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://news.bms.com/news/details/2015/Bristol-Myers-Squibb-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-for-Nivolumab-for-Treatment-of-Advanced-Non-Small-Cell-Lung-Cancer/default.aspx",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:38.441Z",
+        "firstPublicAt": "2015-03-04T00:00:00.000Z",
+        "effectiveAt": "2015-03-04T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:aade4f34066c81c53a490ba5",
+        "exactPassage": "FDA accepted nivolumab NSCLC sBLA Mar 4 2015; approved Oct 9 2015.",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

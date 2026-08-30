@@ -1,0 +1,222 @@
+{
+  "at": "2026-08-28T14:18:43.443Z",
+  "fetchLive": false,
+  "fetchFda": true,
+  "programsWritten": 35,
+  "holdoutEligible": 35,
+  "withRegulatoryClock": 35,
+  "calibrationCases": 100,
+  "kgEnrichedCases": 35,
+  "files": [
+    {
+      "slug": "pembrolizumab-melanoma",
+      "path": "corpus/retrospective/pembrolizumab-melanoma.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "nivolumab-melanoma",
+      "path": "corpus/retrospective/nivolumab-melanoma.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "palbociclib-breast",
+      "path": "corpus/retrospective/palbociclib-breast.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "rilotumumab-gastric",
+      "path": "corpus/retrospective/rilotumumab-gastric.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "nivolumab-nsclc",
+      "path": "corpus/retrospective/nivolumab-nsclc.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "ocrelizumab-ms",
+      "path": "corpus/retrospective/ocrelizumab-ms.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "dupilumab-ad",
+      "path": "corpus/retrospective/dupilumab-ad.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "atezolizumab-urothelial",
+      "path": "corpus/retrospective/atezolizumab-urothelial.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "inotersen-hattr",
+      "path": "corpus/retrospective/inotersen-hattr.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "entrectinib-ntrk",
+      "path": "corpus/retrospective/entrectinib-ntrk.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "aducanumab-ad",
+      "path": "corpus/retrospective/aducanumab-ad.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "verubecestat-ad-fail",
+      "path": "corpus/retrospective/verubecestat-ad-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "upadacitinib-ra",
+      "path": "corpus/retrospective/upadacitinib-ra.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "mavacamten-hcm",
+      "path": "corpus/retrospective/mavacamten-hcm.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "rp1-melanoma-crl",
+      "path": "corpus/retrospective/rp1-melanoma-crl.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "odronextamab-fl-crl",
+      "path": "corpus/retrospective/odronextamab-fl-crl.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "sepiapterin-pku",
+      "path": "corpus/retrospective/sepiapterin-pku.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "empaveli-c3g",
+      "path": "corpus/retrospective/empaveli-c3g.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "transcon-hgh-adult",
+      "path": "corpus/retrospective/transcon-hgh-adult.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "onc-phase2-fail-mock",
+      "path": "corpus/retrospective/onc-phase2-fail-mock.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "bapineuzumab-ad-fail",
+      "path": "corpus/retrospective/bapineuzumab-ad-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "figitumumab-nsclc-fail",
+      "path": "corpus/retrospective/figitumumab-nsclc-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "solanezumab-ad-fail",
+      "path": "corpus/retrospective/solanezumab-ad-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "fingolimod-ms",
+      "path": "corpus/retrospective/fingolimod-ms.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "ipilimumab-melanoma",
+      "path": "corpus/retrospective/ipilimumab-melanoma.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "sofosbuvir-hcv",
+      "path": "corpus/retrospective/sofosbuvir-hcv.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "patisiran-hattr",
+      "path": "corpus/retrospective/patisiran-hattr.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "tirzepatide-t2d",
+      "path": "corpus/retrospective/tirzepatide-t2d.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "resmetirom-mash",
+      "path": "corpus/retrospective/resmetirom-mash.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "faricimab-amd",
+      "path": "corpus/retrospective/faricimab-amd.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "semagacestat-ad-fail",
+      "path": "corpus/retrospective/semagacestat-ad-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "torcetrapib-cv-fail",
+      "path": "corpus/retrospective/torcetrapib-cv-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "bitopertin-schiz-fail",
+      "path": "corpus/retrospective/bitopertin-schiz-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "evacetrapib-cv-fail",
+      "path": "corpus/retrospective/evacetrapib-cv-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    },
+    {
+      "slug": "iniparib-breast-fail",
+      "path": "corpus/retrospective/iniparib-breast-fail.json",
+      "holdoutOk": true,
+      "hasRegulatoryClock": true
+    }
+  ]
+}

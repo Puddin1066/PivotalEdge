@@ -1,0 +1,136 @@
+{
+  "kind": "enrichment_seed",
+  "description": "Polymarket-prioritized live FDA/clinical programs for KG enrichment (Track A).",
+  "prioritizedAt": "2026-08-24",
+  "programs": [
+    {
+      "slug": "intismeran-melanoma",
+      "preferredName": "Intismeran autogene",
+      "modality": "mRNA_vaccine",
+      "mechanismName": "Individualized neoantigen mRNA therapy",
+      "mechanismTarget": null,
+      "firstInClass": true,
+      "sponsorName": "ModernaTX, Inc.",
+      "indicationName": "Resected high-risk melanoma (adjuvant)",
+      "therapeuticArea": "oncology",
+      "diseaseOntologyId": "MONDO_0005105",
+      "nctId": "NCT05933577",
+      "applicationNumber": null,
+      "applicationType": "BLA",
+      "programStatus": "active",
+      "biomarkerEnriched": true,
+      "primaryEndpointMet": true,
+      "primaryEndpointFamily": "EFS",
+      "primaryResultPublicAt": "2026-08-19T12:00:00.000Z",
+      "primaryResultSourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+      "primaryResultPassage": "Phase 3 INTerpath-001 met primary endpoint of recurrence-free survival (RFS) and key secondary distant metastasis-free survival (DMFS) for intismeran autogene plus pembrolizumab in resected stage IIB-IV melanoma.",
+      "regulatoryClock": {
+        "reviewProgram": "unknown",
+        "clockSourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+        "clockFirstPublicAt": "2026-08-19T12:00:00.000Z",
+        "clockPassage": "Sponsors will engage with regulators on filing submissions; no public BLA filing date or PDUFA target announced as of Phase 3 topline (2026-08-19)."
+      },
+      "designations": [
+        {
+          "designationType": "breakthrough",
+          "grantedAt": "2023-02-22T12:00:00.000Z",
+          "sourceUrl": "https://www.cancernetwork.com/view/fda-grants-breakthrough-designation-to-mrna-vaccine-for-resected-melanoma"
+        }
+      ],
+      "fallbackCompetitors": ["Pembrolizumab", "Nivolumab", "Ipilimumab"],
+      "polymarketMarketIds": ["3725541", "3741934", "3727493"],
+      "marketEventTypes": {
+        "3725541": "FDA_APPROVAL_BY_DATE",
+        "3741934": "FDA_APPROVAL_BY_DATE",
+        "3727493": "NDA_BLA_SUBMISSION"
+      },
+      "notes": "Maps to Polymarket skin-cancer vaccine FDA / BLA-submission ladder (mRNA-4157 / V940). BTD Feb 2023; Phase 3 win Aug 2026; no sponsor filing date yet — do not invent expectedFilingAt."
+    },
+    {
+      "slug": "retatrutide-obesity",
+      "preferredName": "Retatrutide",
+      "modality": "peptide",
+      "mechanismName": "GIP/GLP-1/glucagon triple agonist",
+      "mechanismTarget": "GIPR/GLP1R/GCGR",
+      "firstInClass": true,
+      "sponsorName": "Eli Lilly and Company",
+      "indicationName": "Obesity / overweight",
+      "therapeuticArea": "metabolic",
+      "diseaseOntologyId": "EFO_0001073",
+      "nctId": "NCT05929066",
+      "applicationNumber": null,
+      "applicationType": "BLA",
+      "programStatus": "active",
+      "biomarkerEnriched": false,
+      "primaryEndpointMet": true,
+      "primaryEndpointFamily": "other",
+      "primaryResultPublicAt": "2026-05-21T12:00:00.000Z",
+      "primaryResultSourceUrl": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+      "primaryResultPassage": "TRIUMPH-1 Phase 3: all retatrutide doses met primary and key secondary obesity endpoints at 80 weeks.",
+      "regulatoryClock": {
+        "expectedFilingAt": "2027-03-31T23:59:00.000Z",
+        "reviewProgram": "unknown",
+        "clockSourceUrl": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c-302832674.html",
+        "clockFirstPublicAt": "2026-07-23T12:00:00.000Z",
+        "clockPassage": "Lilly plans to submit a Biologics License Application (BLA) for retatrutide to FDA in Q1 2027."
+      },
+      "designations": [],
+      "fallbackCompetitors": ["Tirzepatide", "Semaglutide", "Liraglutide"],
+      "polymarketMarketIds": ["1162139"],
+      "marketEventTypes": {
+        "1162139": "FDA_APPROVAL_BY_DATE"
+      },
+      "notes": "FDA approves Retatrutide this year? (YE 2026). Sponsor guides BLA Q1 2027 — after market deadline."
+    },
+    {
+      "slug": "daraxonrasib-pdac",
+      "preferredName": "Daraxonrasib",
+      "modality": "small_molecule",
+      "mechanismName": "RAS(ON) multi-selective inhibitor",
+      "mechanismTarget": "RAS",
+      "firstInClass": true,
+      "sponsorName": "Revolution Medicines, Inc.",
+      "indicationName": "Previously treated metastatic PDAC",
+      "therapeuticArea": "oncology",
+      "diseaseOntologyId": "MONDO_0005192",
+      "nctId": "NCT06625320",
+      "applicationNumber": null,
+      "applicationType": "NDA",
+      "programStatus": "approved",
+      "biomarkerEnriched": true,
+      "primaryEndpointMet": true,
+      "primaryEndpointFamily": "OS",
+      "primaryResultPublicAt": "2026-04-13T12:00:00.000Z",
+      "primaryResultSourceUrl": "https://www.globenewswire.com/news-release/2026/04/13/3272447/0/en/Daraxonrasib-Demonstrates-Unprecedented-Overall-Survival-Benefit-in-Pivotal-Phase-3-RASolute-302-Clinical-Trial-in-Patients-with-Metastatic-Pancreatic-Cancer.html",
+      "primaryResultPassage": "RASolute 302 Phase 3: daraxonrasib demonstrated OS and PFS benefit vs chemotherapy in previously treated metastatic PDAC; NDA later accepted for FDA review (2026-07-22).",
+      "regulatoryActionDate": "2026-08-26T12:00:00.000Z",
+      "regulatoryActionType": "approval",
+      "regulatoryClock": {
+        "acceptedAt": "2026-07-22T16:05:00.000Z",
+        "reviewProgram": "cnpv",
+        "clockSourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+        "clockFirstPublicAt": "2026-07-22T16:05:00.000Z",
+        "clockPassage": "FDA accepted for review the NDA for daraxonrasib; selected for Commissioner’s National Priority Voucher pilot (no public PDUFA date)."
+      },
+      "designations": [
+        {
+          "designationType": "breakthrough",
+          "grantedAt": "2025-01-01T00:00:00.000Z",
+          "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted"
+        },
+        {
+          "designationType": "orphan",
+          "grantedAt": "2025-01-01T00:00:00.000Z",
+          "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted"
+        }
+      ],
+      "openFdaSearchNames": ["Rasonque", "daraxonrasib", "RMC-6236"],
+      "fallbackCompetitors": ["Liposomal irinotecan", "Gemcitabine", "Sotorasib"],
+      "polymarketMarketIds": ["2253151"],
+      "marketEventTypes": {
+        "2253151": "FDA_APPROVAL_BY_DATE"
+      },
+      "notes": "FDA approved Daraxonrasib 2026-08-26 (Rasonque). NDA accepted Jul 2026 under CNPV."
+    }
+  ]
+}

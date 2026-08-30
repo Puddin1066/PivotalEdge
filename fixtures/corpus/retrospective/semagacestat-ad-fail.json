@@ -1,0 +1,160 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_semagacestat_ad_fail",
+    "preferredName": "Semagacestat",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_semagacestat_ad_fail"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_semagacestat_ad_fail",
+    "name": "Lilly",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_semagacestat_ad_fail",
+    "name": "Alzheimer disease",
+    "therapeuticArea": "neurology",
+    "efoId": null
+  },
+  "program": {
+    "id": "prog_semagacestat_ad_fail",
+    "drugAssetId": "drug_semagacestat_ad_fail",
+    "indicationId": "ind_semagacestat_ad_fail",
+    "sponsorId": "sponsor_semagacestat_ad_fail",
+    "name": "Semagacestat — Alzheimer disease",
+    "status": "discontinued"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_semagacestat_ad_fail",
+      "name": "Gamma-secretase inhibition",
+      "target": null,
+      "firstInClass": false
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct00594568",
+      "nctId": "NCT00594568",
+      "programId": "prog_semagacestat_ad_fail",
+      "phase": "III",
+      "title": "IDENTITY semagacestat",
+      "status": "terminated",
+      "terminationReason": null,
+      "plannedEnrollment": 1537,
+      "actualEnrollment": 1537,
+      "masking": "double",
+      "allocation": "randomized",
+      "biomarkerEnriched": false,
+      "registeredAt": "2010-08-17T12:00:00.000Z",
+      "studyStartAt": "2010-08-17T12:00:00.000Z",
+      "primaryCompletionAt": "2010-08-24T12:00:00.000Z",
+      "completionAt": "2010-08-24T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_semagacestat_ad_fail_primary",
+      "trialId": "trial_nct00594568",
+      "name": "other",
+      "endpointFamily": "other",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_semagacestat_ad_fail_primary",
+      "trialId": "trial_nct00594568",
+      "endpointId": "ep_semagacestat_ad_fail_primary",
+      "primaryEndpointMet": false,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.156Z",
+        "firstPublicAt": "2010-08-17T00:00:00.000Z",
+        "effectiveAt": "2010-08-17T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:20253952a326225c4386b9d0",
+        "exactPassage": "IDENTITY Phase 3 worsened outcomes; stopped.",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_semagacestat_ad_fail_pending",
+    "programId": "prog_semagacestat_ad_fail",
+    "applicationNumber": null,
+    "applicationType": "unknown",
+    "indicationId": "ind_semagacestat_ad_fail",
+    "filedAt": null,
+    "acceptedAt": null,
+    "pdufaDate": "2010-08-24T00:00:00.000Z",
+    "expectedFilingAt": null,
+    "reviewProgram": "unknown",
+    "clockProvenance": null
+  },
+  "regulatoryAction": {
+    "id": "action_semagacestat_ad_fail_withdrawal",
+    "applicationId": "app_semagacestat_ad_fail_pending",
+    "actionType": "withdrawal",
+    "actionDate": "2010-08-24T00:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://retrospective",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T14:18:43.156Z",
+      "firstPublicAt": "2010-08-24T00:00:00.000Z",
+      "effectiveAt": "2010-08-24T00:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:4453bebc943a6c83f123c7c5",
+      "exactPassage": "Program discontinuation disclosure 2010-08-24T00:00:00.000Z for Semagacestat",
+      "locator": "action#withdrawal",
+      "accessClass": "open"
+    }
+  },
+  "designations": [],
+  "approvedTherapiesInIndication": [],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_semagacestat_ad_fail_ct",
+      "title": "IDENTITY semagacestat",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT00594568",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T14:18:43.156Z",
+        "firstPublicAt": "2010-08-17T12:00:00.000Z",
+        "effectiveAt": "2010-08-17T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7820d05266bb52c62f74f5a7",
+        "exactPassage": "IDENTITY semagacestat",
+        "locator": "NCT00594568",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_semagacestat_ad_fail_result_press",
+      "title": "Semagacestat primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "fixture://retrospective",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T14:18:43.156Z",
+        "firstPublicAt": "2010-08-17T00:00:00.000Z",
+        "effectiveAt": "2010-08-17T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:20253952a326225c4386b9d0",
+        "exactPassage": "IDENTITY Phase 3 worsened outcomes; stopped.",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

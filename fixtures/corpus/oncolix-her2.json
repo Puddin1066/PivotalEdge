@@ -1,0 +1,153 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_oncolix",
+    "preferredName": "Oncolix",
+    "modality": "monoclonal_antibody",
+    "mechanismIds": ["mech_her2"]
+  },
+  "sponsor": {
+    "id": "sponsor_lumina",
+    "name": "Lumina Oncology",
+    "cik": "0001000005"
+  },
+  "indication": {
+    "id": "ind_her2_breast",
+    "name": "HER2+ breast cancer",
+    "therapeuticArea": "oncology",
+    "efoId": "EFO_0000305"
+  },
+  "program": {
+    "id": "prog_oncolix_her2",
+    "drugAssetId": "drug_oncolix",
+    "indicationId": "ind_her2_breast",
+    "sponsorId": "sponsor_lumina",
+    "name": "Oncolix HER2+ program",
+    "status": "approved"
+  },
+  "trials": [
+    {
+      "id": "trial_nct00000005",
+      "nctId": "NCT00000005",
+      "programId": "prog_oncolix_her2",
+      "phase": "III",
+      "title": "Oncolix vs standard of care in HER2+ mBC",
+      "status": "completed",
+      "terminationReason": null,
+      "plannedEnrollment": 500,
+      "actualEnrollment": 487,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_nct00000005_primary",
+      "trialId": "trial_nct00000005",
+      "endpointId": "ep_pfs",
+      "primaryEndpointMet": true,
+      "effectEstimate": 0.62,
+      "confidenceInterval": [0.51, 0.74],
+      "pValue": 0.0003,
+      "provenance": {
+        "sourceUrl": "fixture://corpus/oncolix-results",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2019-06-01T12:00:00.000Z",
+        "effectiveAt": "2019-06-01T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:corpus-onco-001",
+        "exactPassage": "PFS primary endpoint met (HR 0.62, p=0.0003).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_bla_onco_005",
+    "programId": "prog_oncolix_her2",
+    "applicationNumber": "BLA-FIXTURE-005",
+    "applicationType": "BLA",
+    "indicationId": "ind_her2_breast"
+  },
+  "regulatoryAction": {
+    "id": "action_approve_onco_005",
+    "applicationId": "app_bla_onco_005",
+    "actionType": "approval",
+    "actionDate": "2021-02-20T16:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "fixture://corpus/oncolix-fda",
+      "sourceSystem": "fixture",
+      "retrievedAt": "2024-06-01T12:00:00.000Z",
+      "firstPublicAt": "2021-02-20T16:00:00.000Z",
+      "effectiveAt": "2021-02-20T16:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:corpus-onco-fda-001",
+      "exactPassage": "FDA approved Oncolix for HER2+ breast cancer.",
+      "locator": "approval-letter#1",
+      "accessClass": "open"
+    }
+  },
+  "documents": [],
+  "mechanisms": [
+    {
+      "id": "mech_her2",
+      "name": "HER2 targeting",
+      "target": "ERBB2",
+      "firstInClass": false
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_pfs",
+      "trialId": "trial_nct00000005",
+      "name": "Progression-free survival",
+      "endpointFamily": "PFS",
+      "isPrimary": true
+    }
+  ],
+  "designations": [
+    {
+      "id": "des_prog_oncolix_her2_priority_review",
+      "programId": "prog_oncolix_her2",
+      "applicationId": "app_bla_onco_005",
+      "designationType": "priority_review",
+      "grantedAt": "2020-06-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://corpus/oncolix-her2.json#priority_review",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "2020-06-01T00:00:00.000Z",
+        "effectiveAt": "2020-06-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:des-oncolix-her2.json-0",
+        "exactPassage": "Designation priority_review",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_ind_her2_breast_0",
+      "indicationId": "ind_her2_breast",
+      "drugAssetId": "drug_trastuzumab",
+      "drugName": "Trastuzumab",
+      "approvedAt": "1998-09-25T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "fixture://competition/drug_trastuzumab",
+        "sourceSystem": "fixture",
+        "retrievedAt": "2024-06-01T12:00:00.000Z",
+        "firstPublicAt": "1998-09-25T00:00:00.000Z",
+        "effectiveAt": "1998-09-25T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:comp-oncolix-her2.json-0",
+        "exactPassage": "Trastuzumab approved",
+        "locator": "auto#1",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": []
+}

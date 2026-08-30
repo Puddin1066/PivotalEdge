@@ -1,0 +1,94 @@
+{
+  "kind": "filing_watch_report",
+  "generatedAt": "2026-08-28T13:47:55.536Z",
+  "programs": [
+    {
+      "slug": "intismeran-melanoma",
+      "preferredName": "Intismeran autogene",
+      "sponsorName": "ModernaTX, Inc.",
+      "nctId": "NCT05933577",
+      "polymarketMarketIds": [
+        "3725541",
+        "3741934",
+        "3727493"
+      ],
+      "contractCoverage": "blocked",
+      "needsFilingGuidanceWatch": true,
+      "needsReviewClockWatch": false,
+      "seedExpectedFilingAt": null,
+      "fixtureExpectedFilingAt": null,
+      "assessments": [
+        {
+          "eventType": "FDA_APPROVAL_BY_DATE",
+          "contractCoverage": "partial",
+          "requiredMissing": [
+            "review_clock"
+          ]
+        },
+        {
+          "eventType": "NDA_BLA_SUBMISSION",
+          "contractCoverage": "blocked",
+          "requiredMissing": [
+            "expectedFilingAt"
+          ]
+        }
+      ],
+      "operatorAction": "Watch sponsor IR; when filing guidance is public, set regulatoryClock.expectedFilingAt on seed + re-run pnpm kg:enrich && pnpm edge:scan",
+      "clockSourceUrl": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+      "notes": "Maps to Polymarket skin-cancer vaccine FDA / BLA-submission ladder (mRNA-4157 / V940). BTD Feb 2023; Phase 3 win Aug 2026; no sponsor filing date yet — do not invent expectedFilingAt."
+    },
+    {
+      "slug": "retatrutide-obesity",
+      "preferredName": "Retatrutide",
+      "sponsorName": "Eli Lilly and Company",
+      "nctId": "NCT05929066",
+      "polymarketMarketIds": [
+        "1162139"
+      ],
+      "contractCoverage": "complete",
+      "needsFilingGuidanceWatch": false,
+      "needsReviewClockWatch": false,
+      "seedExpectedFilingAt": "2027-03-31T23:59:00.000Z",
+      "fixtureExpectedFilingAt": "2027-03-31T23:59:00.000Z",
+      "assessments": [
+        {
+          "eventType": "FDA_APPROVAL_BY_DATE",
+          "contractCoverage": "complete",
+          "requiredMissing": []
+        }
+      ],
+      "operatorAction": "No filing watch — contract clocks satisfied for linked event types",
+      "clockSourceUrl": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c-302832674.html",
+      "notes": "FDA approves Retatrutide this year? (YE 2026). Sponsor guides BLA Q1 2027 — after market deadline."
+    },
+    {
+      "slug": "daraxonrasib-pdac",
+      "preferredName": "Daraxonrasib",
+      "sponsorName": "Revolution Medicines, Inc.",
+      "nctId": "NCT06625320",
+      "polymarketMarketIds": [
+        "2253151"
+      ],
+      "contractCoverage": "complete",
+      "needsFilingGuidanceWatch": false,
+      "needsReviewClockWatch": false,
+      "seedExpectedFilingAt": null,
+      "fixtureExpectedFilingAt": null,
+      "assessments": [
+        {
+          "eventType": "FDA_APPROVAL_BY_DATE",
+          "contractCoverage": "complete",
+          "requiredMissing": []
+        }
+      ],
+      "operatorAction": "No filing watch — contract clocks satisfied for linked event types",
+      "clockSourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+      "notes": "FDA approved Daraxonrasib 2026-08-26 (Rasonque). NDA accepted Jul 2026 under CNPV."
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "filingWatch": 1,
+    "blocked": 1
+  }
+}

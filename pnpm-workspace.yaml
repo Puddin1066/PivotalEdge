@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+  - "tracks/*"
+
+allowBuilds:
+  esbuild: true
+  sharp: true

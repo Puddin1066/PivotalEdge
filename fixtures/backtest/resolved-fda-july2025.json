@@ -1,0 +1,98 @@
+{
+  "kind": "backtest_chrono_corpus",
+  "description": "Resolved Polymarket FDA PDUFA-window markets (Jul 2025). Outcomes from closed Gamma markets. Executable asks are curated as-of ~2025-07-01 mid±spread proxies (Polymarket price-history API lacked usable series for these IDs). Provenance: curated_pre_resolution_mid_plus_spread_proxy. Use for chronological edge/Brier retrospective — not live trading.",
+  "initialBankroll": 10000,
+  "cases": [
+    {
+      "caseId": "pm_566023_rp1_bla",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "II",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false,
+      "executableYesAsk": 0.48,
+      "executableNoAsk": 0.55,
+      "evidenceConfidence": "moderate",
+      "supportingEvidenceCount": 3
+    },
+    {
+      "caseId": "pm_566024_blenrep_bla",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false,
+      "executableYesAsk": 0.58,
+      "executableNoAsk": 0.45,
+      "evidenceConfidence": "moderate",
+      "supportingEvidenceCount": 3
+    },
+    {
+      "caseId": "pm_566025_transcon_sbla",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "endocrinology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true,
+      "executableYesAsk": 0.72,
+      "executableNoAsk": 0.31,
+      "evidenceConfidence": "high",
+      "supportingEvidenceCount": 4
+    },
+    {
+      "caseId": "pm_566026_aficamten_nda",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "cardiology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false,
+      "executableYesAsk": 0.66,
+      "executableNoAsk": 0.37,
+      "evidenceConfidence": "high",
+      "supportingEvidenceCount": 4
+    },
+    {
+      "caseId": "pm_566027_empaveli_snda",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "nephrology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true,
+      "executableYesAsk": 0.74,
+      "executableNoAsk": 0.29,
+      "evidenceConfidence": "high",
+      "supportingEvidenceCount": 4
+    },
+    {
+      "caseId": "pm_566028_sepiapterin_nda",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "rare_disease",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": true,
+      "executableYesAsk": 0.7,
+      "executableNoAsk": 0.33,
+      "evidenceConfidence": "high",
+      "supportingEvidenceCount": 3
+    },
+    {
+      "caseId": "pm_566029_odronextamab_bla",
+      "forecastCutoff": "2025-07-01T00:00:00.000Z",
+      "phase": "III",
+      "therapeuticArea": "oncology",
+      "primaryEndpointMet": true,
+      "applicationFiled": true,
+      "resolvedApproved": false,
+      "executableYesAsk": 0.52,
+      "executableNoAsk": 0.51,
+      "evidenceConfidence": "moderate",
+      "supportingEvidenceCount": 3
+    }
+  ]
+}

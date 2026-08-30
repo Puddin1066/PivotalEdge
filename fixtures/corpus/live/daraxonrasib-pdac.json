@@ -1,0 +1,456 @@
+{
+  "kind": "clinical_program",
+  "drugAsset": {
+    "id": "drug_daraxonrasib_pdac",
+    "preferredName": "Daraxonrasib",
+    "modality": "small_molecule",
+    "mechanismIds": [
+      "mech_daraxonrasib_pdac"
+    ]
+  },
+  "sponsor": {
+    "id": "sponsor_daraxonrasib_pdac",
+    "name": "Revolution Medicines, Inc.",
+    "cik": null
+  },
+  "indication": {
+    "id": "ind_daraxonrasib_pdac",
+    "name": "Previously treated metastatic PDAC",
+    "therapeuticArea": "oncology",
+    "efoId": "MONDO_0005192"
+  },
+  "program": {
+    "id": "prog_daraxonrasib_pdac",
+    "drugAssetId": "drug_daraxonrasib_pdac",
+    "indicationId": "ind_daraxonrasib_pdac",
+    "sponsorId": "sponsor_daraxonrasib_pdac",
+    "name": "Daraxonrasib — Previously treated metastatic PDAC",
+    "status": "approved"
+  },
+  "mechanisms": [
+    {
+      "id": "mech_daraxonrasib_pdac",
+      "name": "RAS(ON) multi-selective inhibitor",
+      "target": "RAS",
+      "firstInClass": true
+    }
+  ],
+  "trials": [
+    {
+      "id": "trial_nct06625320",
+      "nctId": "NCT06625320",
+      "programId": "prog_daraxonrasib_pdac",
+      "phase": "III",
+      "title": "RASolute 302: A Phase 3 Multicenter, Open-label, Randomized Study of Daraxonrasib (RMC-6236) Versus Investigator's Choice of Standard of Care Therapy in Patients With Previously Treated Metastatic Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "status": "active",
+      "terminationReason": null,
+      "plannedEnrollment": 500,
+      "actualEnrollment": 500,
+      "masking": "open",
+      "allocation": "randomized",
+      "biomarkerEnriched": true,
+      "registeredAt": "2024-09-20T12:00:00.000Z",
+      "studyStartAt": "2024-10-16T12:00:00.000Z",
+      "primaryCompletionAt": "2026-06-01T12:00:00.000Z",
+      "completionAt": "2027-12-01T12:00:00.000Z"
+    }
+  ],
+  "endpoints": [
+    {
+      "id": "ep_daraxonrasib_pdac_primary",
+      "trialId": "trial_nct06625320",
+      "name": "Progression free survival (PFS) in the RAS G12-mutant population",
+      "endpointFamily": "OS",
+      "isPrimary": true
+    }
+  ],
+  "trialResults": [
+    {
+      "id": "result_daraxonrasib_pdac_primary",
+      "trialId": "trial_nct06625320",
+      "endpointId": "ep_daraxonrasib_pdac_primary",
+      "primaryEndpointMet": true,
+      "effectEstimate": null,
+      "confidenceInterval": null,
+      "pValue": null,
+      "provenance": {
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/13/3272447/0/en/Daraxonrasib-Demonstrates-Unprecedented-Overall-Survival-Benefit-in-Pivotal-Phase-3-RASolute-302-Clinical-Trial-in-Patients-with-Metastatic-Pancreatic-Cancer.html",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2026-04-13T12:00:00.000Z",
+        "effectiveAt": "2026-04-13T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:921e04dad896ed18330a7701",
+        "exactPassage": "RASolute 302 Phase 3: daraxonrasib demonstrated OS and PFS benefit vs chemotherapy in previously treated metastatic PDAC; NDA later accepted for FDA review (2026-07-22).",
+        "locator": "results#primary",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "application": {
+    "id": "app_daraxonrasib_pdac_pending",
+    "programId": "prog_daraxonrasib_pdac",
+    "applicationNumber": null,
+    "applicationType": "NDA",
+    "indicationId": "ind_daraxonrasib_pdac",
+    "filedAt": null,
+    "acceptedAt": "2026-07-22T16:05:00.000Z",
+    "pdufaDate": null,
+    "expectedFilingAt": null,
+    "reviewProgram": "cnpv",
+    "clockProvenance": {
+      "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+      "sourceSystem": "web_press",
+      "retrievedAt": "2026-08-28T13:26:09.222Z",
+      "firstPublicAt": "2026-07-22T16:05:00.000Z",
+      "effectiveAt": "2026-07-22T16:05:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:91a28336f8875ad6bb12a932",
+      "exactPassage": "FDA accepted for review the NDA for daraxonrasib; selected for Commissioner’s National Priority Voucher pilot (no public PDUFA date).",
+      "locator": "regulatory#clock",
+      "accessClass": "open"
+    }
+  },
+  "regulatoryAction": {
+    "id": "action_daraxonrasib_pdac_approval",
+    "applicationId": "app_daraxonrasib_pdac_pending",
+    "actionType": "approval",
+    "actionDate": "2026-08-26T12:00:00.000Z",
+    "provenance": {
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/13/3272447/0/en/Daraxonrasib-Demonstrates-Unprecedented-Overall-Survival-Benefit-in-Pivotal-Phase-3-RASolute-302-Clinical-Trial-in-Patients-with-Metastatic-Pancreatic-Cancer.html",
+      "sourceSystem": "curated_retrospective",
+      "retrievedAt": "2026-08-28T13:26:09.222Z",
+      "firstPublicAt": "2026-08-26T12:00:00.000Z",
+      "effectiveAt": "2026-08-26T12:00:00.000Z",
+      "versionId": "v1",
+      "checksum": "sha256:dfcb32de4a4773063f273b9d",
+      "exactPassage": "FDA approval date 2026-08-26T12:00:00.000Z for Daraxonrasib",
+      "locator": "submission#ORIG",
+      "accessClass": "open"
+    }
+  },
+  "designations": [
+    {
+      "id": "des_daraxonrasib_pdac_breakthrough_0",
+      "programId": "prog_daraxonrasib_pdac",
+      "applicationId": null,
+      "designationType": "breakthrough",
+      "grantedAt": "2025-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2025-01-01T00:00:00.000Z",
+        "effectiveAt": "2025-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bffddc59bbe650f577ed6968",
+        "exactPassage": "breakthrough designation for Daraxonrasib",
+        "locator": "designation#breakthrough",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "des_daraxonrasib_pdac_orphan_1",
+      "programId": "prog_daraxonrasib_pdac",
+      "applicationId": null,
+      "designationType": "orphan",
+      "grantedAt": "2025-01-01T00:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2025-01-01T00:00:00.000Z",
+        "effectiveAt": "2025-01-01T00:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:003ee795c19e7f088e66c5ed",
+        "exactPassage": "orphan designation for Daraxonrasib",
+        "locator": "designation#orphan",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "approvedTherapiesInIndication": [
+    {
+      "id": "comp_daraxonrasib_pdac_0_liposomal_irinotecan",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_liposomal_irinotecan",
+      "drugName": "Liposomal irinotecan",
+      "approvedAt": "2007-09-13T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2007-09-13T12:00:00.000Z",
+        "effectiveAt": "2007-09-13T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:dda5a2fe357010bec29b5644",
+        "exactPassage": "Orange Book: SOMA (appl 011792) approval 2007-09-13T12:00:00.000Z",
+        "locator": "orangebook#011792",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_1_gemcitabine",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_gemcitabine",
+      "drugName": "Gemcitabine",
+      "approvedAt": "2010-11-15T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2010-11-15T12:00:00.000Z",
+        "effectiveAt": "2010-11-15T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:000416693a2f92de49eb46ac",
+        "exactPassage": "Orange Book: GEMCITABINE HYDROCHLORIDE (appl 079183) approval 2010-11-15T12:00:00.000Z",
+        "locator": "orangebook#079183",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_2_sotorasib",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_sotorasib",
+      "drugName": "Sotorasib",
+      "approvedAt": "2021-05-28T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2021-05-28T12:00:00.000Z",
+        "effectiveAt": "2021-05-28T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ea92e79af6cf55895f45890f",
+        "exactPassage": "Orange Book: LUMAKRAS (appl 214665) approval 2021-05-28T12:00:00.000Z",
+        "locator": "orangebook#214665",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_3_paclitaxel",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_paclitaxel",
+      "drugName": "PACLITAXEL",
+      "approvedAt": "2002-01-25T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2002-01-25T12:00:00.000Z",
+        "effectiveAt": "2002-01-25T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:bbb243fc62d10e2378c267c7",
+        "exactPassage": "Orange Book: PACLITAXEL (appl 075278) approval 2002-01-25T12:00:00.000Z",
+        "locator": "orangebook#075278",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_4_gimeracil",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_gimeracil",
+      "drugName": "GIMERACIL",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005192",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2024-10-16T12:00:00.000Z",
+        "effectiveAt": "2024-10-16T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:c38e595d706e52d6307a6625",
+        "exactPassage": "Approved / clinical candidate in indication: GIMERACIL",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_5_manganese_chloride",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_manganese_chloride",
+      "drugName": "MANGANESE CHLORIDE",
+      "approvedAt": "1986-06-26T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "1986-06-26T12:00:00.000Z",
+        "effectiveAt": "1986-06-26T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:a5c3c3d2007a2589d5edeea0",
+        "exactPassage": "Orange Book: MANGANESE CHLORIDE IN PLASTIC CONTAINER (appl 018962) approval 1986-06-26T12:00:00.000Z",
+        "locator": "orangebook#018962",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_6_raltitrexed",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_raltitrexed",
+      "drugName": "RALTITREXED",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005192",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2024-10-16T12:00:00.000Z",
+        "effectiveAt": "2024-10-16T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7a7e67cd8cafd4bd260b72ef",
+        "exactPassage": "Approved / clinical candidate in indication: RALTITREXED",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_7_ramucirumab",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_ramucirumab",
+      "drugName": "RAMUCIRUMAB",
+      "approvedAt": "2014-04-21T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/125477s000lbl.pdf",
+        "sourceSystem": "enrichment_override",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2014-04-21T12:00:00.000Z",
+        "effectiveAt": "2014-04-21T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:7fa82db9c47e1432a7e761c4",
+        "exactPassage": "Curated override: Ramucirumab (Cyramza) approved 2014-04-21T12:00:00.000Z",
+        "locator": "override#BLA125477",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_8_dostarlimab",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_dostarlimab",
+      "drugName": "DOSTARLIMAB",
+      "approvedAt": "2021-04-22T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/761174s000lbl.pdf",
+        "sourceSystem": "enrichment_override",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2021-04-22T12:00:00.000Z",
+        "effectiveAt": "2021-04-22T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:135107ef7ed227a5bb1b3cd8",
+        "exactPassage": "Curated override: Dostarlimab (Jemperli) approved 2021-04-22T12:00:00.000Z",
+        "locator": "override#BLA761174",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_9_cetuximab",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_cetuximab",
+      "drugName": "CETUXIMAB",
+      "approvedAt": "2004-02-12T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2004/125084lbl.pdf",
+        "sourceSystem": "enrichment_override",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2004-02-12T12:00:00.000Z",
+        "effectiveAt": "2004-02-12T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:4c1ce4507adba37296d3cae6",
+        "exactPassage": "Curated override: Cetuximab (Erbitux) approved 2004-02-12T12:00:00.000Z",
+        "locator": "override#BLA125084",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_10_chlorphenesin_carbamate",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_chlorphenesin_carbamate",
+      "drugName": "CHLORPHENESIN CARBAMATE",
+      "approvedAt": null,
+      "provenance": {
+        "sourceUrl": "https://platform.opentargets.org/disease/MONDO_0005192",
+        "sourceSystem": "opentargets",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2024-10-16T12:00:00.000Z",
+        "effectiveAt": "2024-10-16T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:ee4ac2199e28a1eba57da91f",
+        "exactPassage": "Approved / clinical candidate in indication: CHLORPHENESIN CARBAMATE",
+        "locator": "competition",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "comp_daraxonrasib_pdac_11_mycophenolate_mofetil",
+      "indicationId": "ind_daraxonrasib_pdac",
+      "drugAssetId": "drug_comp_mycophenolate_mofetil",
+      "drugName": "MYCOPHENOLATE MOFETIL",
+      "approvedAt": "2008-07-29T12:00:00.000Z",
+      "provenance": {
+        "sourceUrl": "file:///Users/JJR/PivotalEdge/fixtures/regulatory/orange_book_products_2026.csv",
+        "sourceSystem": "fda.orange_book_local",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2008-07-29T12:00:00.000Z",
+        "effectiveAt": "2008-07-29T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:f580236706ea9068dbc70469",
+        "exactPassage": "Orange Book: MYCOPHENOLATE MOFETIL (appl 065410) approval 2008-07-29T12:00:00.000Z",
+        "locator": "orangebook#065410",
+        "accessClass": "open"
+      }
+    }
+  ],
+  "priorApprovals": [],
+  "documents": [
+    {
+      "id": "doc_daraxonrasib_pdac_ct",
+      "title": "RASolute 302: A Phase 3 Multicenter, Open-label, Randomized Study of Daraxonrasib (RMC-6236) Versus Investigator's Choice of Standard of Care Therapy in Patients With Previously Treated Metastatic Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "documentType": "protocol",
+      "provenance": {
+        "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+        "sourceSystem": "clinicaltrials.gov",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2024-10-16T12:00:00.000Z",
+        "effectiveAt": "2024-10-16T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:590964751c7e26dfb5189056",
+        "exactPassage": "RASolute 302: A Phase 3 Multicenter, Open-label, Randomized Study of Daraxonrasib (RMC-6236) Versus Investigator's Choice of Standard of Care Therapy in Patients With Previously Treated Metastatic Pancreatic Ductal Adenocarcinoma (PDAC)",
+        "locator": "NCT06625320",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_daraxonrasib_pdac_result_press",
+      "title": "Daraxonrasib primary result disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/13/3272447/0/en/Daraxonrasib-Demonstrates-Unprecedented-Overall-Survival-Benefit-in-Pivotal-Phase-3-RASolute-302-Clinical-Trial-in-Patients-with-Metastatic-Pancreatic-Cancer.html",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2026-04-13T12:00:00.000Z",
+        "effectiveAt": "2026-04-13T12:00:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:921e04dad896ed18330a7701",
+        "exactPassage": "RASolute 302 Phase 3: daraxonrasib demonstrated OS and PFS benefit vs chemotherapy in previously treated metastatic PDAC; NDA later accepted for FDA review (2026-07-22).",
+        "locator": "press",
+        "accessClass": "open"
+      }
+    },
+    {
+      "id": "doc_daraxonrasib_pdac_reg_clock",
+      "title": "Daraxonrasib regulatory clock disclosure",
+      "documentType": "press_release",
+      "provenance": {
+        "sourceUrl": "https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-new-drug-application-daraxonrasib-accepted",
+        "sourceSystem": "web_press",
+        "retrievedAt": "2026-08-28T13:26:09.222Z",
+        "firstPublicAt": "2026-07-22T16:05:00.000Z",
+        "effectiveAt": "2026-07-22T16:05:00.000Z",
+        "versionId": "v1",
+        "checksum": "sha256:91a28336f8875ad6bb12a932",
+        "exactPassage": "FDA accepted for review the NDA for daraxonrasib; selected for Commissioner’s National Priority Voucher pilot (no public PDUFA date).",
+        "locator": "regulatory#clock",
+        "accessClass": "open"
+      }
+    }
+  ]
+}

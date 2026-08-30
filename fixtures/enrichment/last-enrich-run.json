@@ -1,0 +1,97 @@
+{
+  "kind": "kg_enrich_run",
+  "at": "2026-08-28T13:26:09.227Z",
+  "programs": [
+    {
+      "slug": "intismeran-melanoma",
+      "path": "corpus/live/intismeran-melanoma.json",
+      "nctId": "NCT05933577",
+      "phase": "III",
+      "trialStatus": "active",
+      "enrollment": 1089,
+      "primaryEndpointMet": true,
+      "designations": [
+        "breakthrough"
+      ],
+      "competitors": 12,
+      "competitorsWithApprovalDate": 8,
+      "polymarketMarketIds": [
+        "3725541",
+        "3741934",
+        "3727493"
+      ],
+      "openTargetsDiseaseId": "MONDO_0005105",
+      "openTargetsHits": 10,
+      "orangeBookHits": 4,
+      "retrospectiveCompetitorHits": 3,
+      "overrideCompetitorHits": 1,
+      "fdaApplicationNumber": null,
+      "fdaApprovalDate": null,
+      "trialRegisteredAt": "2023-06-27T12:00:00.000Z",
+      "trialPrimaryCompletionAt": "2029-10-26T12:00:00.000Z",
+      "acceptedAt": null,
+      "expectedFilingAt": null,
+      "reviewProgram": "unknown",
+      "contractCoverage": "blocked"
+    },
+    {
+      "slug": "retatrutide-obesity",
+      "path": "corpus/live/retatrutide-obesity.json",
+      "nctId": "NCT05929066",
+      "phase": "III",
+      "trialStatus": "completed",
+      "enrollment": 2335,
+      "primaryEndpointMet": true,
+      "designations": [],
+      "competitors": 3,
+      "competitorsWithApprovalDate": 3,
+      "polymarketMarketIds": [
+        "1162139"
+      ],
+      "openTargetsDiseaseId": "EFO_0001073",
+      "openTargetsHits": 0,
+      "orangeBookHits": 1,
+      "retrospectiveCompetitorHits": 1,
+      "overrideCompetitorHits": 1,
+      "fdaApplicationNumber": null,
+      "fdaApprovalDate": null,
+      "trialRegisteredAt": "2023-06-26T12:00:00.000Z",
+      "trialPrimaryCompletionAt": "2026-04-06T12:00:00.000Z",
+      "acceptedAt": null,
+      "expectedFilingAt": "2027-03-31T23:59:00.000Z",
+      "reviewProgram": "unknown",
+      "contractCoverage": "complete"
+    },
+    {
+      "slug": "daraxonrasib-pdac",
+      "path": "corpus/live/daraxonrasib-pdac.json",
+      "nctId": "NCT06625320",
+      "phase": "III",
+      "trialStatus": "active",
+      "enrollment": 500,
+      "primaryEndpointMet": true,
+      "designations": [
+        "breakthrough",
+        "orphan"
+      ],
+      "competitors": 12,
+      "competitorsWithApprovalDate": 9,
+      "polymarketMarketIds": [
+        "2253151"
+      ],
+      "openTargetsDiseaseId": "MONDO_0005192",
+      "openTargetsHits": 10,
+      "orangeBookHits": 6,
+      "retrospectiveCompetitorHits": 0,
+      "overrideCompetitorHits": 3,
+      "fdaApplicationNumber": null,
+      "fdaApprovalDate": null,
+      "trialRegisteredAt": "2024-09-20T12:00:00.000Z",
+      "trialPrimaryCompletionAt": "2026-06-01T12:00:00.000Z",
+      "acceptedAt": "2026-07-22T16:05:00.000Z",
+      "expectedFilingAt": null,
+      "reviewProgram": "cnpv",
+      "contractCoverage": "complete"
+    }
+  ]
+}
